@@ -3,14 +3,30 @@ lang: sr-Cyrl
 title: Пример курса
 description:
   willLearn: # list
-    - Научићете 1
+    - ­да разликујете визуелну презентацију и логичку структуру текста;
+    - да користите алате за стилско обликовање документа и креирање прегледа садржаја у програму за обраду текста;
+    - да објасните принципе растерске и векторске графике и модела приказа боја;
+    - да ­креирамо растерску слику у изабраном програму; 
+    - да користимо алате за уређивање и трансформацију слике;
+    - ­да креирамо векторску слику у изабраном програму; 
+    - да креирамо алате за уређивање и трансформацију слике;
+    - да креирамо гиф анимацију;
     - Научићете 2
   requirements:
-    - Имаш инсталиран Пајтон
-    - Имаш инсталиран Петљадок
+    - Имаш инсталиран Gimp
+    - Имаш инсталиран Inkscape
+    - Имаш инсталиран Screencat-o-matic
   toc:
-    - Пример_лекције
-    - Пример_лекције2
+    - Час 1. Рад са текстом – преглед садржаја текстуалног документа
+    - Час 2. Рачунарска графика
+    - Час 3. Растерска и векторска графика
+    - Час 4. Рад са сликама - слојеви
+    - Час 5. Рад са сликама – обрада дигиталних слика
+    - Час 6. Креирање векторске графике
+    - Час 7. Креирање векторске графике
+    - Час 8. Обрада векторске графике
+    - Час 9. Анимиране слике
+    - Час 10. Снимање видео-записа
   externalLinks: # opciono 
     - text: Синтакса restructuredText
       href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
@@ -18,47 +34,163 @@ description:
       href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
 
 lessons:
-  - title: Naslov_1
-    folder: Пример_лекција1
-    guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
+  - title: Час 1. Рад са текстом – преглед садржаја текстуалног документа
+    folder: Час 1. Рад са текстом – преглед садржаја текстуалног документа
+    guid: 883a789a-5320-4467-92ad-6888ba983570
     description: Прва лекција
     activities:
       - type: reading
-        title: Пример фајла
-        file: primer_1.rst
+        title: Час. Рад са текстом – преглед садржаја текстуалног документа
+        file: Час_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
         description: #opciono
-        guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
-      - type: reading
-        title: Пример pdf фајла
-        file: primer_dokument.pdf
-        description: ...
-        guid: d90350ae-84e4-4e49-bac8-2d4849e3c409
-      - type: video
-        title: Пример видеа
-        url: https://www.youtube.com/watch?v=flu3-ntQIlE # može da se navede i ceo YT url, a može i samo ID (id u bilo kom yt linku predstavlja 11 karatkera nakon v=)
-        description: ...
-        guid: 61657689-aa6b-46c9-87da-51869d6477ee
+        guid: 1f676570-7079-4b4d-b836-555259c85f50
       - type: quiz 
-        title: Пример теста
-        file: primer_test_1.rst
+        title: Тест. Рад са текстом – преглед садржаја текстуалног документа
+        file: Тест_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
         description: ...
-        guid: a725f29a-b323-4a1a-b52d-6eae141bc243
+        guid: 0299e2c9-6e21-4941-8093-bf7888c1ce9a
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-      - guid: de4d8ced-7457-4257-a156-250bdb711d65
-      - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: Naslov_2
-    folder: Пример_лекција2
-    guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
+      - guid: aaf83c5e-db21-4d36-9bbd-a73d3227ee0f
+      - guid: d1f95912-c8e1-4d6a-b87d-d391250d8f30
+  - title: Час 2. Рачунарска графика
+    folder: Час 2. Рачунарска графика
+    guid: e5c686b1-65da-48a1-957e-0abca9adc147
     description:  Друга лекција
     activities:
       - type: reading
-        title: Primer rst fajla
-        file: primer_2.rst
+        title: Час. Рачунарска графика
+        file: Час_2_Рачунарска_графика.rst
         description: #opciono
-        guid: 4576c9a4-2071-4a21-b221-a646477e05be   
+        guid: 05e1440b-a65f-4f85-8892-267884ca6859 
+      - type: quiz
+        title: Тест. Рачунарска графика
+        file: Тест_2_Рачунарска_графика.rst
+        description: #opciono
+        guid: 0f1eacd4-2900-4056-b20e-1edb356a2aab 
+  - title: Час 3. Растерска и векторска графика
+    folder: Час 3. Растерска и векторска графика
+    guid: 7fb47079-68dc-40d8-b06a-5f20f7845deb
+    description:  Трећа лекција
+    activities:
+      - type: reading
+        title: Час. Растерска и векторска графика
+        file: Час_3_Растерска_и_векторска_графика.rst
+        description: #opciono
+        guid: aa202f4d-4408-4fd6-818b-16c885ee5175
+      - type: quiz
+        title: Тест. Растерска и векторска графика
+        file: Тест_3_Растерска_и_векторска_графика.rst
+        description: #opciono
+        guid: 04a95836-6dc0-4032-aecb-ca2a861a8f65
+  - title: Час 4. Рад са сликама – слојеви
+    folder: Час 4. Рад са сликама – слојеви
+    guid: adfdc5e5-9917-47ae-8dbf-28eecbff345d
+    description:  Четврта лекција
+    activities:
+      - type: reading
+        title: Час. Рад са сликама – слојеви
+        file: Час_4_Рад_са_сликама_слојеви.rst
+        description: #opciono
+        guid: 5944177d-f914-4166-beb1-7a1e58171713
+      - type: quiz
+        title: Тест. Рад са сликама – слојеви
+        file: Тест_4_Рад_са_сликама_слојеви.rst
+        description: #opciono
+        guid: 786c88fa-77af-4c47-95ea-151bb2fd229b
+  - title: Час 5. Рад са сликама – обрада дигиталних слика
+    folder: Час 5. Рад са сликама – обрада дигиталних слика
+    guid: 2f046095-d409-423b-a5c4-6bec565b1891
+    description:  Пета лекција
+    activities:
+      - type: reading
+        title: Час. Рад са сликама – обрада дигиталних слика
+        file: Час_5_Рад_са_сликама_обрада_дигиталних_слика.rst
+        description: #opciono
+        guid: 2e20c602-998c-4dfd-83d8-33c58b1769f9
+      - type: quiz
+        title: Тест. Рад са сликама – обрада дигиталних слика
+        file: Тест_5_Рад_са_сликама_обрада_дигиталних_слика.rst
+        description: #opciono
+        guid: 07610fb0-37ac-4674-ab46-b5847fc417ee
+  - title: Час 6. Креирање векторске графике
+    folder: Час 6. Креирање векторске графике
+    guid: 26624d1a-b76f-4f1f-8f08-6e1f71ccbed4
+    description:  Шест лекција
+    activities:
+      - type: reading
+        title: Час. Креирање векторске графике
+        file: Час_6_Креирање_векторске_графике.rst
+        description: #opciono
+        guid: 005666a7-4702-4a63-8cbd-642cf4692078
+      - type: quiz
+        title: Тест. Креирање векторске графике
+        file: Тест_6_Креирање_векторске_графике.rst
+        description: #opciono
+        guid: f0842095-dfd8-4ccc-85e2-f8d8a5cb58f3
+  - title: Час 7. Креирање векторске графике
+    folder: Час 7. Креирање векторске графике
+    guid: 26887aa1-e774-40f6-aeeb-796fd24eb327
+    description:  Седма лекција
+    activities:
+      - type: reading
+        title: Час. Креирање векторске графике
+        file: Час_7_Креирање_векторске_графике.rst
+        description: #opciono
+        guid: a4296ff4-7bd5-4053-a3b6-b47d51e2d861
+      - type: quiz
+        title: Тест. Креирање векторске графике
+        file: Тест_7_Креирање_векторске_графике.rst
+        description: #opciono
+        guid: 917e2189-9680-4c0e-8075-2ccb0b59bd47
+  - title: Час 8. Обрада векторске графике
+    folder: Час 8. Обрада векторске графике
+    guid: 184a96f4-d0d7-44d8-9f94-b90eb0dfb539
+    description:  Осма лекција
+    activities:
+      - type: reading
+        title: Час. Обрада векторске графике
+        file: Час_8_Обрада_векторске_графике.rst
+        description: #opciono
+        guid: 6b6820d6-008b-4566-8433-2613d7438d50
+      - type: quiz
+        title: Тест. Обрада векторске графике
+        file: Тест_8_Обрада_векторске_графике.rst
+        description: #opciono
+        guid: f374db90-7d76-47c8-b061-edfd8b443450    
+  - title: Час 9. Анимиране слике
+    folder: Час 9. Анимиране слике
+    guid: 6046461e-27f8-44c0-8287-0e19f17543f4
+    description:  Девата лекција
+    activities:
+      - type: reading
+        title: Час. Анимиране слике
+        file: Час_9_Анимиране_слике.rst
+        description: #opciono
+        guid: fde298d6-c8ce-41d7-af8a-0397e332db47
+      - type: quiz
+        title: Тест. Анимиране слике
+        file: Тест_9_Анимиране_слике.rst
+        description: #opciono
+        guid: 54304960-e805-429e-b0c7-d5495e350d5e    
+  - title: Час 10. Снимање видео-записа
+    folder: Час 10. Снимање видео-записа
+    guid: ffb25fa0-eefa-4332-bd58-e734bfa1a101
+    description:  Десета лекција
+    activities:
+      - type: reading
+        title: Час. Снимање видео-записа
+        file: Час_10_Снимање_видео_записа.rst
+        description: #opciono
+        guid: ebbd042b-b269-4845-81b5-26889c4b8489
+      - type: quiz
+        title: Тест. Снимање видео-записа
+        file: Тест_10_Снимање_видео_записа.rst
+        description: #opciono
+        guid: 24a6a6c3-84e0-40f9-8433-0462781bcd1e 
+
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-  - guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
-  - guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5
+  - guid: b9e3e6a3-9b7b-4966-acc1-2de21a5059c1
+  - guid: 99001af8-9278-48e6-b32d-588d9f27c228
 
 
 
