@@ -44,9 +44,14 @@ lessons:
         file: Час_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
         description: #opciono
         guid: 1f676570-7079-4b4d-b836-555259c85f50
+      - type: reading
+        title: Задаци. Рад са текстом – преглед садржаја текстуалног документа
+        file: Задатак_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
+        description: #opciono
+        guid: a564c96e-334f-42a1-8ad0-1ab0fec98b94
       - type: quiz 
-        title: Тест. Рад са текстом – преглед садржаја текстуалног документа
-        file: Тест_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
+        title: Квиз. Рад са текстом – преглед садржаја текстуалног документа
+        file: Квиз_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
         description: ...
         guid: 0299e2c9-6e21-4941-8093-bf7888c1ce9a
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
@@ -63,8 +68,8 @@ lessons:
         description: #opciono
         guid: 05e1440b-a65f-4f85-8892-267884ca6859 
       - type: quiz
-        title: Тест. Рачунарска графика
-        file: Тест_2_Рачунарска_графика.rst
+        title: Квиз. Рачунарска графика
+        file: Квиз_2_Рачунарска_графика.rst
         description: #opciono
         guid: 0f1eacd4-2900-4056-b20e-1edb356a2aab 
   - title: Час 3. Растерска и векторска графика
@@ -78,8 +83,8 @@ lessons:
         description: #opciono
         guid: aa202f4d-4408-4fd6-818b-16c885ee5175
       - type: quiz
-        title: Тест. Растерска и векторска графика
-        file: Тест_3_Растерска_и_векторска_графика.rst
+        title: Квиз. Растерска и векторска графика
+        file: Квиз_3_Растерска_и_векторска_графика.rst
         description: #opciono
         guid: 04a95836-6dc0-4032-aecb-ca2a861a8f65
   - title: Час 4. Рад са сликама – слојеви
@@ -93,8 +98,8 @@ lessons:
         description: #opciono
         guid: 5944177d-f914-4166-beb1-7a1e58171713
       - type: quiz
-        title: Тест. Рад са сликама – слојеви
-        file: Тест_4_Рад_са_сликама_слојеви.rst
+        title: Квиз. Рад са сликама – слојеви
+        file: Квиз_4_Рад_са_сликама_слојеви.rst
         description: #opciono
         guid: 786c88fa-77af-4c47-95ea-151bb2fd229b
   - title: Час 5. Рад са сликама – обрада дигиталних слика
@@ -108,8 +113,8 @@ lessons:
         description: #opciono
         guid: 2e20c602-998c-4dfd-83d8-33c58b1769f9
       - type: quiz
-        title: Тест. Рад са сликама – обрада дигиталних слика
-        file: Тест_5_Рад_са_сликама_обрада_дигиталних_слика.rst
+        title: Квиз. Рад са сликама – обрада дигиталних слика
+        file: Квиз_5_Рад_са_сликама_обрада_дигиталних_слика.rst
         description: #opciono
         guid: 07610fb0-37ac-4674-ab46-b5847fc417ee
   - title: Час 6. Креирање векторске графике
@@ -123,8 +128,8 @@ lessons:
         description: #opciono
         guid: 005666a7-4702-4a63-8cbd-642cf4692078
       - type: quiz
-        title: Тест. Креирање векторске графике
-        file: Тест_6_Креирање_векторске_графике.rst
+        title: Квиз. Креирање векторске графике
+        file: Квиз_6_Креирање_векторске_графике.rst
         description: #opciono
         guid: f0842095-dfd8-4ccc-85e2-f8d8a5cb58f3
   - title: Час 7. Креирање векторске графике
@@ -138,8 +143,8 @@ lessons:
         description: #opciono
         guid: a4296ff4-7bd5-4053-a3b6-b47d51e2d861
       - type: quiz
-        title: Тест. Креирање векторске графике
-        file: Тест_7_Креирање_векторске_графике.rst
+        title: Квиз. Креирање векторске графике
+        file: Квиз_7_Креирање_векторске_графике.rst
         description: #opciono
         guid: 917e2189-9680-4c0e-8075-2ccb0b59bd47
   - title: Час 8. Обрада векторске графике
@@ -153,8 +158,8 @@ lessons:
         description: #opciono
         guid: 6b6820d6-008b-4566-8433-2613d7438d50
       - type: quiz
-        title: Тест. Обрада векторске графике
-        file: Тест_8_Обрада_векторске_графике.rst
+        title: Квиз. Обрада векторске графике
+        file: Квиз_8_Обрада_векторске_графике.rst
         description: #opciono
         guid: f374db90-7d76-47c8-b061-edfd8b443450    
   - title: Час 9. Анимиране слике
@@ -168,8 +173,8 @@ lessons:
         description: #opciono
         guid: fde298d6-c8ce-41d7-af8a-0397e332db47
       - type: quiz
-        title: Тест. Анимиране слике
-        file: Тест_9_Анимиране_слике.rst
+        title: Квиз. Анимиране слике
+        file: Квиз_9_Анимиране_слике.rst
         description: #opciono
         guid: 54304960-e805-429e-b0c7-d5495e350d5e    
   - title: Час 10. Снимање видео-записа
@@ -183,8 +188,8 @@ lessons:
         description: #opciono
         guid: ebbd042b-b269-4845-81b5-26889c4b8489
       - type: quiz
-        title: Тест. Снимање видео-записа
-        file: Тест_10_Снимање_видео_записа.rst
+        title: Квиз. Снимање видео-записа
+        file: Квиз_10_Снимање_видео_записа.rst
         description: #opciono
         guid: 24a6a6c3-84e0-40f9-8433-0462781bcd1e 
 
