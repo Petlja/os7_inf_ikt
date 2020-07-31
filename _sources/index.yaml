@@ -97,6 +97,11 @@ lessons:
         file: Час_4_Рад_са_сликама_слојеви.rst
         description: #opciono
         guid: 5944177d-f914-4166-beb1-7a1e58171713
+      - type: reading
+        title: Задаци. Рад са сликама - слојеви
+        file: Задатак_4_Рад_са _сликама_слојеви.rst
+        description: #opciono
+        guid: f47ce132-b11c-45f8-9ccb-5ae2899fddae
       - type: quiz
         title: Квиз. Рад са сликама – слојеви
         file: Квиз_4_Рад_са_сликама_слојеви.rst
@@ -112,6 +117,11 @@ lessons:
         file: Час_5_Рад_са_сликама_обрада_дигиталних_слика.rst
         description: #opciono
         guid: 2e20c602-998c-4dfd-83d8-33c58b1769f9
+      - type: reading
+        title: Задаци. Рад са сликама – обрада дигиталних слика
+        file: Задатак_5_Рад_са_сликама_обрада_дигиталних_слика.rst
+        description: #opciono
+        guid: dba0fb96-ee7f-4c15-aca6-304fb08a5ea0
       - type: quiz
         title: Квиз. Рад са сликама – обрада дигиталних слика
         file: Квиз_5_Рад_са_сликама_обрада_дигиталних_слика.rst
