@@ -137,6 +137,11 @@ lessons:
         file: Час_6_Креирање_векторске_графике.rst
         description: #opciono
         guid: 005666a7-4702-4a63-8cbd-642cf4692078
+      - type: reading
+        title: Задаци. Креирање векторске графике
+        file: Задатак_6_Креирање_векторске_графике.rst
+        description: #opciono
+        guid: 0b069bb1-5cef-43ef-9fa1-a419e4200db3
       - type: quiz
         title: Квиз. Креирање векторске графике
         file: Квиз_6_Креирање_векторске_графике.rst
@@ -152,6 +157,11 @@ lessons:
         file: Час_7_Креирање_векторске_графике.rst
         description: #opciono
         guid: a4296ff4-7bd5-4053-a3b6-b47d51e2d861
+      - type: reading
+        title: Задаци. Креирање векторске графике
+        file: Задатак_7_Креирање_векторске_графике.rst
+        description: #opciono
+        guid: 9ed5af2b-04b6-4a49-b013-433ff86f73ac
       - type: quiz
         title: Квиз. Креирање векторске графике
         file: Квиз_7_Креирање_векторске_графике.rst
@@ -167,6 +177,11 @@ lessons:
         file: Час_8_Обрада_векторске_графике.rst
         description: #opciono
         guid: 6b6820d6-008b-4566-8433-2613d7438d50
+      - type: reading
+        title: Задаци. Обрада векторске графике
+        file: Задатак_8_Обрада_векторске_графике.rst
+        description: #opciono
+        guid: e71545b4-7bd7-4f02-acd5-2f2d2c6159f7
       - type: quiz
         title: Квиз. Обрада векторске графике
         file: Квиз_8_Обрада_векторске_графике.rst
@@ -182,6 +197,11 @@ lessons:
         file: Час_9_Анимиране_слике.rst
         description: #opciono
         guid: fde298d6-c8ce-41d7-af8a-0397e332db47
+      - type: reading
+        title: Задаци. Анимиране слике
+        file: Задатак_9_Анимиране_слике.rst
+        description: #opciono
+        guid: 5132b956-9333-4e49-be9c-8704d287bfc8
       - type: quiz
         title: Квиз. Анимиране слике
         file: Квиз_9_Анимиране_слике.rst
@@ -197,6 +217,11 @@ lessons:
         file: Час_10_Снимање_видео_записа.rst
         description: #opciono
         guid: ebbd042b-b269-4845-81b5-26889c4b8489
+      - type: reading
+        title: Час. Снимање видео-записа
+        file: Задатак_10_Снимање_видео_записа.rst
+        description: #opciono
+        guid: 21a2aad0-5d48-41e9-9960-5f4e5e8b2cfd
       - type: quiz
         title: Квиз. Снимање видео-записа
         file: Квиз_10_Снимање_видео_записа.rst
