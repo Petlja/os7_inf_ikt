@@ -1,63 +1,334 @@
-courseId: kurs-primer
+courseId: 6_razred_IKT_DigitalnaPismenost
 lang: sr-Cyrl
-title: Пример курса
+title: Информационо-комуникациона технологија и дигитална писменост
 description:
   willLearn: # list
-    - Научићете 1
-    - Научићете 2
+    - како се правилно користи ИКТ уређаје;
+    - да именујете основне компоненте рачунара и ИКТ уређаја;
+    - разлику између трајног и привременог чувања података;
+    - да сачувате и организујете податке на дигиталном уређају; 
+    - да сачувате и организујете податке у облаку података;
+    - да ­креирате и обрађујете дигиталну слику;
+    - да креирате текстуални документ и примените основне акције уноса и едитовања чистог текста;
+    - да ­креирате текстуални документ и примените основне акције едитовања и форматирања (самостално и сараднички);
+    - ­да креирате, уређујете и структурирате текстуални документ који садржи табелу (самостално и сараднички);
+    - да чувате и организујете податке локално и у облаку;
+    - да дефинишете логичку структуру и стилове текста (самостално и сараднички);
+    - да примењујете алате и технике за обраду звучног записа;
+    - да примењујете алате и технике за обраду видео-записа;
+    - процес конверзије типова датотека; 
+    - да уређујете мултимедијалну презентацију која садржи видео и аудио садржаје (самостално и сараднички).
+    - шта су рачунарске мреже, које су њихове предности и како се деле
+    - шта су интернет адресе, домени и протоколи 
+    - да разликујете основне интернет сервисе и њихову намену
+    - како се правилно и одговорно користите ИКТ уређаји у мрежном окружењу
+    - примењујете поступке и правила за безбедно понашање и представљање на мрежи
+    - препознате облике дигиталног насиља, како да правилно реагујете на њега и како да се заштитите
+    - како се претражују, проналазе, процењују и преузимају информације са интернета
+    - како се прикупљају подаци путем онлајн упитника
+    - на који начин су дигитални призводи и садржаји заштићени лиценцом
   requirements:
-    - Имаш инсталиран Пајтон
-    - Имаш инсталиран Петљадок
+    - Имаш инсталиран Gimp 2
+    - Имаш инсталиран Audacity
+    - Имаш инсталиран Windows Movie Maker
+    - Рачунар са приступом интернету
   toc:
-    - Пример_лекције
-    - Пример_лекције2
-  externalLinks: # opciono 
-    - text: Синтакса restructuredText
-      href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
-    - text: Синтакса restructuredText 2
-      href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
+    - Дигитални уређаји
+    - Организација и управљање подацима
+    - Рад са сликама
+    - Рад са текстом унос и едитовање чистог текста
+    - Рад са текстом форматирање карактера и пасуса
+    - Рад са текстом – уметање и форматирање табеле
+    - Рад са текстом – логичка структура и стилови
+    - Рад са звучним записом
+    - Рад са видео-записом
+    - Мултимедијалне презентације
+    - Рачунарске мреже. Употреба ИКТ уређаја на одговоран и сигуран начин у мрежном окружењу
+    - Интернет сервиси. Правила безбедног рада на Интернету
+    - Претраживање Интернета, одабир резултата и преузимање садржаја
+    - Заштита приватности личних података и ауторских права
 
+  externalLinks: # opciono 
+    - text: Нет патрола
+      href: http://www.netpatrola.rs/
+    - text: Кликни безбедно
+      href: https://kliknibezbedno.wordpress.com/opsta-bezbednst-na-internetu/
+      
 lessons:
-  - title: Пример_лекција1
-    guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
+  - title: Час 1. Дигитални уређаји
+    folder: Час 1. Дигитални уређаји
+    guid: b0e3fff5-4d7b-4452-9c27-1a2bb012aec6
     description: Прва лекција
     activities:
       - type: reading
-        title: Пример фајла
-        file: primer_1.rst
+        title: Час. Дигитални уређаји
+        file: Час_1_Дигитални_уређаји.rst
         description: #opciono
-        guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
-      - type: reading
-        title: Пример pdf фајла
-        file: primer_dokument.pdf
-        description: ...
-        guid: d90350ae-84e4-4e49-bac8-2d4849e3c409
-      - type: video
-        title: Пример видеа
-        url: https://www.youtube.com/watch?v=flu3-ntQIlE # može da se navede i ceo YT url, a može i samo ID (id u bilo kom yt linku predstavlja 11 karatkera nakon v=)
-        description: ...
-        guid: 61657689-aa6b-46c9-87da-51869d6477ee
+        guid: 7eb982a7-12be-4410-9e7b-7573760f4406
       - type: quiz 
-        title: Пример теста
-        file: primer_test_1.rst
+        title: Тест. Дигитални уређаји
+        file: Тест_1_Дигитални_уређаји.rst
         description: ...
-        guid: a725f29a-b323-4a1a-b52d-6eae141bc243
+        guid: 9c3e5dfe-3d36-4266-8637-9adc2fc8ba3e
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-      - guid: de4d8ced-7457-4257-a156-250bdb711d65
-      - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: Пример_лекција2
-    guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
+      - guid: 26b99f78-ce37-458d-ae7d-b78b267d2a1d
+      - guid: f8f550c6-cf18-48c6-bd08-bcb90100d5bd
+  - title: Час 2. Организација и управљање подацима
+    folder: Час 2. Организација и управљање подацима
+    guid: 43a7e557-e0db-4dc0-987b-8097b603e496
     description:  Друга лекција
     activities:
       - type: reading
-        title: Primer rst fajla
-        file: primer_2.rst
+        title: Час. Организација и управљање подацима
+        file: Час_2_Организација_и_управљање_подацима.rst
         description: #opciono
-        guid: 4576c9a4-2071-4a21-b221-a646477e05be   
+        guid: 7dc2a1ab-726b-4f0e-9dd3-3cd0a3e6e941
+      - type: reading
+        title: Задаци. Организација и управљање подацима
+        file: Задатак_2_Организација_и_управљање_подацима.rst
+        description: #opciono
+        guid: 5697c02d-d3fd-4e70-bbd0-6d3b9d37a8f8
+      - type: quiz
+        title: Тест. Организација и управљање подацима
+        file: Тест_2_Организација_и_управљање_подацима.rst
+        description: #opciono
+        guid: 7860a6b2-ddb1-4fe9-b8c4-76ef5fe212d4 
+  - title: Час 3. Рад са сликама
+    folder: Час 3. Рад са сликама
+    guid: 14ba6ceb-479c-4f18-ab1f-977531cfc74d
+    description:  Трећа лекција
+    activities:
+      - type: reading
+        title: Час. Рад са сликама
+        file: Час_3_Рад_са_сликама.rst
+        description: #opciono
+        guid: ca5de095-3315-4880-8912-efc0cc98d95c 
+      - type: reading
+        title: Задаци. Рад са сликама
+        file: Задатак_3_Рад_са_сликама.rst
+        description: #opciono
+        guid: 3ba40e8e-3c5e-4b51-a975-d9d59d7056ff       
+      - type: quiz
+        title: Тест. Рад са сликама
+        file: Тест_3_Рад_са_сликама.rst
+        description: #opciono
+        guid: a7fc6b62-ee5d-4e3b-a4ef-1f2b9426e5c5
+  - title: Час 4. Рад са текстом - унос и едитовање чистог текста
+    folder: Час 4. Рад са текстом унос и едитовање чистог текста
+    guid: efd50b41-e850-46af-b7a5-95b1343848b1
+    description: Четврта лекција
+    activities:
+      - type: reading
+        title: Час. Рад са текстом - унос и едитовање чистог текста
+        file: Час_4_Рад_са_текстом_унос_и_едитовање_чистог_текста.rst
+        description: #opciono
+        guid: d4b00abd-f879-4edc-8c1a-637528df76e6
+      - type: quiz 
+        title: Тест. Рад са текстом – унос и едитовање чистог текста
+        file: Тест_4_Рад_са_текстом_унос_и_едитовање_чистог_текста.rst
+        description: ...
+        guid: 81bac160-a995-425e-8034-4d3496d868f2
+  - title: Час 5. Рад са текстом форматирање карактера и пасуса
+    folder: Час 5. Рад са текстом форматирање карактера и пасуса
+    guid: 75081954-94b6-4157-89c5-c82d6e82f32d
+    description: Пета лекција
+    activities:
+      - type: reading
+        title: Час. Рад са текстом форматирање карактера и пасуса
+        file: Час_5_Рад_са_текстом_форматирање_карактера_и_пасуса.rst
+        description: #opciono
+        guid: 08f7ff1c-0896-439e-b0ba-5a53d1387e7a
+      - type: reading
+        title: Задаци. Рад са текстом форматирање карактера и пасуса
+        file: Задатак_5_Рад_са_текстом_форматирање_карактера_и_пасуса.rst
+        description: #opciono
+        guid: 649c936b-005f-49cd-8cf7-57e7dd4cb91c
+      - type: quiz 
+        title: Тест. Рад са текстом форматирање карактера и пасуса
+        file: Тест_5_Рад_са_текстом_форматирање_карактера_и_пасуса.rst
+        description: ...
+        guid: ed590ef8-6590-47fa-ad86-6d52cfc57bae
+  - title: Час 6. Рад са текстом – уметање и форматирање табеле
+    folder: Час 6. Рад са текстом уметање и форматирање табеле
+    guid: 0c6f1be7-45f8-4e43-9669-29e849eafd9d
+    description: Шеста лекција
+    activities:
+      - type: reading
+        title: Час. Рад са текстом – уметање и форматирање табеле
+        file: Час_6_Рад_са_текстом_уметање_и_форматирање_табеле.rst
+        description: #opciono
+        guid: 8f6c24e0-579a-46c7-9b92-d3b0642f4964
+      - type: reading
+        title: Задаци. Рад са текстом – уметање и форматирање табеле
+        file: Задатак_6_Рад_са_текстом_уметање_и_форматирање_табеле.rst
+        description: #opciono
+        guid: 7b601dcf-1472-44b6-ac3b-d86e58c2df10
+      - type: quiz 
+        title: Тест. Рад са текстом – уметање и форматирање табеле
+        file: Тест_6_Рад_са_текстом_уметање_и_форматирање_табеле.rst
+        description: ...
+        guid: 54ac3799-fc65-4dd7-9205-16f8e88fe66a
+  - title: Час 7. Рад са текстом – логичка структура и стилови
+    folder: Час 7. Рад са текстом логичка структура и стилови
+    guid: ebc1dc56-9867-4fd6-aadc-b394d44127fd
+    description: Седма лекција
+    activities:
+      - type: reading
+        title: Час. Рад са текстом – логичка структура и стилови
+        file: Час_7_Рад_са_текстом_логичка_структура_и_стилови.rst
+        description: #opciono
+        guid: 2c4f8e11-749b-4021-9f0c-e089d658e958
+      - type: reading
+        title: Задаци. Рад са текстом – логичка структура и стилови
+        file: Задатак_7_Рад_са_текстом_логичка_структура_и_стилови.rst
+        description: #opciono
+        guid: 59ad888b-e376-4650-b61d-bb350407219c
+      - type: quiz 
+        title: Тест. Рад са текстом – логичка структура и стилови
+        file: Тест_7_Рад_са_текстом_логичка_структура_и_стилови.rst
+        description: ...
+        guid: 72ac8836-7926-486c-9518-d2bdd40229ca
+  - title: Час 8. Рад са звучним записом
+    folder: Час 8. Рад са звучним записом
+    guid: 4e7ebdeb-1ea1-428e-b24b-ab15ad768612
+    description: Осма лекција
+    activities:
+      - type: reading
+        title: Час. Рад са звучним записом
+        file: Час_8_Рад_са_звучним_записом.rst
+        description: #opciono
+        guid: 4d6b2d4a-8248-4c78-8678-4f64a93eaaf9
+      - type: reading
+        title: Задаци. Рад са звучним записом
+        file: Задатак_8_Рад_са_звучним_записом.rst
+        description: #opciono
+        guid: d7b0dce9-ad3e-4d34-8049-029d65000d08
+      - type: quiz 
+        title: Тест. Рад са звучним записом
+        file: Тест_8_Рад_са_звучним_записом.rst
+        description: ...
+        guid: 9cb33680-197b-405d-85d3-e0c1c5fbcd36
+  - title: Час 9. Рад са видео-записом
+    folder: Час 9. Рад са видео записом
+    guid: 9b1c12c2-7b9d-4c90-9493-f0e96b2b8b28
+    description: Девета лекција
+    activities:
+      - type: reading
+        title: Час. Рад са видео-записом
+        file: Час_9_Рад_са_видео_записом.rst
+        description: #opciono
+        guid: d8d028fd-b30f-49c6-aec4-8b02d15381a0
+      - type: reading
+        title: Задаци. Рад са видео-записом
+        file: Задатак_9_Рад_са_видео_записом.rst
+        description: #opciono
+        guid: 931e0957-6aca-4e00-bdf1-1110e4cd0520      
+      - type: quiz 
+        title: Тест. Рад са видео-записом
+        file: Тест_9_Рад_са_видео_записом.rst
+        description: ...
+        guid: 456dc1c2-8cbc-4823-99ac-77800d62427b
+  - title: Час 10. Мултимедијалне презентације
+    folder: Час 10. Мултимедијалне презентације
+    guid: 59bac8be-e924-437b-bfc8-f83480c9df4d
+    description: Десета лекција
+    activities:
+      - type: reading
+        title: Час. Мултимедијалне презентације
+        file: Час_10_Мултимедијалне_презентације.rst
+        description: #opciono
+        guid: d73d0d4d-52e9-43a2-a915-d19db3654255
+      - type: quiz 
+        title: Тест. Мултимедијалне презентације
+        file: Тест_10_Мултимедијалне_презентације.rst
+        description: ...
+        guid: d2f398cc-802a-41f9-a083-ed5a3d2b67f4
+  - title: Рачунарске мреже. Употреба ИКТ уређаја на одговоран и сигуран начин у мрежном окружењу
+    folder: Рачунарске мреже. Употреба ИКТ уређаја на одговоран и сигуран начин у мрежном окружењу
+    guid: e12d50e5-8154-42db-bdd7-51fc8713f037
+    description: Прва лекција
+    activities:
+      - type: reading
+        title: Рачунарске мреже. Употреба ИКТ уређаја на одговоран и сигуран начин у мрежном окружењу
+        folder: Рачунарске мреже. Употреба ИКТ уређаја на одговоран и сигуран начин у мрежном окружењу
+        file: Рачунарске мреже и употреба ИКТ уређаја на одговоран и сигуран начин у мрежном окружењу.rst
+        description: #opciono
+        guid: 1aaa7fff-6f50-4a2a-b64d-f6f86ca28043
+      - type: quiz 
+        title: Тест прве лекције
+        folder: Рачунарске мреже. Употреба ИКТ уређаја на одговоран и сигуран начин у мрежном окружењу
+        file: Тест прве лекције.rst
+        description: #opciono
+        guid: 2d27931b-4dd2-4d1a-9982-1b1b294f71e1
+    archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
+      - guid: de4d8ced-7457-4257-a156-250bdb711d65
+      - guid: 22752682-f23f-4df7-b590-e22780fda0a3
+  - title: Интернет сервиси. Правила безбедног рада на Интернету
+    folder: Интернет сервиси. Правила безбедног рада на Интернету
+    guid: 723fc5e0-4b27-4afd-859c-84d3cf8ab783
+    description:  Друга лекција
+    activities:
+      - type: reading
+        title: Интернет сервиси
+        folder: Интернет сервиси. Правила безбедног рада на Интернету
+        file: Интернет сервиси.rst
+        description: #opciono
+        guid: 0cca3ec1-bd01-4769-b759-8a1e7e424bdf
+      - type: reading
+        title: Прикупљање података путем онлајн упитника
+        folder: Интернет сервиси. Правила безбедног рада на Интернету
+        file: Прикупљање података путем онлајн упитника.rst
+        description: #opciono
+        guid: 7f16b235-4641-4f9a-8352-9be75f101f15
+      - type: reading
+        title: Правила безбедног рада на Интернету
+        folder: Интернет сервиси. Правила безбедног рада на Интернету
+        file: Правила безбедног рада на Интернету.rst
+        description: #opciono
+        guid: 7e5741f4-eb44-44eb-950d-7d0d1c8010cd
+      - type: quiz 
+        title: Тест друге лекције
+        folder: Интернет сервиси. Правила безбедног рада на Интернету
+        file: Тест друге лекције.rst
+        description: #opciono
+        guid: 313c1996-d6cd-448e-bbcb-c823b03d32cd 
+  - title: Претраживање Интернета, одабир резултата и преузимање садржаја
+    folder: Претраживање Интернета, одабир резултата и преузимање садржаја
+    guid: bbf6640d-c6ef-49e3-8da6-2bcbf7a22edf
+    description:  Трећа лекција
+    activities:
+      - type: reading
+        title: Претраживање Интернета, одабир резултата и преузимање садржаја
+        folder: Претраживање Интернета, одабир резултата и преузимање садржаја
+        file: Претраживање Интернета, одабир резултата и преузимање садржаја.rst
+        description: #opciono
+        guid: 6913aef4-aa57-4a3d-a45e-9f630f4f26f3
+      - type: quiz 
+        title: Тест треће лекције
+        folder: Претраживање Интернета, одабир резултата и преузимање садржаја
+        file: Тест треће лекције.rst
+        description: #opciono
+        guid: 89fa77d7-2cff-43a3-9d90-4c0aa736b2bc
+  - title: Заштита приватности личних података и ауторскa права
+    folder: Заштита приватности личних података и ауторскa права
+    guid: 0e28b78b-eb55-446b-9bef-8dcff9a4d55c
+    description:  Четврта лекција
+    activities:
+      - type: reading
+        title: Заштита приватности личних података и ауторскa права
+        folder: Заштита приватности личних података и ауторскa права
+        file: Заштита приватности личних података и ауторскa права.rst
+        description: #opciono
+        guid: b5427537-baf4-4917-a1ed-9504895aa804
+      - type: quiz 
+        title: Тест четврте лекције
+        folder: Заштита приватности личних података и ауторскa права
+        file: Тест четврте лекције.rst
+        description: #opciono
+        guid: 1ee22944-c948-4422-a8ec-14de4bb03a62          
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-  - guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
-  - guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5
-
+  - guid: f7fc677c-e497-4f47-9efc-6b3762f38c1c
+  - guid: 224664f5-6cdb-453b-bf71-9634fa504956
 
 
 
