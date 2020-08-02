@@ -31,6 +31,7 @@ description:
     - Час 8. Обрада векторске графике
     - Час 9. Анимиране слике
     - Час 10. Снимање видео-записа
+    - Интернет адресе и протоколи - URL, DNS, IP адреса
   externalLinks: # opciono 
     - text: Синтакса restructuredText
       href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
