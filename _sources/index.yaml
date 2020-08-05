@@ -32,6 +32,7 @@ description:
     - Час 9. Анимиране слике
     - Час 10. Снимање видео-записа
     - Интернет адресе и протоколи - URL, DNS, IP адреса
+    - Хипервеза и хипертекст
   externalLinks: # opciono 
     - text: Синтакса restructuredText
       href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
@@ -249,10 +250,25 @@ lessons:
         description: #opciono
         guid: b7bde1cf-0818-4b54-99eb-ee0cf13e4cca
       - type: quiz
-        title: Тест прва лекције
+        title: Тест прве лекције
         file: Тест прве лекције.rst
         description: #opciono
         guid: 2ad6d14b-b8c8-4f48-8252-776ef4324c12      
+  - title: Хипервеза и хипертекст
+    folder: Хипервеза и хипертекст
+    guid: e8ea3079-fea0-4dc0-9da3-d357866138d7
+    description:  Друга лекција
+    activities:
+      - type: reading
+        title: Хипервеза и хипертекст
+        file: Хипервеза и хипертекст.rst
+        description: #opciono
+        guid: 074a43d8-a020-4439-a3b9-31628cdde71a
+      - type: quiz
+        title: Тест друге лекције
+        file: Тест друге лекције.rst
+        description: #opciono
+        guid: 9ea13f0f-af2a-42b0-b9d9-6cec8c57d68a
 
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
   - guid: b9e3e6a3-9b7b-4966-acc1-2de21a5059c1
