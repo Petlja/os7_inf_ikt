@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Час. Рачунарска графика &#8212; 7_razred_IKT_DigitalnaPismenost</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Квиз. Рачунарска графика" href="Квиз_2_Рачунарска_графика.html" />
+    <link rel="prev" title="Час 2. Рачунарска графика" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = '7_razred_IKT_DigitalnaPismenost';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Primer_kurs';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">7_razred_IKT_DigitalnaPismenost</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Час 1. Рад са текстом – преглед садржаја текстуалног документа/index.html">Час 1. Рад са текстом – преглед садржаја текстуалног документа</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Час 1. Рад са текстом – преглед садржаја текстуалног документа/Час_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.html">Час. Рад са текстом – преглед садржаја текстуалног документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 1. Рад са текстом – преглед садржаја текстуалног документа/Задатак_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.html">Задаци. Рад са текстом – преглед садржаја текстуалног документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 1. Рад са текстом – преглед садржаја текстуалног документа/Квиз_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.html">Квиз. Рад са текстом – преглед садржаја текстуалног документа</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Час 2. Рачунарска графика</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Час. Рачунарска графика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Квиз_2_Рачунарска_графика.html">Квиз. Рачунарска графика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Час 3. Растерска и векторска графика/index.html">Час 3. Растерска и векторска графика</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Час 3. Растерска и векторска графика/Час_3_Растерска_и_векторска_графика.html">Час. Растерска и векторска графика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 3. Растерска и векторска графика/Квиз_3_Растерска_и_векторска_графика.html">Квиз. Растерска и векторска графика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Час 4. Рад са сликама – слојеви/index.html">Час 4. Рад са сликама – слојеви</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Час 4. Рад са сликама – слојеви/Час_4_Рад_са_сликама_слојеви.html">Час. Рад са сликама - слојеви</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 4. Рад са сликама – слојеви/Задатак_4_Рад_са _сликама_слојеви.html">Задаци. Рад са сликама - слојеви</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 4. Рад са сликама – слојеви/Квиз_4_Рад_са_сликама_слојеви.html">Квиз. Рад са сликама - слојеви</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Час 5. Рад са сликама – обрада дигиталних слика/index.html">Час 5. Рад са сликама – обрада дигиталних слика</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Час 5. Рад са сликама – обрада дигиталних слика/Час_5_Рад_са_сликама_обрада_дигиталних_слика.html">Час. Рад са сликама – обрада дигиталних слика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 5. Рад са сликама – обрада дигиталних слика/Задатак_5_Рад_са_сликама_обрада_дигиталних_слика.html">Задаци. Рад са сликама - обрада дигиталних слика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 5. Рад са сликама – обрада дигиталних слика/Квиз_5_Рад_са_сликама_обрада_дигиталних_слика.html">Квиз. Рад са сликама - обрада дигиталних слика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Час 6. Креирање векторске графике/index.html">Час 6. Креирање векторске графике</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Час 6. Креирање векторске графике/Час_6_Креирање_векторске_графике.html">Час. Креирање векторске графике</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 6. Креирање векторске графике/Задатак_6_Креирање_векторске_графике.html">Задаци. Креирање векторске графике</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 6. Креирање векторске графике/Квиз_6_Креирање_векторске_графике.html">Квиз. Креирање векторске графике</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Час 7. Креирање векторске графике/index.html">Час 7. Креирање векторске графике</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Час 7. Креирање векторске графике/Час_7_Креирање_векторске_графике.html">Час. Креирање векторске графике</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 7. Креирање векторске графике/Задатак_7_Креирање_векторске_графике.html">Задаци. Креирање векторске графике</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 7. Креирање векторске графике/Квиз_7_Креирање_векторске_графике.html">Квиз. Креирање векторске графике</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Час 8. Обрада векторске графике/index.html">Час 8. Обрада векторске графике</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Час 8. Обрада векторске графике/Час_8_Обрада_векторске_графике.html">Час. Обрада векторске графике</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 8. Обрада векторске графике/Задатак_8_Обрада_векторске_графике.html">Задаци. Обрада векторске графике</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 8. Обрада векторске графике/Квиз_8_Обрада_векторске_графике.html">Квиз. Обрада векторске графике</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Час 9. Анимиране слике/index.html">Час 9. Анимиране слике</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Час 9. Анимиране слике/Час_9_Анимиране_слике.html">Час. Анимиране слике</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 9. Анимиране слике/Задатак_9_Анимиране_слике.html">Задаци. Анимиране слике</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 9. Анимиране слике/Квиз_9_Анимиране_слике.html">Квиз. Анимиране слике</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Час 10. Снимање видео-записа/index.html">Час 10. Снимање видео-записа</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Час 10. Снимање видео-записа/Час_10_Снимање_видео_записа.html">Час. Снимање видео-записа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 10. Снимање видео-записа/Задатак_10_Снимање_видео_записа.html">Задаци. Снимање видео-записа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Час 10. Снимање видео-записа/Квиз_10_Снимање_видео_записа.html">Квиз. Снимање видео записа</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Интернет адресе и протоколи - URL, DNS, IP адреса/index.html">Интернет адресе и протоколи - URL, DNS, IP адреса</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Интернет адресе и протоколи - URL, DNS, IP адреса/Интернет адресе и протоколи - URL, DNS, IP адреса.html">Интернет адресе и протоколи - URL, DNS, IP адреса</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Интернет адресе и протоколи - URL, DNS, IP адреса/Тест прве лекције.html">Тест прве лекције</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Хипервеза и хипертекст/index.html">Хипервеза и хипертекст</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Хипервеза и хипертекст/Хипервеза и хипертекст.html">Хипервеза и хипертекст</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Хипервеза и хипертекст/Тест друге лекције.html">Тест друге лекције</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>Час. Рачунарска графика<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<dl class="simple">
+<dt>На овом часу ћемо говорити о:</dt><dd><ul class="simple">
+<li><p>рачунарској графици;</p></li>
+<li><p>RGB моделу приказа боја;</p></li>
+<li><p>структури пиксела и резолуцији;</p></li>
+<li><p>CMYK моделу приказа боја.</p></li>
+</ul>
+</dd>
+</dl>
+
+    </p></div></div>
+<p>O рачунарској графици говорили смо и у петом и у шестом разреду. Као знаш рачунарска графика је област рачунарства која се бави креирањем, обрадом, прилагођавањем слика и анимацијом помоћу рачунара.</p>
+<p>Данас корисник скоро сваки дигитални уређај контролише помоћу икона и слика, а не само уношењем текста. Рачунарска графика је врло корисна. То је област која се користи у различитим дисциплинама попут машинства, архитектуре, грађевине, саобраћаја, електротехнике и електронике, али и у уметности, а такође у медицини и фармацији, физици, биологији и хемији, математици, примењеној математици и информатици.
+Поред тога, рачунарска графика је опште примењена у филмској индустрији, користи се и за израду компјутерских игара а као и код веб дизајна. Рачунарски генериране слике које видимо на телевизији и у филмовима напредовале су до те мере да их је готово немогуће разликовати од слика из стварног света.</p>
+<div class="section" id="id2">
+<h2>Како видимо боје<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Човек види свет око себе у зависности од начина на који се светлост у оку прелама. Светлост је састављена од честица светлости - фотона. Постоји више врста фотона. Наше око може да детектује светлост између 400 и 700 нанометара. Различите таласне дужине се виде као другачије боје.
+Мозак ствара слике предмета у зависности од начина како се фотони одбијају од предмета.
+Ти фотони се зову видљиви фотони, и има их шест врста: љубичасти (390- 430 nm), плави (460-480 nm), зелени (490- 530 nm), жути (550- 580 nm), наранђасти (590- 640 nm), црвени (650- 800 nm).</p>
+<p>У нашем оку налазе се две врсте специјалних чулних ћелија осетљивих на светлост (фоторецептора) - чепићи и штапићи.</p>
+<p><strong>Чепићи</strong> прерађују јарко светло и боју и они се користе за стварање јадног лик гледаног предмета и омогућава распознавање боја (централни вид).</p>
+<p><strong>Штапићи</strong> одређују видно поље (периферни вид). Тако је омогућено кретање у простору и да се види при слабој светлости.</p>
+<p>Процењено је да људско може да разликује преко 10 милиона боја.</p>
+<p>Наш мозак обрађује слике предмета које видимо у зависности од количине светлости која се апсорбује или одбија од тог предмета.
+Предмети неке боје апсорбују (упијају), а друге одбијају. Наш мозак региструје само оне фотоне које се одбијају.</p>
+<p>На пример, када тело апсорбује свих шест врста видљивих фотона, ми га тада видимо као црно, јер видљиви фотони не стижу до нашег мозга.
+Наш мозак региструје да је предмет беле боје када се од предмета одбију свих шест врста видљивих фотона.</p>
+<p>Када је структура предмета или тела таква да се делимично одбијају и апсорбује више различитих врста видљивих фотона, мозак региструје комбинацију одбијених видљивих фотона, тј неку од боја.
+На пример, када светлост обасја неки предмет, рецимо шољу, тај предмет апсорбује део светлости, а рефлектује остатак. Која се таласна дужина апсорбује и рефлектује зависи од својства предмета који је обасјан светлошћу.</p>
+<p>Мозак види слику тако што упоређује садржај тренутне слике са сликама које је до тада „видео” као и претходним знањем о боји конкретних предмета.
+Резултат тога је да боје које видимо нису истоветне са бојама у природи, већ су улепшане.</p>
+<a class="reference internal image-reference" href="../_images/L72S1.jpg"><img alt="../_images/L72S1.jpg" class="align-center" src="../_images/L72S1.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="rgb">
+<h2>RGB модел приказа боја<a class="headerlink" href="#rgb" title="Permalink to this headline">¶</a></h2>
+<p>У свим дигиталним уређајима који производе слику црвена, зелена и плава користе се као основне боје. Овај начин приказивања боја назива се RGB (Red, Green, Blue) модел приказа боја.</p>
+<a class="reference internal image-reference" href="../_images/L72S2.png"><img alt="../_images/L72S2.png" class="align-center" src="../_images/L72S2.png" style="width: 600px;" /></a>
+<p>Једна боја се описује кроз три вредности: део црвене, део зелене и део плаве боје. На горњој слици:</p>
+<ul class="simple">
+<li><p>B – основна боја  (плава)</p></li>
+<li><p>R – основна боја  (црвена)</p></li>
+<li><p>G – основна боја  (зелена)</p></li>
+<li><p>Y – изведена боја (жута)</p></li>
+<li><p>M – изведена боја (магента, розе, циклама)</p></li>
+<li><p>C – изведена боја (цијан, тиркизна, светло плава)</p></li>
+<li><p>W – бела боја</p></li>
+</ul>
+<p>RGB модел приказа боја представља адитивни метод (мешање) стварања слике који је заснован на комбиновању (сабирању) светлости три основне боје.</p>
+<p>У зависности од интензитета добија се светлија или тамнија боја, а од односа тих боја нијанса.
+На овој начин раде монитори, пројектори и остали уређаји код којих се слика добија емитовањем светлости.</p>
+<p>На рачунару, телевизорима и мобилним уређајима се на екрану налазе мале тачкице пиксели који се састоје од три правоугаоника који се налазе један поред другог.
+Један од њих емитује различите количине црвене, други зелене, а трећи плаве светлости.
+Као што смо рекли од интензитета светлости коју сваки од њих емитује зависи коју боју посматрач види.</p>
+<p>Ако бисте користили лупу или објектив макро камере и приближили се екрану дигиталног уређаја, ево како би то изгледало:</p>
+<a class="reference internal image-reference" href="../_images/L72S3.jpg"><img alt="../_images/L72S3.jpg" class="align-center" src="../_images/L72S3.jpg" style="width: 600px;" /></a>
+<p>Пиксел ће бити сив ако сва три правоугаоника емитују исту количину светлости умереног интензитета. Ако сва три правоугаоника емитују исту количину светлости високог интензитета видећемо бели пиксел, у супротном ако се не емитује светлост видећемо црни пискел.</p>
+<p>Ниво интензитета светлости сваког правоугаоника је означен бројем. Овај број се записује бинарно (комбинација нула и јединица). Овај број битова назива се <strong>дубина боје</strong>. Он одређује укупан број различитих нијанси одерђене боје.
+На пример, ако вредност дубине једног пискела износи 1 бит он може имати само две вредности: белу и црну. Међутим, ако слика има дубину боје од 8 битова, она садржи 256 боја (2^8), док слика са дубином од 24 бита имаће 16 милиона боја.</p>
+<p>А што је већа дубине боје, слика ће садржати више боја и нијанси боја. Можемо закључити да што је већа дубина боје то је слика реалистично представљена.</p>
+<p>Данас се најчешће користи дубина боје TrueColor. Она подразумева по 1 бајт за сваку од три RGB компоненте.
+С обзиром на то да 1 бајт садржи 8 битова, jедним бајтом могуће је представити 2^8 = 256 различитих боја.
+Вредност једног пиксела је представљена са 3 бајта, по један бајт за сваку од RGB боја.
+На основу тога број боја по сваком пикселу износи 256х256х256= 16.777.216.</p>
+<p>Сваки монитор може да прикаже слику различитог квалитета. Дубина боје и резолуција карактеришу квалитет слике.</p>
+<p><strong>Резолуција</strong> дефинише број пиксела на екрану дигиталног уређаја. Она је основна мера за оштрину неке слике.</p>
+<p>На основу свега горе наведеног можемо да кажемо да количина меморије коју заузима слика зависи од дубине боје, али и од резолуције слике.</p>
+<p>Тако на пример, за слику резолуције 640 x 480 пиксела, чији су пиксели представљени 24-битним бројем, потребна је количина меморије од: 640 x 480 x 3 бајта = 900 KB.</p>
+<p>Ако вредност пиксела представимо 8-битним бројем (1 бајт) онда се такве слике називају 8-битне сиве слике. Оне садрже само информацију о светлости пиксела, али не и о боји.  Код њих је могуће представити 256 нивоа светлости при чему 0 обично одговара црном пикселу, а 255 белом пикселу.
+У фотографској терминологији у питању је црно-бела слика.</p>
+</div>
+<div class="section" id="cmyk">
+<h2>CMYK модел приказа боја<a class="headerlink" href="#cmyk" title="Permalink to this headline">¶</a></h2>
+<p>Боје које се могу одштампати класичним штампарским машинама дефинишу се CMYK (aкроним од енглеских речи Cyan, Magenta, Yellow, Key (Black)) моделом приказа боја.</p>
+<a class="reference internal image-reference" href="Час 2. Рачунарска графика/../../_images/L72S4.png"><img alt="Час 2. Рачунарска графика/../../_images/L72S4.png" class="align-center" src="Час 2. Рачунарска графика/../../_images/L72S4.png" style="width: 600px;" /></a>
+<p>Једна боја се описује кроз три вредности: део црвене, део зелене и део плаве боје. На горњој слици:</p>
+<ul class="simple">
+<li><p>Y – изведена боја (жута)</p></li>
+<li><p>M – изведена боја (магента, розе, циклама)</p></li>
+<li><p>C – изведена боја (цијан, тиркизна, светло плава)</p></li>
+</ul>
+<p>Мешањем три боје (цијан, магента, жута) у једнаким количинама требало би да се добиje црна боја.
+Међутим, не добија се, већ се добија црвено-смеђа боја. Због тога се у CMYK моделу уводи и четврта боја – црна боја (Key (Black)).</p>
+<p>То је суптрактивно мешање боја, јер додавањем боја одузима се светлина белог папира</p>
+<p>CMYK модел заснован на томе да се додавањем боје на папир не емитује светлост, већ се светлост одређене боје упија. Као што знамо наше око види само светлост која се одбија.
+Овај модел се користи за штампање докумената. Због тога се приликом штампања не користе црвена, зелена и плава, већ цијан, магента и жута које се одбијају од беле подлоге.
+Због тога се овај модел назива и суптрактивни, јер свака од основних боја у штампи (цијан, магента, жута) одузима једну од основних боја (црвена, зелена, плава).
+Цијан тачкица на папиру упија црвено светло, а одбија једнаке количине зеленог и плавог светла.
+Жута боја упија плаво светло, а одбија црвено и зелено док магента упија зелено светло, а одбија црвено и плаво.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<dl class="simple">
+<dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
+<li><p>да je rачунарска графика област рачунарства која се бави креирањем, обрадом, прилагођавањем слика и анимација помоћу рачунара;</p></li>
+<li><p>да је пиксел најмањи елемент дигиталне слике који се може обрађивати;</p></li>
+<li><p>да је резолуција основна мера за оштрину неке слике и дефинише се као број пиксела на екрану;</p></li>
+<li><p>да дубина боје одређује укупан број различитих нијанси боје које се могу представити;</p></li>
+<li><p>да RGB (Red, Green, Blue) модел приказа боја је адитивни метод стварања слике који се заснива на комбиновању (сабирању) светлости три основне боје;</p></li>
+<li><p>да CMYK (енгл. Cyan, Magenta, Yellow, Key (Black)) модел приказа боја назива се и суптрактивни, јер свака од основних боја у штампи (цијан, магента, жута) одузима једну од основних боја (црвена, зелена, плава).</p></li>
+</ul>
+</dd>
+</dl>
+
+    </p></div></div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Час 2. Рачунарска графика' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Квиз. Рачунарска графика' data-toggle="tooltip"><a href="Квиз_2_Рачунарска_графика.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Час 2. Рачунарска графика' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Квиз. Рачунарска графика' data-toggle="tooltip"><a href="Квиз_2_Рачунарска_графика.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
