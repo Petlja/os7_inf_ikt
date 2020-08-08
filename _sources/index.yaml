@@ -280,6 +280,11 @@ lessons:
         file: Електронска пошта.rst
         description: #opciono
         guid: abae84f9-ec8b-4a81-9ddf-a4438e6c4266
+      - type: quiz
+        title: Тест треће лекције
+        file: Тест треће лекције.rst
+        description: #opciono
+        guid: 3b7c6fcc-45ce-4c31-99d5-1dee1c1730ab
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
   - guid: b9e3e6a3-9b7b-4966-acc1-2de21a5059c1
   - guid: 99001af8-9278-48e6-b32d-588d9f27c228
