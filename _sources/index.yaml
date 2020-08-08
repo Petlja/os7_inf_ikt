@@ -33,6 +33,7 @@ description:
     - Час 10. Снимање видео-записа
     - Интернет адресе и протоколи - URL, DNS, IP адреса
     - Хипервеза и хипертекст
+    - Електронска пошта
   externalLinks: # opciono 
     - text: Синтакса restructuredText
       href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
@@ -269,7 +270,16 @@ lessons:
         file: Тест друге лекције.rst
         description: #opciono
         guid: 9ea13f0f-af2a-42b0-b9d9-6cec8c57d68a
-
+  - title: Електронска пошта
+    folder: Електронска пошта
+    guid: 4148afe2-40e3-4f78-823e-6b161bfb108f
+    description:  Трећа лекција
+    activities:
+      - type: reading
+        title: Електронска пошта
+        file: Електронска пошта.rst
+        description: #opciono
+        guid: abae84f9-ec8b-4a81-9ddf-a4438e6c4266
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
   - guid: b9e3e6a3-9b7b-4966-acc1-2de21a5059c1
   - guid: 99001af8-9278-48e6-b32d-588d9f27c228
