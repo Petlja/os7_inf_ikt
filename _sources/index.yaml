@@ -35,12 +35,6 @@ description:
     - Хипервеза и хипертекст
     - Електронска пошта
   externalLinks: # opciono 
-    - text: Синтакса restructuredText
-      href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
-    - text: Синтакса restructuredText 2
-      href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
-
-  externalLinks: # opciono 
     - text: Нет патрола
       href: http://www.netpatrola.rs/
     - text: Кликни безбедно
