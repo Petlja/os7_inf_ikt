@@ -234,8 +234,8 @@ lessons:
         file: Квиз_10_Снимање_видео_записа.rst
         description: #opciono
         guid: 24a6a6c3-84e0-40f9-8433-0462781bcd1e 
-  - title: Интернет адресе и протоколи - URL, DNS, IP адреса
-    folder: Интернет адресе и протоколи - URL, DNS, IP адреса
+  - title: 2.1. Интернет адресе и протоколи - URL, DNS, IP адреса
+    folder: 2.1. Интернет адресе и протоколи - URL, DNS, IP адреса
     guid: 4a5275e7-7bf8-4927-b041-c1f17f608bfa
     description:  Прва лекција
     activities:
@@ -249,8 +249,8 @@ lessons:
         file: Тест прве лекције.rst
         description: #opciono
         guid: 2ad6d14b-b8c8-4f48-8252-776ef4324c12      
-  - title: Хипервеза и хипертекст
-    folder: Хипервеза и хипертекст
+  - title: 2.2. Хипервеза и хипертекст
+    folder: 2.2. Хипервеза и хипертекст
     guid: e8ea3079-fea0-4dc0-9da3-d357866138d7
     description:  Друга лекција
     activities:
@@ -264,10 +264,10 @@ lessons:
         file: Тест друге лекције.rst
         description: #opciono
         guid: 9ea13f0f-af2a-42b0-b9d9-6cec8c57d68a
-  - title: Електронска пошта
-    folder: Електронска пошта
+  - title: 2.3. Електронска пошта
+    folder: 2.3. Електронска пошта
     guid: 4148afe2-40e3-4f78-823e-6b161bfb108f
-    description:  Трећа лекција
+    description: Трећа лекција
     activities:
       - type: reading
         title: Електронска пошта
@@ -279,6 +279,21 @@ lessons:
         file: Тест треће лекције.rst
         description: #opciono
         guid: 3b7c6fcc-45ce-4c31-99d5-1dee1c1730ab
+  - title: 2.4. Рад на дељеним документима у облаку
+    folder: 2.4. Рад на дељеним документима у облаку
+    guid: 281bc173-38fa-4a80-b65c-8f8ca283e29a
+    description: Четврта лекција
+    activities:
+      - type: reading
+        title: Рачунарство у облаку
+        file: Рачунарство у облаку.rst
+        description: #opciono
+        guid: 6019ffec-6e3a-43c1-bc72-6b0db8f4a895
+      - type: quiz
+        title: Тест четврте лекције
+        file: Тест четврте лекције.rst
+        description: #opciono
+        guid: 44c7dfa5-d585-4146-8002-388cac7d769f      
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
   - guid: b9e3e6a3-9b7b-4966-acc1-2de21a5059c1
   - guid: 99001af8-9278-48e6-b32d-588d9f27c228
