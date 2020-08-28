@@ -51,13 +51,23 @@ description:
       href: https://kliknibezbedno.wordpress.com/opsta-bezbednst-na-internetu/
       
 lessons:
-  - title: Час 1. Рад са текстом – преглед садржаја текстуалног документа
+  - title: 1. Информационо-комуникациона технологија
+    folder: 1_IKT
+    guid: a23b98b6-b09b-4912-90ee-b3c99ba75b4a
+    description: Предлекција за ИКТ
+    activities:
+      - type: reading
+        title: Информационо-комуникациона технологија
+        file: Информационо_комуникациона_технологија.rst
+        description: #opciono
+        guid: e05eee4c-52a2-441e-89db-ab35fae40269
+  - title: 1.1. Рад са текстом – преглед садржаја текстуалног документа
     folder: Час 1. Рад са текстом – преглед садржаја текстуалног документа
     guid: 883a789a-5320-4467-92ad-6888ba983570
     description: Прва лекција
     activities:
       - type: reading
-        title: Час. Рад са текстом – преглед садржаја текстуалног документа
+        title: Рад са текстом – преглед садржаја текстуалног документа
         file: Час_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
         description: #opciono
         guid: 1f676570-7079-4b4d-b836-555259c85f50
@@ -74,13 +84,13 @@ lessons:
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
       - guid: aaf83c5e-db21-4d36-9bbd-a73d3227ee0f
       - guid: d1f95912-c8e1-4d6a-b87d-d391250d8f30
-  - title: Час 2. Рачунарска графика
+  - title: 1.2. Рачунарска графика
     folder: Час 2. Рачунарска графика
     guid: e5c686b1-65da-48a1-957e-0abca9adc147
     description:  Друга лекција
     activities:
       - type: reading
-        title: Час. Рачунарска графика
+        title: Рачунарска графика
         file: Час_2_Рачунарска_графика.rst
         description: #opciono
         guid: 05e1440b-a65f-4f85-8892-267884ca6859 
@@ -89,13 +99,13 @@ lessons:
         file: Квиз_2_Рачунарска_графика.rst
         description: #opciono
         guid: 0f1eacd4-2900-4056-b20e-1edb356a2aab 
-  - title: Час 3. Растерска и векторска графика
+  - title: 1.3. Растерска и векторска графика
     folder: Час 3. Растерска и векторска графика
     guid: 7fb47079-68dc-40d8-b06a-5f20f7845deb
     description:  Трећа лекција
     activities:
       - type: reading
-        title: Час. Растерска и векторска графика
+        title: Растерска и векторска графика
         file: Час_3_Растерска_и_векторска_графика.rst
         description: #opciono
         guid: aa202f4d-4408-4fd6-818b-16c885ee5175
@@ -104,13 +114,13 @@ lessons:
         file: Квиз_3_Растерска_и_векторска_графика.rst
         description: #opciono
         guid: 04a95836-6dc0-4032-aecb-ca2a861a8f65
-  - title: Час 4. Рад са сликама – слојеви
+  - title: 1.4. Рад са сликама – слојеви
     folder: Час 4. Рад са сликама – слојеви
     guid: adfdc5e5-9917-47ae-8dbf-28eecbff345d
     description:  Четврта лекција
     activities:
       - type: reading
-        title: Час. Рад са сликама – слојеви
+        title: Рад са сликама – слојеви
         file: Час_4_Рад_са_сликама_слојеви.rst
         description: #opciono
         guid: 5944177d-f914-4166-beb1-7a1e58171713
@@ -124,13 +134,13 @@ lessons:
         file: Квиз_4_Рад_са_сликама_слојеви.rst
         description: #opciono
         guid: 786c88fa-77af-4c47-95ea-151bb2fd229b
-  - title: Час 5. Рад са сликама – обрада дигиталних слика
+  - title: 1.5. Рад са сликама – обрада дигиталних слика
     folder: Час 5. Рад са сликама – обрада дигиталних слика
     guid: 2f046095-d409-423b-a5c4-6bec565b1891
     description:  Пета лекција
     activities:
       - type: reading
-        title: Час. Рад са сликама – обрада дигиталних слика
+        title: Рад са сликама – обрада дигиталних слика
         file: Час_5_Рад_са_сликама_обрада_дигиталних_слика.rst
         description: #opciono
         guid: 2e20c602-998c-4dfd-83d8-33c58b1769f9
@@ -144,13 +154,13 @@ lessons:
         file: Квиз_5_Рад_са_сликама_обрада_дигиталних_слика.rst
         description: #opciono
         guid: 07610fb0-37ac-4674-ab46-b5847fc417ee
-  - title: Час 6. Креирање векторске графике
+  - title: 1.6. Креирање векторске графике
     folder: Час 6. Креирање векторске графике
     guid: 26624d1a-b76f-4f1f-8f08-6e1f71ccbed4
     description:  Шест лекција
     activities:
       - type: reading
-        title: Час. Креирање векторске графике
+        title: Креирање векторске графике
         file: Час_6_Креирање_векторске_графике.rst
         description: #opciono
         guid: 005666a7-4702-4a63-8cbd-642cf4692078
@@ -164,13 +174,13 @@ lessons:
         file: Квиз_6_Креирање_векторске_графике.rst
         description: #opciono
         guid: f0842095-dfd8-4ccc-85e2-f8d8a5cb58f3
-  - title: Час 7. Креирање векторске графике
+  - title: 1.7. Креирање векторске графике
     folder: Час 7. Креирање векторске графике
     guid: 26887aa1-e774-40f6-aeeb-796fd24eb327
     description:  Седма лекција
     activities:
       - type: reading
-        title: Час. Креирање векторске графике
+        title: Креирање векторске графике
         file: Час_7_Креирање_векторске_графике.rst
         description: #opciono
         guid: a4296ff4-7bd5-4053-a3b6-b47d51e2d861
@@ -184,13 +194,13 @@ lessons:
         file: Квиз_7_Креирање_векторске_графике.rst
         description: #opciono
         guid: 917e2189-9680-4c0e-8075-2ccb0b59bd47
-  - title: Час 8. Обрада векторске графике
+  - title: 1.8. Обрада векторске графике
     folder: Час 8. Обрада векторске графике
     guid: 184a96f4-d0d7-44d8-9f94-b90eb0dfb539
     description:  Осма лекција
     activities:
       - type: reading
-        title: Час. Обрада векторске графике
+        title: Обрада векторске графике
         file: Час_8_Обрада_векторске_графике.rst
         description: #opciono
         guid: 6b6820d6-008b-4566-8433-2613d7438d50
@@ -204,13 +214,13 @@ lessons:
         file: Квиз_8_Обрада_векторске_графике.rst
         description: #opciono
         guid: f374db90-7d76-47c8-b061-edfd8b443450    
-  - title: Час 9. Анимиране слике
+  - title: 1.9. Анимиране слике
     folder: Час 9. Анимиране слике
     guid: 6046461e-27f8-44c0-8287-0e19f17543f4
     description:  Девата лекција
     activities:
       - type: reading
-        title: Час. Анимиране слике
+        title: Анимиране слике
         file: Час_9_Анимиране_слике.rst
         description: #opciono
         guid: fde298d6-c8ce-41d7-af8a-0397e332db47
@@ -224,18 +234,18 @@ lessons:
         file: Квиз_9_Анимиране_слике.rst
         description: #opciono
         guid: 54304960-e805-429e-b0c7-d5495e350d5e    
-  - title: Час 10. Снимање видео-записа
+  - title: 1.10. Снимање видео-записа
     folder: Час 10. Снимање видео-записа
     guid: ffb25fa0-eefa-4332-bd58-e734bfa1a101
     description:  Десета лекција
     activities:
       - type: reading
-        title: Час. Снимање видео-записа
+        title: Снимање видео-записа
         file: Час_10_Снимање_видео_записа.rst
         description: #opciono
         guid: ebbd042b-b269-4845-81b5-26889c4b8489
       - type: reading
-        title: Час. Снимање видео-записа
+        title: Задаци. Снимање видео-записа
         file: Задатак_10_Снимање_видео_записа.rst
         description: #opciono
         guid: 21a2aad0-5d48-41e9-9960-5f4e5e8b2cfd
