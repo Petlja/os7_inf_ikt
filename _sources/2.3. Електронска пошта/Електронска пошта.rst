@@ -88,11 +88,11 @@
 
 
 .. image:: ../../_images/email10.png
-   :width: 480px   
+   :width: 450px   
    :align: center 
 
 .. image:: ../../_images/email11.png
-   :width: 480px   
+   :width: 450px   
    :align: center 
 
 

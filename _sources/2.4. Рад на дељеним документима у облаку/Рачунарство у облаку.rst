@@ -53,11 +53,11 @@
 Датотекама и фасциклама се у облаку управља на исти начин као и на диску рачунара. Могу се копирати, премештати, преименовати, брисати и делити.
 
 .. image:: ../../_images/NovoGD2.jpg
-   :width: 450px   
+   :width: 400px   
    :align: left 
 
 .. image:: ../../_images/OtpremanjeGoogleDrive.jpg
-   :width: 550px   
+   :width: 500px   
    :align: right 
 
 
