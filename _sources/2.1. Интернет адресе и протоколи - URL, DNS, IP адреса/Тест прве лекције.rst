@@ -52,8 +52,8 @@
     :feedback: Tвој одговор није тачан. Покушај поново!
     :match_1: https://petlja.org/ |||Адреса веб-сајта
     :match_2: https://petlja.org/net.kabinet |||Адреса веб-странице
-    :match_3: https://petlja.org/biblioteka/r/lekcije/_images/bela_kucica.png |||Веб-адреса слике
-    :match_4: https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf |||Веб-адреса документа у PDF формату
+    :match_3: https://petlja.org/biblioteka/r /lekcije/_images/bela_kucica.png |||Веб-адреса слике
+    :match_4: https://petljamediastorage.blob.core.windows .net/root/Media/Default/Help/cheatsheet.pdf |||Веб-адреса документа у PDF формату
     
 
 Питање 5.
@@ -61,7 +61,7 @@
 
 .. fillintheblank:: Сервер
 
-    Како се назива главни рачунар на коме се налазе ресурси рачунарске мреже и који омогућује да они буду доступни осталим рачунарима у мрежи? Одговор уписати малим словима ћирилице.
+    Како се назива рачунар на коме се налазе ресурси рачунарске мреже и који омогућује да они буду доступни осталим рачунарима у мрежи? Одговор уписати малим словима ћирилице.
 
     Одговор: |blank|
 

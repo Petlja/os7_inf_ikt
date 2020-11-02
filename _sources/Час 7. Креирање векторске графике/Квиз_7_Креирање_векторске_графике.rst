@@ -43,13 +43,13 @@
 ~~~~~~~~~
 
 .. mchoice:: L77P4
-    :answer_a: правих линија
+    :answer_a: праву линију
     :feedback_a: Тачно    
-    :answer_b: не
+    :answer_b: кружницу
     :feedback_b: Нетачно
-    :answer_c: неправилних линија
+    :answer_c: неправилну линију
     :feedback_c: Тачно
-    :answer_d: не
+    :answer_d: правоугаоник
     :feedback_d: Нетачно
     :correct: a,c
 
