@@ -65,7 +65,7 @@
     :feedback_b: Тачно
     :answer_c: промене величине слике
     :feedback_c: Тачно   
-    :answer_d: преокренути слике 
+    :answer_d: преокренути слику 
     :feedback_d: Тачно   
     :correct: a,b,c,d
 
