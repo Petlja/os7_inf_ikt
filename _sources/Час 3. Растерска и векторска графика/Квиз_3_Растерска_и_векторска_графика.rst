@@ -43,7 +43,7 @@
 .. mchoice:: L73P10
     :answer_a: BMP
     :feedback_a: Тачно    
-    :answer_b: PDF
+    :answer_b: CDR
     :feedback_b: Нетачно
     :answer_c: RAW
     :feedback_c: Тачно
