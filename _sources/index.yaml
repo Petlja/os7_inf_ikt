@@ -253,7 +253,17 @@ lessons:
         title: Квиз. Снимање видео-записа
         file: Квиз_10_Снимање_видео_записа.rst
         description: #opciono
-        guid: 24a6a6c3-84e0-40f9-8433-0462781bcd1e 
+        guid: 24a6a6c3-84e0-40f9-8433-0462781bcd1e
+  - title: 2. Дигитална писменост
+    folder: 2_DP
+    guid: a23b98b6-b09b-4912-90ee-b3c99ba75b4d
+    description: Предлекција за ДП
+    activities:
+      - type: reading
+        title: Дигитална писменост
+        file: 2_dp.rst
+        description: #opciono
+        guid: e05eee4c-52a2-441e-89db-ab35fae4026d         
   - title: 2.1. Интернет адресе и протоколи - URL, DNS, IP адреса
     folder: 2.1. Интернет адресе и протоколи - URL, DNS, IP адреса
     guid: 4a5275e7-7bf8-4927-b041-c1f17f608bfa
