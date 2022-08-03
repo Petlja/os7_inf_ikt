@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -491,7 +455,7 @@
 <h2>Креирање налога<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Да би корисници интернета могли да шаљу и примају електронску пошту, потребно је да имају своју електронску адресу. Уколико је немају, могу је добити тако што ће <strong>бесплатно креирати</strong> налог код Google сервиса електронске поште (Gmail веб сервиса) на адреси mail.google.com или www.gmail.com одабиром опције “Отвори налог”. За отварање налога на овом сервису важи ограничење узраста, односно налог могу отворити старији од 13 година.
 Осим Google-а, адресу електронске поште можеш бесплатно креирати и преко других сервиса електронске поште, као што је Microsoft. Ако желиш да креираш налог преко овог сервиса, потребно је да у веб-прегледачу откуцаш: <a class="reference external" href="https://account.microsoft.com">https://account.microsoft.com</a>.
-На страници пронађи и одабери опцију <strong>Create a Microsoft account</strong>.</p>
+На страници пронађи и одабери опцију <strong>Create account</strong>.</p>
 <a class="reference internal image-reference" href="../_images/email01.png"><img alt="../_images/email01.png" class="align-center" src="../_images/email01.png" style="width: 900px;" /></a>
 <p>У празно поље унеси корисничко име које желиш и домен „outlook” па кликни на дугме <strong>Next</strong>. Уколико клинеш на опцију Get a new email address биће ти понуђено да одабереш да ли желиш као име провајдера да користиш outlook или hotmail.
 За креирање корисничког имена, осим слова и бројева, можеш користити и тачке и цртице. Могуће је да ћеш изабрати корисничко име које је већ заузето, па у том случају можеш осим свог имена користити и годину рођења, скраћени облик или неку другу алтернативу.</p>
@@ -502,20 +466,21 @@
 <p>Следећи корак је да изабереш <strong>лозинку</strong>. Подсети се која су <strong>правила креирања добре лозинке</strong>. За лозинку је најбоље да изабереш комбинацију (великих и малих) слова, бројева и специјалних знакова.</p>
 <a class="reference internal image-reference" href="../_images/email06.png"><img alt="../_images/email06.png" class="align-center" src="../_images/email06.png" style="width: 350px;" /></a>
 <a class="reference internal image-reference" href="../_images/email07.png"><img alt="../_images/email07.png" class="align-center" src="../_images/email07.png" style="width: 350px;" /></a>
-<p>На последњем кораку унеси тражене карактере како би се верификовало да налог не отвара неки софтвер (робот) и твој налог је већ спреман за употребу.
-Постоји могућност да уколико ти је приказани скуп карактера недовољно читљив тражиш приказ новог скупа карактера опцијом <strong>New</strong> или захтеваш звучну репродукцију опцијом Audio.
+<p>На последњем кораку потребно је да решиш слагалицу како би се верификовало да налог не отвара неки софтвер (робот) и твој налог је већ спреман за употребу.
+Постоји могућност да уколико ти је приказана салагалица нејасна захтеваш звучну репродукцију опцијом Audio.
 Прозор може да изгледа као на некој од наредних слика.</p>
 <a class="reference internal image-reference" href="../_images/email08.png"><img alt="../_images/email08.png" class="align-center" src="../_images/email08.png" style="width: 350px;" /></a>
 <a class="reference internal image-reference" href="../_images/email08a.png"><img alt="../_images/email08a.png" class="align-center" src="../_images/email08a.png" style="width: 350px;" /></a>
 <a class="reference internal image-reference" href="../_images/email08b.png"><img alt="../_images/email08b.png" class="align-center" src="../_images/email08b.png" style="width: 350px;" /></a>
-<p>Када је налог креиран, отвара се страница за његово подешавање. У горњем левом углу изабери <strong>More actions / Edit Profile</strong> па можеш додати слику, датум рођења, својe пребивалиште и остале податке.</p>
+<p>Када је налог креиран, добија се порука да ли желиш да останеш пријављен на налог и потврдом отвара се страница за његово подешавање.</p>
+<p>У горњем левом углу у менију изабери опцију <strong>Your info</strong> па можеш унети своје име и презиме, додати слику, датум рођења, својe пребивалиште и остале податке.</p>
 <a class="reference internal image-reference" href="../_images/email09.png"><img alt="../_images/email09.png" class="align-center" src="../_images/email09.png" style="width: 600px;" /></a>
 <a class="reference internal image-reference" href="../_images/email12.png"><img alt="../_images/email12.png" class="align-left" src="../_images/email12.png" style="width: 480px;" /></a>
 <a class="reference internal image-reference" href="../_images/email15.png"><img alt="../_images/email15.png" class="align-right" src="../_images/email15.png" style="width: 480px;" /></a>
 <a class="reference internal image-reference" href="../_images/email10.png"><img alt="../_images/email10.png" class="align-center" src="../_images/email10.png" style="width: 450px;" /></a>
 <a class="reference internal image-reference" href="../_images/email11.png"><img alt="../_images/email11.png" class="align-center" src="../_images/email11.png" style="width: 450px;" /></a>
 <dl class="simple">
-<dt>Без обзира на то да ли користимо веб-мејл сервис или неку од постојећих апликација за рад са електронском поштом, основне функције које су нам на располагању су:</dt><dd><ul class="simple">
+<dt>Без обзира на то да ли користиш веб-мејл сервис или неку од постојећих апликација за рад са електронском поштом, основне функције које су ти на располагању су:</dt><dd><ul class="simple">
 <li><p>креирање новог мејла</p></li>
 <li><p>слање мејла</p></li>
 <li><p>преузимање пристиглих мејлова</p></li>
@@ -530,7 +495,7 @@
 </div>
 <div class="section" id="id3">
 <h2>Слање и пријем поште<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Да би написао/написала електронску поруку, на главном менију изабери Account. Кликни на падајући мени More actions и изабери View inbox. Пратећи следеће кораке, подеси програм на српски језик.</p>
+<p>Да би написао/написала електронску поруку, на главном менију изабери Outlook након чега ће се отворити апликација за рад са електронском поштом. Можеш да испратиш понуђено упутство и да подесиш програм на српски језик.</p>
 <p>На следећој слици jе приказан мени са опцијама за креирање нове поруке, приступ фасциклама (фолдерима) и њихово уређивање у <strong>Microsoft сервису за електронску пошту</strong>.</p>
 <a class="reference internal image-reference" href="../_images/email20c.png"><img alt="../_images/email20c.png" class="align-center" src="../_images/email20c.png" style="width: 200px;" /></a>
 <p>Веома слично изгледа мени са опцијама за креирање нове поруке, приступ фасциклама (фолдерима) и њихово уређивање и у <strong>Google сервису</strong>.</p>
@@ -648,6 +613,17 @@ Outlook памти адресе чим пошаљеш прву поруку. К�
 </ul>
 </dd>
 </dl>
+<p>Шта смо научили:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Један од разлога популарност електронске поште је то што се помоћу ње могу послати разне врсте фајлова (документи, слике, видео и аудио записи, архивирани подаци и др.)</p></li>
+<li><p>За слање и пријем порука електронске поште користи се интернет сервис веб-мејл (енгл. webmail).</p></li>
+<li><p>Да би корисници интернета могли да шаљу и примају електронску пошту, потребно је да имају своју електронску адресу односно адресу електронске поште или имејл (енгл. e-mail) адресу.</p></li>
+<li><p>Адреса електронске поште може се добити тако што ће бесплатно креирати налог код Google сервиса електронске поште (Gmail веб сервиса) на адреси mail.google.com или преко других сервиса електронске поште, као што је Microsoft .</p></li>
+<li><p>Често се дешава да се имејл адресе злоупотребљавају па корисници сервиса електронске поште често добијају нежељену и непримерену пошту (енгл. Spam). Системи за електронски пошту помоћу одговарајућих алгоритама могу да препознају спам поруке и аутоматски их сврставају у фасциклу Нежељена е-пошта (енгл. Spam или Junk Email).</p></li>
+<li><p>У раду са електронском поштом увек се треба придржавати савета за правилну и безбедну комуникацију путем електронске поште.</p></li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 

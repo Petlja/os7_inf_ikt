@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -460,24 +424,59 @@
             <p>
 <dl class="simple">
 <dt>На овом часу ћеш научити:</dt><dd><ul class="simple">
-<li><p>врсте интернет адреса и која је њихова намена;</p></li>
-<li><p>типове интернет адреса и начине адресирања;</p></li>
+<li><p>које врсте интернет адреса постоје и која је њихова намена;</p></li>
+<li><p>који су типови интернет адреса и начини адресирања;</p></li>
 <li><p>који протоколи се користе за комуникацију у рачунарској мрежи.</p></li>
 </ul>
 </dd>
 </dl>
 
     </p></div></div>
-<p>Сваког дана стотину милиона људи широм света истовремено захтевају приступ садржајима различитих интернет страница и очекују њихову доступност без чекања, застоја и грешака.
-Да би то било могуће и да би се успешно реализовало, мора постојати јасно успостављен систем комуникације између ИКТ уређаја повезаних у рачунарску мрежу како би се комуникација и пренос података на интернету несметано одвијали.
-Подсетимо се да рачунари који омугућују приступ различитим интернет сервисима представљају сервере, док рачунари који захтевају коришћење тих сервиса представљају клијенте.
-Комуникација између клијената и сервера се непрестано одвија по тачно утврђеним протоколима као што су HTTP и HTTPS за испоручивање садржаја интернет странице, SMTP за пријем, слање и чување електронске поште или FTP за пренос датотека.</p>
+<p>Сваког дана много људи широм света истовремено захтевају приступ садржајима на интернету и очекују њихову
+доступност без чекања, застоја и грешака. Да би то било могуће и да би се комуникација и пренос података
+на интернету несметано одвијали, мора постојати јасно успостављен систем комуникације између ИКТ уређаја
+повезаних у рачунарску мрежу.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Повежи тип рачунара са његовим називом</p>
+
+    </p></div></div>
+
+<div class="course-box course-box-problem course-content">
+<ul data-component="dragndrop" id="dnd-001">
+    <span data-component="question">
+</span>
+	
+
+    <li data-component="draggable" id="dnd-001_drag1">Клијент</li>
+    <li data-component="dropzone" for="dnd-001_drag1">рачунар који захтева коришћење интернет сервиса</li>
+
+    <li data-component="draggable" id="dnd-001_drag2">Сервер</li>
+    <li data-component="dropzone" for="dnd-001_drag2">рачунар који омугућује приступ различитим интернет сервисима</li>
+</ul></div><dl class="simple">
+<dt>Подсетимо се да рачунари који омугућују приступ различитим интернет сервисима представљају сервере, док рачунари који захтевају коришћење тих сервиса представљају клијенте. Комуникација између клијената и сервера се непрестано одвија по тачно утврђеним правилима односно протоколима као што су:</dt><dd><ul class="simple">
+<li><p>HTTP и HTTPS за испоручивање садржаја интернет странице,</p></li>
+<li><p>SMTP за пријем, слање и чување електронске поште или</p></li>
+<li><p>FTP за пренос датотека.</p></li>
+</ul>
+</dd>
+</dl>
 <p>У претходном разреду објаснили смо значење појмова URL, DNS и IP адресе. Потсетимо се шта представљају ови појмови.</p>
 <p><strong>URL</strong> (енг. <strong>Uniform Resource Locator</strong>) представља јединствену локацију ресурса (појединачне веб-стране, датотека и других ресурса) на мрежи. Као синоним за URL адресу често се користи веб-адреса.</p>
 <a class="reference internal image-reference" href="../_images/network.jpg"><img alt="../_images/network.jpg" class="align-right" src="../_images/network.jpg" style="width: 300px;" /></a>
-<p><strong>IP адреса</strong> (енг. <strong>Internet Protocol Address</strong>) је јединствена адреса сваког уређаја прикљученог на интернет. IP адресе се записују <strong>бинарним записом</strong> помоћу цифара 0 и 1.
-За записивање IP адресе потребно је 32 бита (бинарне цифре), нпр. 11000000 10101000 00000001 10011000. Да би људи могли лакше да памте и манипулишу IP адресама, оне се записују са четири броја у декадном бројном систему тако што се 32-битна IP адреса дели на четири дела, а сваки од њих може бити број од 0 до 255.
-Тако 11000000.10101000.00000001.10011000 постаје 192.168.1.152 у декадном запису. На овај начин могу да се адресирају више од четири милијарде различитих ИКТ уређаја у мрежи. IP адресе се не додељују насумично већ постоје одређена правила за њихово додељивање.</p>
+<p><strong>IP адреса</strong> (енг. <strong>Internet Protocol Address</strong>) је јединствена адреса сваког уређаја прикљученог
+на интернет. IP адресе се записују <strong>бинарним записом</strong> помоћу цифара 0 и 1. За записивање IP адресе
+потребно је 32 бита (бинарне цифре), нпр. 11000000 10101000 00000001 10011000. Да би људи могли лакше
+да памте и манипулишу IP адресама, оне се записују са четири броја у декадном бројном систему тако
+што се 32-битна IP адреса дели на четири дела, а сваки од њих може бити број од 0 до 255. Тако
+11000000.10101000.00000001.10011000 постаје 192.168.1.152 у декадном запису. На овај начин могу
+да се адресирају више од четири милијарде различитих ИКТ уређаја у мрежи. IP адресе се не додељују
+насумично већ постоје одређена правила за њихово додељивање.</p>
 <dl class="simple">
 <dt>IP адресе могу бити:</dt><dd><ul class="simple">
 <li><p><strong>статичке</strong> - када су непроменљиве за један уређај,</p></li>
@@ -496,7 +495,7 @@
 </dd>
 </dl>
 <a class="reference internal image-reference" href="../_images/Ipv4_address.jpg"><img alt="../_images/Ipv4_address.jpg" class="align-center" src="../_images/Ipv4_address.jpg" style="width: 400px;" /></a>
-<p>Како можеш да откријеш која је твоја IP адреса? Један од начина је да одеш на неки од сајтова кој раде проверу IP адресе попут <a class="reference external" href="https://whatismyipaddress.com/ip-lookup">https://whatismyipaddress.com/ip-lookup</a>.
+<p>Како можеш да откријеш која је твоја IP адреса? Један од начина је да одеш на неки од сајтова који раде проверу IP адресе попут <a class="reference external" href="https://whatismyipaddress.com/ip-lookup">https://whatismyipaddress.com/ip-lookup</a>.
 Како је људима тешко да памте и манипулишу оваквим нумеричким адресама са великим бројем цифара, за представљање IP адресе користе се мнемоничке адресе које представљају комбинацију слова и цифара. Такве адресе се називају веб-адресе.
 Тако је веб-адреса сајта <a class="reference external" href="https://www.google.com/">https://www.google.com/</a> а IP адреса сервера на коме је тај сајт смештен је 172.217.168.196. Било да у адресном пољу интернет прегледача укуцамо веб-адресу или IP адресу резултат ће бити исти, добићемо почетну страницу Google сајта.
 Да би овакав начин адресирања био изводљив, уведен је интернет сервис <strong>Систем интернет домена</strong> (енгл. DNS), који претвара мнемоничку адресу у IP адресу. DNS (енг. <em>Domain Name System</em>) је интернет сервис који врши конвертовање IP адресе из бројева у симболичку адресу како би се лакше памтила односно омогућава превођење текстуалних ознака у нумеричке ознаке и обратно.</p>
@@ -509,16 +508,30 @@
 <p>Како на интернету постоји велики број сервера, а сваки од њих мора имати јединствено име, произилази да сервери морају имати сложена имена. Из тог разлога уводи се појам интернет домена.
 Домен је скуп имена за сервере који припадају једној организацији (предузећу, школи, државној установи итд.). Систем имена је <strong>хијерархијски организован</strong>. Последњи део интернет домена назива се <strong>домен највишег нивоа</strong> (енг. Top-Level Domain - <strong>TLD</strong>).
 На пример домени комерцијалних организација групишу се у домен вишег нивоа .com (www.google.com, www.microsoft.com), едукативне организације се налазе у домену .edu (www.harvard.edu) итд.</p>
-<p>Између појмова „интернет домен” и „назив интернет домена” постоји јасна разлика. Често се када се каже  „интернет домен”  мисли на назив интернет домена. Интернет домен представља скуп података који описују једну целину на интернету (интернет адресе се везују за одређене локације на интернету као што су сервери, сајтови и др).
-Назив интернет домена јесте текстуална ознака коју сваки корисник може регистровати на интернету за своје потребе. Приликом регистрације домена, назив домена се уписује у <strong>Централни регистар</strong> којим управља <strong>Регистар интернет домена</strong>.
-Практично назив интернет домена је интернет (веб) адреса коју корисник региструје у оквиру неког постојећег интернет домена. На пример, веб-адреса www.petlja.org представља адресу која је  регистрована у оквиру домена .org.
-Назив интернет домена састоји се из низа слова и цифара раздвојених тачкама. Правила код давања назива домену су да може да садржи цифре (0–9), слова енглеског алфабета (а–z) (или неког другог писма) и цртицу (-), а назив не сме бити краћи од два, нити дужи од 63 знака, не сме да садржи цртицу на почетку или крају, као ни две узастопне цртице на трећој и четвртој позицији.
-Домен .rs припада доменима са интернационализованим називима, што омогућава да се у имену домена нађу и карактери č, ć, š, ž и đ. Подсетимо се да имамо и .срб домен, код кога се користи ћирилица за називе домена.</p>
+<p>Између појмова „интернет домен” и „назив интернет домена” постоји јасна разлика. Често када се каже
+„интернет домен”  мисли се на назив интернет домена. Интернет домен представља скуп података који описују
+једну целину на интернету (интернет адресе се везују за одређене локације на интернету као што су сервери,
+сајтови и др). Назив интернет домена јесте текстуална ознака коју сваки корисник може регистровати на
+интернету за своје потребе. Приликом регистрације домена, назив домена се уписује у <strong>Централни регистар</strong>
+којим управља <strong>Регистар интернет домена</strong>. Практично назив интернет домена је интернет (веб) адреса коју
+корисник региструје у оквиру неког постојећег интернет домена. На пример, веб-адреса www.petlja.org представља
+адресу која је  регистрована у оквиру домена .org.</p>
 <dl class="simple">
-<dt>Резимирајмо основне термине:</dt><dd><ul class="simple">
+<dt>Назив интернет домена састоји се из низа слова и цифара раздвојених тачкама. Правила код давања назива домену су:</dt><dd><ul class="simple">
+<li><p>назив може да може да садржи цифре (0–9), слова енглеског алфабета (а–z) (или неког другог писма) и цртицу (-),</p></li>
+<li><p>назив не сме бити краћи од два, нити дужи од 63 знака,</p></li>
+<li><p>назив не сме да садржи цртицу на почетку или крају, као ни две узастопне цртице на трећој и четвртој позицији.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Домен .rs припада доменима са интернационализованим називима, што омогућава да се у имену домена нађу
+и карактери č, ć, š, ž и đ. Подсетимо се да имамо и .срб домен, код кога се користи ћирилица за називе
+домена.</p>
+<dl class="simple">
+<dt>Шта смо научили?</dt><dd><ul class="simple">
 <li><p><strong>IP адреса</strong> (енг. <strong>Internet Protocol Address</strong>) је јединствена нумеричка адреса за сваки уређај прикључен на интернет.</p></li>
 <li><p><strong>URL</strong> (енг. <strong>Uniform Resource Locator</strong>) јесте јединствена локација ресурса на интернету.</p></li>
-<li><p><strong>DNS</strong> (енг. <strong>Domain Name System</strong>) јесте интернет сервис који омогућава превођење текстуалних ознака веб адреса у нумеричке ознаке и обратно.</p></li>
+<li><p><strong>DNS</strong> (енг. <strong>Domain Name System</strong>) је интернет сервис који омогућава превођење текстуалних ознака веб адреса у нумеричке ознаке и обратно.</p></li>
 <li><p><strong>DNS сервер</strong> је уређај који омогућава да се за тражене услуге на одређеном интернет домену добију одговарајуће IP адресе неопходне за комуникацију и размену података у мрежи.</p></li>
 <li><p><strong>Интернет домен</strong> јесте скуп података који описују једну целину на интернету, тј. интернет адресе се везују за одређене локације на интернету као што су сервери, сајтови и др.</p></li>
 <li><p><strong>Назив интернет домена</strong> јесте текстуална ознака која се може регистровати за сопствене потребе. Приликом регистрације, назив се уписује у Централни регистар, којим управља Регистар интернет домена.</p></li>

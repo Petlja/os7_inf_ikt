@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -470,12 +434,12 @@
 
     </p></div></div>
 <p>Могућност да своје датотеке (текстуалне, звучне, видео записе, фотографије…) не чуваш на свом рачунару, већ на неким удаљеним серверима (посебним рачунарима за чување података) и да им путем интернета приступаш са било које локације и било ког уређаја у било ком тренутку назива се <strong>складиштење у облаку</strong> (енгл. <em>Cloud storage</em>).
-Постоје бројни сервиси који пружају ову услугу попут сервиса <strong>Google Drive</strong> у оквиру Google налога, затим <strong>OneDrive</strong> коришћењем Microsoft налога, <strong>Dropbox</strong> и других. Организација података на овим серверима је хијерархијска и по структури слична организацији података на диску твог рачунара.</p>
-<p>Неки од ових сервиса пружају могућност да креираш нове датотеке различитог типа или отвараш и модификујеш већ постојеће отпремљене датотеке. Једна од највећих предности сервиса у облаку је што се датотеке и фасцикле могу делити са више корисника. На тај начин свако може истовремено да доприноси раду на документу, што представља сараднички рад на документу.
+Постоје бројни сервиси који ти пружају ову услугу попут сервиса <strong>Google Drive</strong> у оквиру Google налога, затим <strong>OneDrive</strong> коришћењем Microsoft налога, <strong>Dropbox</strong> и других. Организација података на овим серверима је хијерархијска и по структури слична организацији података на диску твог рачунара.</p>
+<p>Неки од ових сервиса пружају ти могућност да креираш нове датотеке различитог типа или отвараш и модификујеш већ постојеће отпремљене датотеке. Једна од највећих предности сервиса у облаку је што се датотеке и фасцикле могу делити са више корисника. На тај начин свако може истовремено да доприноси раду на документу, што представља сараднички рад на документу.
 Овакав концепт рада назива се <strong>“рачунарство у облаку”</strong>.</p>
 <div class="section" id="id2">
 <h2>Претраживање и проналажење датотека у облаку<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Корисницима <strong>Google налога</strong> на располагању је коришћење услуге <strong>Гугл диск</strong> (енгл. <strong>Google Drive</strong>) који представља један од најпознатијих и најчешће коришћених складишта у облаку. Корисницима је на располагању бесплатни меморијски простор од 15GB (укључујући и сервис електронске поште Gmail). За више простора потребно је купити неки од понуђених пакета.
+<p>Као кориснику <strong>Google налога</strong> на располагању ти је коришћење услуге <strong>Гугл диск</strong> (енгл. <strong>Google Drive</strong>) који представља један од најпознатијих и најчешће коришћених складишта у облаку. У оквиру ове услуге на располагању ти је бесплатни меморијски простор од 15GB (укључујући и сервис електронске поште Gmail). За више простора потребно је купити неки од понуђених пакета.
 То је уобичајени принцип на коме функционише рачунарство у облаку - нуде се бесплатно одређене функционалности са ограниченим меморијским простором а уз доплату се добија већи простор и проширени спектар услуга на коришћење.</p>
 <a class="reference internal image-reference" href="../_images/GoogleDrive.jpg"><img alt="../_images/GoogleDrive.jpg" class="align-center" src="../_images/GoogleDrive.jpg" style="width: 800px;" /></a>
 <p>Погледај у следећем видеу <strong>како се претражују фасцикле и датотеке на Гугл диску</strong>:</p>
@@ -513,8 +477,8 @@
     </div>
 <div class="section" id="id3">
 <h2>Сарадничко креирање и дељење докумената у облаку<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Гугл диск нуди могућност да се <strong>отпреме датотеке и фасцикле</strong> које су претходно сачуване на диску локалног рачунара, или да се директно <strong>креирају нове датотеке и фасцикле у облаку</strong>.
-Одабиром опције <strong>Ново</strong> (енгл. <strong>New</strong>) пружа се могућност да се у облаку креира датотека (<strong>file</strong>) или фасцикла (<strong>folder</strong>).
+<p>Гугл диск ти нуди могућност да <strong>отпремиш датотеке и фасцикле</strong> које си претходно сачувао на диску локалног рачунара, или да директно <strong>креираш нове датотеке и фасцикле у облаку</strong>.
+Одабиром опције <strong>Ново</strong> (енгл. <strong>New</strong>) пружа ти се могућност да се у облаку креираш датотеку (<strong>file</strong>) или фасциклу (<strong>folder</strong>).
 Датотекама и фасциклама се у облаку управља на исти начин као и на диску рачунара. Могу се копирати, премештати, преименовати, брисати и делити.</p>
 <a class="reference internal image-reference" href="../_images/NovoGD2.jpg"><img alt="../_images/NovoGD2.jpg" class="align-center" src="../_images/NovoGD2.jpg" style="width: 400px;" /></a>
 <a class="reference internal image-reference" href="../_images/OtpremanjeGoogleDrive.jpg"><img alt="../_images/OtpremanjeGoogleDrive.jpg" class="align-center" src="../_images/OtpremanjeGoogleDrive.jpg" style="width: 500px;" /></a>
@@ -533,8 +497,16 @@
     </div>
     
     
-    <p>Поред ових опција могу се креирати и нови документ за обраду текста (<strong>Google документи</strong>), нова слајд-презентација (<strong>Google презентације</strong>), нови упитник (<strong>Google упитници</strong>) и многи други типови докумената.
-Онлајн апликације за рад са текстом и презентацијама имају скоро све функционалности као и апликације инсталиране на рачунару и међусобно су компатибилне, што значи да уколико започнеш рад на неком документу у апликацији на рачунару, па онда тај документ отпремиш на Гугл диск можеш да наставиш да га уређујеш у онлајн апликацији и обрнуто.
+    <dl class="simple">
+<dt>Поред ових опција могу се креирати и:</dt><dd><ul class="simple">
+<li><p>нови документ за обраду текста (<strong>Google документи</strong>),</p></li>
+<li><p>нова слајд-презентација (<strong>Google презентације</strong>),</p></li>
+<li><p>нови упитник (<strong>Google упитници</strong>)</p></li>
+<li><p>и многи други типови докумената.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Онлајн апликације за рад са текстом и презентацијама имају скоро све функционалности као и апликације инсталиране на рачунару и међусобно су компатибилне, што значи да уколико започнеш рад на неком документу у апликацији на рачунару, па онда тај документ отпремиш на Гугл диск можеш да наставиш да га уређујеш у онлајн апликацији и обрнуто.
 Ако креираш неки документ у облаку, можеш да га преузмеш локално на диск свог рачунара и наставиш са радом у апликацији инсталираној на рачунару.</p>
 <a class="reference internal image-reference" href="../_images/NovoGDrive.jpg"><img alt="../_images/NovoGDrive.jpg" class="align-center" src="../_images/NovoGDrive.jpg" style="width: 800px;" /></a>
 <p>Погледај у следећем видеу <strong>како се креира Гугл презентација</strong>:</p>
@@ -614,7 +586,17 @@
     </div>
     
     
-    </div>
+    <dl class="simple">
+<dt>Шта смо научили:</dt><dd><ul class="simple">
+<li><p>Услуга чувања датотека на неким удаљеним серверима којима можеш да путем интернета приступаш са било које локације и било ког уређаја у било ком тренутку назива се складиштење у облаку (енгл. Cloud storage).</p></li>
+<li><p>Постоји више сервиса који ти пружају ову услугу попут сервиса Google Drive, OneDrive, Dropbox и других.</p></li>
+<li><p>Организација података на овим серверима је хијерархијска и по структури слична организацији података на диску твог рачунара.</p></li>
+<li><p>Ови сервиси пружају ти могућност да креираш нове датотеке различитог типа или отвараш и модификујеш већ постојеће отпремљене датотеке.</p></li>
+<li><p>Једна од највећих предности складиштења у облаку је што се датотеке и фасцикле могу делити са више корисника при чему свако може истовремено да доприноси раду на документу, што представља сараднички рад на документу. Овакав концепт рада назива се “рачунарство у облаку”.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
 </div>
 
 

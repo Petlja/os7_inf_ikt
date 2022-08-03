@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -459,7 +423,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="Рачунарство_у_облаку">
-            <p>Q-24: Шта нам све омогућава рачунарство у облаку? Изабери све тачне одговоре:</p>
+            <p>Q-25: Шта ти све омогућава рачунарство у облаку? Изабери све тачне одговоре:</p>
 
             <li data-component="answer" data-correct id="Рачунарство_у_облаку_opt_a">коришћење онлајн програма</li><li data-component="feedback" id="Рачунарство_у_облаку_opt_a">Тачно</li>
             
@@ -478,15 +442,15 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="Подела_садржаја">
-            <p>Q-25: Како може да се подели садржај Гугл диска? Изабери све тачне одговоре.</p>
+            <p>Q-26: Како можеш да поделиш садржај Гугл диска? Изабери све тачне одговоре.</p>
 
             <li data-component="answer" data-correct id="Подела_садржаја_opt_a">да буде јаван и да му може приступити свако</li><li data-component="feedback" id="Подела_садржаја_opt_a">Тачно</li>
             
-            <li data-component="answer"  id="Подела_садржаја_opt_b">да му могу приступити само особе које знају лозинку</li><li data-component="feedback" id="Подела_садржаја_opt_b">Нетачно</li>
+            <li data-component="answer"  id="Подела_садржаја_opt_b">да му могу приступити само особе којима си дао лозинку</li><li data-component="feedback" id="Подела_садржаја_opt_b">Нетачно</li>
             
-            <li data-component="answer" data-correct id="Подела_садржаја_opt_c">да могу да му приступе само особе које имају линк</li><li data-component="feedback" id="Подела_садржаја_opt_c">Тачно</li>
+            <li data-component="answer" data-correct id="Подела_садржаја_opt_c">да му могу приступити само особе којима си послао линк</li><li data-component="feedback" id="Подела_садржаја_opt_c">Тачно</li>
             
-            <li data-component="answer" data-correct id="Подела_садржаја_opt_d">да могу да му приступе само одређене особе</li><li data-component="feedback" id="Подела_садржаја_opt_d">Тачно</li>
+            <li data-component="answer" data-correct id="Подела_садржаја_opt_d">да му могу приступити само оне особе које ти одабереш</li><li data-component="feedback" id="Подела_садржаја_opt_d">Тачно</li>
             
 
             </ul>
@@ -497,7 +461,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="Гугл_диск">
-            <p>Q-26: На Гугл диск могу се отпремити датотеке сачуване на диску рачунара, али се могу креирати и нове датотеке у онлајн програмима. Изабери тачан одговор:</p>
+            <p>Q-27: На Гугл диск можеш да отпремиш датотеке сачуване на диску рачунара, али можеш да креираш и нове датотеке у онлајн програмима. Изабери тачан одговор:</p>
 
             <li data-component="answer" data-correct id="Гугл_диск_opt_a">Тачно</li><li data-component="feedback" id="Гугл_диск_opt_a">Тачно</li>
             
@@ -512,7 +476,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="Претраживачи_анонимни">
-            <p>Q-27: Које од наведених изјава су тачне. Одабери само тачне одговоре (један или више):</p>
+            <p>Q-28: Које од наведених изјава су тачне. Одабери само тачне одговоре (један или више):</p>
 
             <li data-component="answer"  id="Претраживачи_анонимни_opt_a">На Гугл диск се могу отпремати само датотеке</li><li data-component="feedback" id="Претраживачи_анонимни_opt_a">Нетачно</li>
             
@@ -546,7 +510,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="Приватан_садржај">
-            <p>Q-28: Садржај који није подељен са другим корисницима је приватан и нико осим власника Гугл диска нема приступ том садржају. Изабери тачан одговор:</p>
+            <p>Q-29: Садржај који није подељен са другим корисницима је приватан и нико осим власника Гугл диска нема приступ том садржају. Изабери тачан одговор:</p>
 
             <li data-component="answer" data-correct id="Приватан_садржај_opt_a">Тачно</li><li data-component="feedback" id="Приватан_садржај_opt_a">Тачно</li>
             

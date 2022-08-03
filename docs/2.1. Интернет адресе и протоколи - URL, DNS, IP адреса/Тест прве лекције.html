@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -459,7 +423,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="URL">
-            <p>Q-1: Како се назива јединствена адреса неког ресурса на интернету, попут појединачне интернет странице, датотеке, или сервиса? Изабери тачан одговор:</p>
+            <p>Q-2: Како се назива јединствена адреса неког ресурса на интернету, попут појединачне интернет странице, датотеке, или сервиса? Изабери тачан одговор:</p>
 
             <li data-component="answer"  id="URL_opt_a">IP адреса (Internet Protocol address)</li><li data-component="feedback" id="URL_opt_a">Нетачно</li>
             
@@ -476,7 +440,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="Адреса">
-            <p>Q-2: Како се назива јединствена нумеричка адреса за сваки уређај прикључен на интернет? Изабери тачан одговор:</p>
+            <p>Q-3: Како се назива јединствена нумеричка адреса за сваки уређај прикључен на интернет? Изабери тачан одговор:</p>
 
             <li data-component="answer"  id="Адреса_opt_a">MAC адреса</li><li data-component="feedback" id="Адреса_opt_a">Нетачно</li>
             
@@ -493,7 +457,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="DNS">
-            <p>Q-3: Како се назива систем који претвара мнемоничку адресу у IP адресу? Изабери тачан одговор:</p>
+            <p>Q-4: Како се назива систем који претвара мнемоничку адресу у IP адресу? Изабери тачан одговор:</p>
 
             <li data-component="answer" data-correct id="DNS_opt_a">Domain Name System - DNS</li><li data-component="feedback" id="DNS_opt_a">Тачно</li>
             
@@ -507,28 +471,6 @@
             </div>
 <div class="section" id="id5">
 <h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Споји одговарајуће адресе са њиховим значењима.</p>
-
-<div class="course-box course-box-problem course-content">
-<ul data-component="dragndrop" id="Типови_адреса">
-    <span data-component="question">
-</span>
-	<span data-component=feedback>Tвој одговор није тачан. Покушај поново!</span>
-
-    <li data-component="draggable" id="Типови_адреса_drag1">https://petlja.org/ </li>
-    <li data-component="dropzone" for="Типови_адреса_drag1">Адреса веб-сајта</li>
-
-    <li data-component="draggable" id="Типови_адреса_drag2">https://petlja.org/net.kabinet </li>
-    <li data-component="dropzone" for="Типови_адреса_drag2">Адреса веб-странице</li>
-
-    <li data-component="draggable" id="Типови_адреса_drag3">https://petlja.org/biblioteka/r /lekcije/_images/bela_kucica.png </li>
-    <li data-component="dropzone" for="Типови_адреса_drag3">Веб-адреса слике</li>
-
-    <li data-component="draggable" id="Типови_адреса_drag4">https://petljamediastorage.blob.core.windows .net/root/Media/Default/ Help/cheatsheet.pdf </li>
-    <li data-component="dropzone" for="Типови_адреса_drag4">Веб-адреса документа у PDF формату</li>
-</ul></div></div>
-<div class="section" id="id6">
-<h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 
         <div class="course-box course-box-question course-content">
         <div data-component="fillintheblank" id="Сервер">
@@ -544,8 +486,8 @@
         </div>
         </div>
             </div>
-<div class="section" id="id7">
-<h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="TLD_Домен">
@@ -561,8 +503,8 @@
             </ul>
             </div>
             </div>
-<div class="section" id="id8">
-<h2>Питање 7.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="edu_Домен">
@@ -578,9 +520,46 @@
             </ul>
             </div>
             </div>
+<div class="section" id="id8">
+<h2>Питање 7.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="Протоколи">
+            <p>Q-7: Интернет протокол је скуп стандарда који омогућавају пренос пакета података између рачунара и других уређаја повезаних на исту мрежу или на различите мреже. Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="Протоколи_opt_a">Нетачно</li><li data-component="feedback" id="Протоколи_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="Протоколи_opt_b">Тачно</li><li data-component="feedback" id="Протоколи_opt_b">Тачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
 <div class="section" id="id9">
 <h2>Питање 8.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
-<p>Споји одговарајуће генеричке домене са њиховим значењима.</p>
+<p>Превуци блокове са примерима адреса приказане са леве стране на одговарајуће називе адреса приказане са десне стране.</p>
+
+<div class="course-box course-box-problem course-content">
+<ul data-component="dragndrop" id="Типови_адреса">
+    <span data-component="question">
+</span>
+	<span data-component=feedback>Tвој одговор није тачан. Покушај поново!</span>
+
+    <li data-component="draggable" id="Типови_адреса_drag1">https://petlja.org/ </li>
+    <li data-component="dropzone" for="Типови_адреса_drag1">Адреса веб-сајта</li>
+
+    <li data-component="draggable" id="Типови_адреса_drag2">https://petlja.org/net.kabinet </li>
+    <li data-component="dropzone" for="Типови_адреса_drag2">Адреса веб-странице</li>
+
+    <li data-component="draggable" id="Типови_адреса_drag3">https://petlja.org/biblioteka/r/lekcije/_images/bela_kucica.png </li>
+    <li data-component="dropzone" for="Типови_адреса_drag3">Веб-адреса слике</li>
+
+    <li data-component="draggable" id="Типови_адреса_drag4">https://petljamediastorage.blob.core.windows.net/root/Media/Default/ Help/cheatsheet.pdf </li>
+    <li data-component="dropzone" for="Типови_адреса_drag4">Веб-адреса документа у PDF формату</li>
+</ul></div></div>
+<div class="section" id="id10">
+<h2>Питање 9.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>Превуци блокове са описом домена приказане са леве стране на одговарајући блок са називом домена приказане са десне стране.</p>
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="Генерички_домени">
@@ -606,21 +585,6 @@
     <li data-component="draggable" id="Генерички_домени_drag6">домен за пословне компаније и привредне субјекте</li>
     <li data-component="dropzone" for="Генерички_домени_drag6">.biz</li>
 </ul></div></div>
-<div class="section" id="id10">
-<h2>Питање 9.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="Протоколи">
-            <p>Q-8: Интернет протокол је скуп стандарда који омогућавају пренос пакета података између рачунара и других уређаја повезаних на исту мрежу или на различите мреже. Изабери тачан одговор:</p>
-
-            <li data-component="answer"  id="Протоколи_opt_a">Нетачно</li><li data-component="feedback" id="Протоколи_opt_a">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="Протоколи_opt_b">Тачно</li><li data-component="feedback" id="Протоколи_opt_b">Тачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
 </div>
 
 
