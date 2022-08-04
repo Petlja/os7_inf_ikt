@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,7 +419,9 @@
   <div class="section" id="id1">
 <h1>Снимање видео-записа<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -466,9 +432,10 @@
 </dl>
 
     </p></div></div>
-<p>У седмом разреду користићемо програм за снимање екрана дигиталног уређаја како бисмо креирали видео-упутства.
-За снимање екрана постоји велики број разноврсних програма, ми ћемо користити један од бесплатних програма screencast-o-matic.
-Програм преузимамо са интернет адресе: <a class="reference external" href="https://screencast-o-matic.com/">https://screencast-o-matic.com/</a>, а затим инсталирамо на рачунар.</p>
+<p>У седмом разреду користићеш програм за снимање екрана дигиталног уређаја за креирање видео-упутства.
+За снимање екрана постоји велики број разноврсних програма, ми ћемо користити један од бесплатних програма
+screencast-o-matic. Програм преузимамо са интернет адресе: <a class="reference external" href="https://screencast-o-matic.com/">https://screencast-o-matic.com/</a>, а затим
+инсталираш на рачунар.</p>
 <p>Изглед радне површине програма screencast-o-matic дат је на доњој слици:</p>
 <ol class="arabic simple">
 <li><p>Оквир простора који се снима;</p></li>
@@ -479,22 +446,22 @@
 <div class="section" id="id2">
 <h2>Подешавање параметара видео-записа<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Простор за подешавање параметара видео-записа састоји се од неколико делова.</p>
-<p>У врху овог простора бирамо шта улази у видео.</p>
+<p>У врху овог простора бираш шта улази у видео.</p>
 <a class="reference internal image-reference" href="../_images/L710S2.png"><img alt="../_images/L710S2.png" src="../_images/L710S2.png" style="width: 400px;" /></a>
 <ul class="simple">
 <li><p>Опција <code class="docutils literal notranslate"><span class="pre">Screen</span></code> се користи за снимање само екрана</p></li>
-<li><p>Опција <code class="docutils literal notranslate"><span class="pre">Webcam</span></code> се користи за снимање само видео-камером дигиталног уређаја (на пример, снимање себе док говорите)</p></li>
-<li><p>Опција <code class="docutils literal notranslate"><span class="pre">Both</span></code> се користи када желимо да у видео уђе и снимак екрана и снимак са видео-камере</p></li>
+<li><p>Опција <code class="docutils literal notranslate"><span class="pre">Webcam</span></code> се користи за снимање само видео-камером дигиталног уређаја (на пример, снимање себе док говориш)</p></li>
+<li><p>Опција <code class="docutils literal notranslate"><span class="pre">Both</span></code> се користи када желиш да у видео уђе и снимак екрана и снимак са видео-камере</p></li>
 </ul>
 <p>Поред опције за снимање, постоје још неки делови који су јако важни за креирање видео-записа:</p>
 <ul>
 <li><p>обавештење да је максимална дозвољена дужина снимка 15 минута;</p>
 <a class="reference internal image-reference" href="../_images/L710S3.png"><img alt="../_images/L710S3.png" src="../_images/L710S3.png" style="width: 400px;" /></a>
 </li>
-<li><p>одабир величине оквира простора који снимамо;</p>
+<li><p>одабир величине оквира простора који снимаш;</p>
 <a class="reference internal image-reference" href="../_images/L710S4.png"><img alt="../_images/L710S4.png" src="../_images/L710S4.png" style="width: 400px;" /></a>
 </li>
-<li><p>одабир микрофона који снима оно што говоримо;</p>
+<li><p>одабир микрофона који снима оно што говориш;</p>
 <a class="reference internal image-reference" href="../_images/L710S5.png"><img alt="../_images/L710S5.png" src="../_images/L710S5.png" style="width: 400px;" /></a>
 </li>
 <li><p>обавештење да у бесплатној верзији програм снима само оно што забележи микрофон.</p>
@@ -504,11 +471,13 @@
 </div>
 <div class="section" id="id3">
 <h2>Покретање и заустављање снимања<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Када кликнемо на дугме <a class="reference internal" href="../_images/L710S7.png"><img alt="u1" src="../_images/L710S7.png" style="width: 30px;" /></a> започињемо снимање видео-записа.</p>
-<p>Да бисмо зауставили (паузирали) снимање, потребно је да кликнемо на паузу (плаво дугме <a class="reference internal" href="../_images/L710S8.png"><img alt="u2" src="../_images/L710S8.png" style="width: 250px;" /></a>), а да бисмо завршили снимање кликнемо на <cite>Done</cite> <a class="reference internal" href="../_images/L710S9.png"><img alt="u3" src="../_images/L710S9.png" style="width: 250px;" /></a>.</p>
-<p>Кликом на <code class="docutils literal notranslate"><span class="pre">Done</span></code>, програм ће захтевати да чувамо или додатно уређујемо видео-запис.</p>
-<p>Када одаберемо опцију <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">/</span> <span class="pre">Upload</span></code>, и одаберемо опцију <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As</span> <span class="pre">Video</span> <span class="pre">File</span></code> чувамо снимљени видео-запис на рачунару.</p>
-<p>Опис поступка креирања видео-записа можете погледати на следећем видеу:</p>
+<p>Када кликнеш на дугме <a class="reference internal" href="../_images/L710S7.png"><img alt="u1" src="../_images/L710S7.png" style="width: 30px;" /></a> започињеш снимање видео-записа.</p>
+<p>Да би се зауставило (паузирало) снимање, потребно је да кликнеш на паузу (плаво дугме <a class="reference internal" href="../_images/L710S8.png"><img alt="u2" src="../_images/L710S8.png" style="width: 250px;" /></a>), а да би
+се завршило снимање кликнеш на <cite>Done</cite> <a class="reference internal" href="../_images/L710S9.png"><img alt="u3" src="../_images/L710S9.png" style="width: 250px;" /></a>.</p>
+<p>Кликом на <code class="docutils literal notranslate"><span class="pre">Done</span></code>, програм ће захтевати да чуваш или додатно уређујеш видео-запис.</p>
+<p>Када одабереш опцију <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">/</span> <span class="pre">Upload</span></code>, и одабереш опцију <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As</span> <span class="pre">Video</span> <span class="pre">File</span></code> чуваш снимљени видео-запис
+на рачунару.</p>
+<p>Опис поступка креирања видео-записа можеш погледати на следећем видеу:</p>
 
     <div  id="IVHQGPFTNDg" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/IVHQGPFTNDg/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -526,16 +495,18 @@
     <p>За конверзију типова датотека у предходним разредима користили смо програм Format Factory.</p>
 <p>Подсећања ради:</p>
 <ul class="simple">
-<li><p>Тип датотеке мењамо када се нађемо у ситуацији да програм који користимо „не уме” да ради са датотеком коју уређујемо.</p></li>
-<li><p>Тип датотеке мењамо и када желимо да она заузима мање меморијског простора.</p></li>
+<li><p>Тип датотеке мењаш када се нађеш у ситуацији да програм који користиш „не уме” да ради са датотеком коју уређујеш.</p></li>
+<li><p>Тип датотеке мењаш и када желиш да она заузима мање меморијског простора.</p></li>
 </ul>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да стварамо видео записе снимајући екран дигиталног уређаја (што је згодно за прављење видео-туторијала).</p></li>
+<li><p>да ствараш видео записе снимајући екран дигиталног уређаја (што је згодно за прављење видео-туторијала).</p></li>
 </ul>
 </dd>
 </dl>

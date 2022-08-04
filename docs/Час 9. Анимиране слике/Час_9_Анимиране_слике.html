@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,7 +419,9 @@
   <div class="section" id="id1">
 <h1>Анимиране слике<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -482,7 +448,7 @@
 </ul>
 <p>Microsoft Gif Animator преузимамо са интернет странице  <a class="reference external" href="https://microsoft-gif-animator.en.uptodown.com/windows">https://microsoft-gif-animator.en.uptodown.com/windows</a> кликом на дугме Latest version.
 Довољно је да покренемо извршну датотеку <a class="reference internal" href="../_images/L79S1.png"><img alt="m1" src="../_images/L79S1.png" style="width: 100px;" /></a>.</p>
-<p>Опис поступка за преузимање и покретање програма Microsoft Gif Animator можете погледати на следећем видеу:</p>
+<p>Опис поступка за преузимање и покретање програма Microsoft Gif Animator можеш погледати на следећем видеу:</p>
 
     <div  id="nyw4rP0FUfk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/nyw4rP0FUfk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -506,9 +472,9 @@
 <p>Kартице <strong>Animation</strong> и <strong>Image</strong> активирају се тек након постављања прве слике.</p>
 <a class="reference internal image-reference" href="../_images/L79S2.png"><img alt="../_images/L79S2.png" src="../_images/L79S2.png" style="width: 600px;" /></a>
 <p>Свака анимирана слика је сачињена од више (непокретних) слика, па је за израду анимације потребно да се припреми више слика истих димензија. Код креирања анимација обично се свака следећа слика мало разликује од претходне, што даје утисак да се објекат у анимацији креће.
-Да бисмо могли да креирамо анимирану слику у програму Microsoft Gif Animator потребно је да припремљене слике буду запамћене у <strong>GIF</strong> формату.</p>
-<p>Подсећања ради, <strong>GIF</strong> (Graphics Interchange Format) спада у компримоване формате без губитака квалитетa слике.</p>
-<p>Опис поступка за припрему сликa за анимацију можете погледати на следећем видеу:</p>
+Да би се креирала анимирана слика у програму Microsoft Gif Animator потребно је да припремљене слике буду запамћене у <strong>GIF</strong> формату.</p>
+<p>Подсетимо се да <strong>GIF</strong> (Graphics Interchange Format) спада у компримоване формате без губитака квалитетa слике.</p>
+<p>Опис поступка за припрему сликa за анимацију можеш погледати на следећем видеу:</p>
 
     <div  id="EzjtdR18luk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/EzjtdR18luk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -523,22 +489,27 @@
     </div>
     
     
-    <p>Прву слику увозимо кликом на опцију <code class="docutils literal notranslate"><span class="pre">Open</span></code> из линије са алатима. Отвара се прозор за отварање датотеке у оквиру кога бирамо слику и избор потврђујемо кликом на дугме <strong>Open</strong>.</p>
-<p>У простору за приказ фрејмова биће приказана прва изабрана слика. Остале слике увозимо избором алатке <strong>Insert</strong> <a class="reference internal" href="../_images/L79S3.png"><img alt="m2" src="../_images/L79S3.png" style="width: 30px;" /></a>.
-Ако увеземо погрешну слику, слику можемо да обришемо тако што је селектујемо и кликнемо на алатку <strong>Delete</strong> <a class="reference internal" href="../_images/L79S4.png"><img alt="m3" src="../_images/L79S4.png" style="width: 30px;" /></a>.
-У случају да слике у простору за фрејмове нису поређане у одговарајућем редоследу, жељени распоред вршимо коришћењем алатки <strong>Move Up/Down</strong> <a class="reference internal" href="../_images/L79S5.png"><img alt="m4" src="../_images/L79S5.png" style="width: 30px;" /></a>.</p>
-<p>У картици <strong>Options</strong>, можемо да подесимо однос величине слика и сцене за приказивање анимације одабиром опције <code class="docutils literal notranslate"><span class="pre">Thumbnails</span> <span class="pre">Reflect</span> <span class="pre">Image</span> <span class="pre">Position</span></code>.</p>
-<p>У истој картици у зависности од сложености слика, бирамо одговарајући метод за приказивање палете боја:</p>
+    <p>Прву слику увозиш кликом на опцију <code class="docutils literal notranslate"><span class="pre">Open</span></code> из линије са алатима. Отвара се прозор за отварање датотеке
+у оквиру кога бираш слику и избор потврђујеш кликом на дугме <strong>Open</strong>.</p>
+<p>У простору за приказ фрејмова биће приказана прва изабрана слика. Остале слике увозиш избором алатке
+<strong>Insert</strong> <a class="reference internal" href="../_images/L79S3.png"><img alt="m2" src="../_images/L79S3.png" style="width: 30px;" /></a>. Ако увезеш погрешну слику, слику можеш да обришеш тако што је селектујеш и кликнеш
+на алатку <strong>Delete</strong> <a class="reference internal" href="../_images/L79S4.png"><img alt="m3" src="../_images/L79S4.png" style="width: 30px;" /></a>. У случају да слике у простору за фрејмове нису поређане у одговарајућем
+редоследу, жељени распоред вршиш коришћењем алатки <strong>Move Up/Down</strong> <a class="reference internal" href="../_images/L79S5.png"><img alt="m4" src="../_images/L79S5.png" style="width: 30px;" /></a>.</p>
+<p>У картици <strong>Options</strong>, можеш да подесиш однос величине слика и сцене за приказивање анимације одабиром
+опције <code class="docutils literal notranslate"><span class="pre">Thumbnails</span> <span class="pre">Reflect</span> <span class="pre">Image</span> <span class="pre">Position</span></code>.</p>
+<p>У истој картици у зависности од сложености слика, бираш одговарајући метод за приказивање палете боја:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Solid</span></code> (за линије и слике са неколико боја);</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Pattern</span></code> (за слике са умереним бројем боја);</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Random</span></code> (за слике са више боја);</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Error</span> <span class="pre">Diffusion</span></code> (за ублажавање прелаза између боја).</p></li>
 </ul>
-<p>Величину сцене за приказ анимације подешавамо на картици <strong>Animation</strong> тако што жељене вредности уносимо у поља <code class="docutils literal notranslate"><span class="pre">Animation</span> <span class="pre">Width</span></code> и <code class="docutils literal notranslate"><span class="pre">Animation</span> <span class="pre">Height</span></code>.
-Видљивост броја унетих слика за креирање анимације налази се у пољу <code class="docutils literal notranslate"><span class="pre">Image</span> <span class="pre">Count</span></code>.
-У случају да желимо да се анимација понавља треба да означимо поље <code class="docutils literal notranslate"><span class="pre">Looping</span></code> и унесемо број понављања у поље <code class="docutils literal notranslate"><span class="pre">Repeat</span> <span class="pre">Count</span></code> или одаберемо бесконачно понављање означавањем поља <code class="docutils literal notranslate"><span class="pre">Repeat</span> <span class="pre">Forever</span></code>.</p>
-<p>У оквиру картице <strong>Image</strong> подешавамо основне особине фрејмова:</p>
+<p>Величину сцене за приказ анимације подешавамо на картици <strong>Animation</strong> тако што жељене вредности уносиш
+у поља <code class="docutils literal notranslate"><span class="pre">Animation</span> <span class="pre">Width</span></code> и <code class="docutils literal notranslate"><span class="pre">Animation</span> <span class="pre">Height</span></code>. Видљивост броја унетих слика за креирање анимације
+налази се у пољу <code class="docutils literal notranslate"><span class="pre">Image</span> <span class="pre">Count</span></code>. У случају да желиш да се анимација понавља треба да означиш поље
+<code class="docutils literal notranslate"><span class="pre">Looping</span></code> и унесеш број понављања у поље <code class="docutils literal notranslate"><span class="pre">Repeat</span> <span class="pre">Count</span></code> или одабереш бесконачно понављање означавањем
+поља <code class="docutils literal notranslate"><span class="pre">Repeat</span> <span class="pre">Forever</span></code>.</p>
+<p>У оквиру картице <strong>Image</strong> подешаваш основне особине фрејмова:</p>
 <ul class="simple">
 <li><p>позицију на сцени (<code class="docutils literal notranslate"><span class="pre">Left</span></code>, <code class="docutils literal notranslate"><span class="pre">Top</span></code>);</p></li>
 <li><p>дужину трајања (<code class="docutils literal notranslate"><span class="pre">Duration</span></code>, мерна јединица 1/100s);</p></li>
@@ -546,7 +517,7 @@
 <li><p>провидност позадине (<code class="docutils literal notranslate"><span class="pre">Transaparency</span></code>).</p></li>
 </ul>
 <p>Избором алатке <strong>Select All</strong> <a class="reference internal" href="../_images/L79S6.png"><img alt="m5" src="../_images/L79S6.png" style="width: 30px;" /></a> ове особине могу да се подесе за све оквире истовремено.</p>
-<p>Опис поступка за креирање покретне слике можете погледати на следећем видеу:</p>
+<p>Опис поступка за креирање покретне слике можеш погледати на следећем видеу:</p>
 
     <div  id="5WktEqRDux4" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/5WktEqRDux4/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -563,10 +534,11 @@
     
     <div class="section" id="id2">
 <h2>Покретање и чување анимације<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Анимацију покрећемо избором алатке <strong>Preview</strong> <a class="reference internal" href="../_images/L79S7.png"><img alt="m6" src="../_images/L79S7.png" style="width: 30px;" /></a> из Линије са алаткама.
-Отвориће се нови прозор у којем се приказује анимација и у којем можемо да поново покренемо и зауставимо анимацију или је прикажемо фрејм по фрејм.</p>
-<p>Анимирану слику чувамо у формату <strong>.gif</strong>, избором алатке <strong>Save As</strong> <a class="reference internal" href="../_images/L79S8.png"><img alt="m7" src="../_images/L79S8.png" style="width: 30px;" /></a> из Линије са алаткама.</p>
-<p>Опис поступка за креирање анимране слике можете погледати на следећем видеу:</p>
+<p>Анимацију покрећеш избором алатке <strong>Preview</strong> <a class="reference internal" href="../_images/L79S7.png"><img alt="m6" src="../_images/L79S7.png" style="width: 30px;" /></a> из Линије са алаткама. Отвориће се нови прозор у
+којем се приказује анимација и у којем можеш да поново покренеш и зауставиш анимацију или је прикажеш
+фрејм по фрејм.</p>
+<p>Анимирану слику чуваш у формату <strong>.gif</strong>, избором алатке <strong>Save As</strong> <a class="reference internal" href="../_images/L79S8.png"><img alt="m7" src="../_images/L79S8.png" style="width: 30px;" /></a> из Линије са алаткама.</p>
+<p>Опис поступка за креирање анимране слике можеш погледати на следећем видеу:</p>
 
     <div  id="vtIoGLr7Jfk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/vtIoGLr7Jfk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -584,11 +556,14 @@
     </div>
 <div class="section" id="id3">
 <h2>Уграђивање анимације у мултимедијалну презентацију<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Анимирану слику не можемо прегледати у програмима за обраду слике. Такву слику можемо погледати у програму за креирање анимација, да је прикажемо у веб прегледачима, али и у програмима за креирање мултимедијалних презентација.</p>
-<p>У програму Microsoft PowerPoint можемо да уметнемо анимацију на слајд тако што у менију изаберемо <code class="docutils literal notranslate"><span class="pre">Insert</span></code> → <code class="docutils literal notranslate"><span class="pre">Pictures</span></code> → одабир анимације → <code class="docutils literal notranslate"><span class="pre">Insert</span></code>.</p>
-<p>Тако уметнута слика ће бити „непокретна” све док не покренемо презентацију кликом на дугме <strong>F5</strong> са тастатуре.
-Када смо покренули презентацију анимирана слика биће приказана у форми „покрета”.</p>
-<p>Опис поступка уграђивања анимације у мултимедијалну презентацију можете погледати на следећем видеу:</p>
+<p>Анимирану слику не можеш прегледати у програмима за обраду слике. Такву слику можеш погледати у програму
+за креирање анимација, да је прикажеш у веб прегледачима, али и у програмима за креирање мултимедијалних
+презентација.</p>
+<p>У програму Microsoft PowerPoint можеш да уметнеш анимацију на слајд тако што у менију изабереш <code class="docutils literal notranslate"><span class="pre">Insert</span></code>
+→ <code class="docutils literal notranslate"><span class="pre">Pictures</span></code> → одабир анимације → <code class="docutils literal notranslate"><span class="pre">Insert</span></code>.</p>
+<p>Тако уметнута слика ће бити „непокретна” све док не покренеш презентацију кликом на дугме <strong>F5</strong> са тастатуре.
+Када покренеш презентацију анимирана слика биће приказана у форми „покрета”.</p>
+<p>Опис поступка уграђивања анимације у мултимедијалну презентацију можеш погледати на следећем видеу:</p>
 
     <div  id="Adgz2n54yC4" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/Adgz2n54yC4/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -604,15 +579,17 @@
     
     
     
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да је анимација процес смењивања слика којим се ствара привид да се неки објекат мења (или креће) током времена;</p></li>
-<li><p>да је фрејм једна од слика/фотографија које сачињавају покретну слику;</p></li>
-<li><p>да анимирану слику чувамо у .GIF формату;</p></li>
-<li><p>да анимирану слику није могуће приказати у програмима за преглед слика, али их је, поред програма за креирање анимација, могуће приказати у веб-прегледачима, као и у програмима за креирање мултимедијалних презентација.</p></li>
+<li><p>анимација је процес смењивања слика којим се ствара привид да се неки објекат мења (или креће) током времена;</p></li>
+<li><p>фрејм је једна од слика/фотографија које сачињавају покретну слику;</p></li>
+<li><p>анимирану слику чуваш у .GIF формату;</p></li>
+<li><p>анимирану слику није могуће приказати у програмима за преглед слика, али их је, поред програма за креирање анимација, могуће приказати у веб-прегледачима, као и у програмима за креирање мултимедијалних презентација.</p></li>
 </ul>
 </dd>
 </dl>

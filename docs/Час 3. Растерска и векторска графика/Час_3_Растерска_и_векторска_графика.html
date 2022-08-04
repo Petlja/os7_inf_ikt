@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,7 +419,9 @@
   <div class="section" id="id1">
 <h1>Растерска и векторска графика<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -477,9 +443,12 @@
 <li><p>2Д и 3Д графику и</p></li>
 <li><p>растерску и векторску графику.</p></li>
 </ul>
-<p>Појам <strong>2Д графика</strong> односи се на слике које имају 2 димензије (ширину и дужину), као што су фотографија, слика која се приказује на екрану.</p>
+<p>Појам <strong>2Д графика</strong> односи се на слике које имају 2 димензије (ширину и дужину), као што су фотографија,
+цртеж, графикон и слично.</p>
 <a class="reference internal image-reference" href="../_images/L73S2.png"><img alt="../_images/L73S2.png" class="align-center" src="../_images/L73S2.png" style="width: 300px;" /></a>
-<p>Док се појам <strong>3Д графика</strong> односи се на креирање и приказивање тродимензионалних објеката у дигиталном облику. Ови 3Д модели се користе за креирање рачунарских игара, симулација, у архитектури и грађевинарству, те многим другим областима.</p>
+<p>Појам <strong>3Д графика</strong> односи се на креирање и приказивање тродимензионалних објеката у дигиталном облику.
+Ови 3Д модели се користе за креирање рачунарских игара, симулација, у архитектури и грађевинарству,
+медицини и многим другим областима.</p>
 <a class="reference internal image-reference" href="../_images/L73S3.png"><img alt="../_images/L73S3.png" class="align-center" src="../_images/L73S3.png" style="width: 200px;" /></a>
 <div class="section" id="id2">
 <h2>Растерска графика<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
@@ -489,7 +458,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L73P1">
-            <p>Q-45: За коју врсту рачунарске графике пиксел представља основни градивни елемент. Означи тачан одговор.</p>
+            <p>Q-46: За коју врсту рачунарске графике пиксел представља основни градивни елемент. Означи тачан одговор.</p>
 
             <li data-component="answer" data-correct id="L73P1_opt_a">растерска графика</li><li data-component="feedback" id="L73P1_opt_a">Тачно</li>
             
@@ -579,23 +548,55 @@
 <p>Да би се смањила количина меморије потребна за чување слика развијене су различите технике компресије дигиталне слике.</p>
 <p><strong>Компресија без губитака (lossless)</strong> смањује величину датотеке без смањења квалитета слике. Kористи се кад је квалитет слике важнији од величине датотеке.</p>
 <p><strong>Компресија са губитком података (lossy)</strong> користи ограничења људског ока и слика се замењује сличном сликом која се може записати са мање података, тако да људско око углавном не примећује разлику између оригиналне и сачуване слике.</p>
-<p>Најчешће коришћени типови (формати) растерских  датотека су:</p>
-<ol class="arabic simple">
-<li><p><strong>RAW</strong> формат записа фотографије у којем фотоапарат бележи све податке које је забележио и сам дигитални сензор фотоапарата (RAW значи сиров, необрађен). У овом формату нема компресије па ни редукције квалитета слике;</p></li>
-<li><p><strong>GIF</strong> (Graphics Interchange Format) формат је ограничен на 8-битну палету, односно 256 боја чиме се смањује количина података. Погодан је за чување графике са релативно мало боја као што су дијаграми, геометријски облици и логотипи. Подржава анимације и  често се користи за приказ анимација на веб страници;</p></li>
-<li><p><strong>JPEG</strong> (Joint Photographic Experts Group) је компресовани формат слика са губицима. Заснива се на особини људског ока да боље уочава површине и облике него варијације у боји и осветљењу. Ово је најчешће коришћен формат у раду са сликама. Због мале количине меморије коју заузима, налази примену у складиштењу слика, приказу слика путем интернета или размени путем електронске поште;</p></li>
-<li><p><strong>PNG</strong> (Portable Network Graphics) је формат за растерске слике који користи компресију без губитка. Подржава 24-битну дубину боја;</p></li>
-<li><p><strong>TIFF</strong> (Tagged Image File Format) формат користи 24-битну или 48-битну дубину боје, а екстензија за ове датотеке је TIFF или TIF. Користи се компресија без губитка, и зато је преовлађујући формат за велике слике које се користе за штампу великих плаката, високо квалитетних каталога и сл.</p></li>
-</ol>
+<p>Најчешће коришћени типови (формати) растерских датотека представљени су у следећој табели.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 6%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Назив</p></th>
+<th class="head"><p>Тип компресије</p></th>
+<th class="head"><p>Опис и примена</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>BMP (bitmap)</p></td>
+<td><p>некомпримован</p></td>
+<td><p>Један од првих графичких формата који је све мање у употреби. Према овом формату растерске слике често се називају битмапиране слике. Код овог формата памти се сваки пиксел слике појединачно, са одговарајућим бројем бајтова који одређују боју. Нема компресије па ни редукције квалитета због чега су слике сачуване у овом формату веома велике.</p></td>
+</tr>
+<tr class="row-odd"><td><p>RAW</p></td>
+<td><p>некомпримован</p></td>
+<td><p>формат записа фотографије у којем фотоапарат бележи све податке које је забележио и сам дигитални сензор фотоапарата (RAW значи сиров, необрађен). У овом формату нема компресије па ни редукције квалитета слике;</p></td>
+</tr>
+<tr class="row-even"><td><p>GIF (Graphics Interchange Format)</p></td>
+<td><p>Са губицима (lossy)</p></td>
+<td><p>формат ограничен на 8-битну палету, односно 256 боја чиме се смањује количина података. Погодан је за чување графике са релативно мало боја као што су дијаграми, геометријски облици и логотипи. Подржава анимације и често се користи за приказ анимација на веб страници;</p></td>
+</tr>
+<tr class="row-odd"><td><p>JPEG (Joint Photographic Experts Group)</p></td>
+<td><p>Са губицима (lossy)</p></td>
+<td><p>Заснива се на особини људског ока да боље уочава површине и облике него варијације у боји и осветљењу. Ово је најчешће коришћен формат у раду са сликама. Због мале количине меморије коју заузима, налази примену у складиштењу слика, приказу слика путем интернета или размени путем електронске поште;</p></td>
+</tr>
+<tr class="row-even"><td><p>PNG (Portable Network Graphics)</p></td>
+<td><p>Без губитака (lossless)</p></td>
+<td><p>је формат за растерске слике који користи компресију без губитка. Подржава 24-битну дубину боја;</p></td>
+</tr>
+<tr class="row-odd"><td><p>TIFF (Tagged Image File Format)</p></td>
+<td><p>Без губитака (lossless)</p></td>
+<td><p>формат користи 24-битну или 48-битну дубину боје, а екстензија за ове датотеке је TIFF или TIF. Користи се компресија без губитка, и зато је преовлађујући формат за велике слике које се користе за штампу великих плаката, високо квалитетних каталога и сл.</p></td>
+</tr>
+</tbody>
+</table>
 <p>Један од првих графичких формата био је BMP (bitmap) формат, али је он све мање у употреби. Према овом формату растерске слике често се називају битмапиране слике. Код овог формата памти се сваки пиксел слике појединачно, са одговарајућим бројем бајтова који одређују боју. Нема компресије па ни редукције квалитета због чега су слике сачуване у овом формату веома велике.</p>
 <p>Формати за чување векторских датотека углавном зависе од програма у којем је садржај датотеке направљен.</p>
 <p>Најчешће коришћени типови (формати) векторских датотека су:</p>
-<ol class="arabic simple">
+<ul class="simple">
 <li><p><strong>SVG</strong> (Scalable Vector Graphics) - формат намењен веб страницама;</p></li>
 <li><p><strong>PDF</strong> (Portable Document Format) - формат који се користи за запис докумената намењених за читање на екрану и штампање. Подржава чување и растерских слика;</p></li>
 <li><p><strong>CDR</strong> (CorelDraw) формат програма CorelDraw;</p></li>
 <li><p><strong>DWG</strong> (AutoCAD) формат програма AutoCAD.</p></li>
-</ol>
+</ul>
 </div>
 <div class="section" id="id7">
 <h2>Претраживање слика на интернету<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
@@ -619,8 +620,9 @@
 </ol>
 <p>Уколико је потребно направити прецизније претраживање слика треба одабрати опцију за напредну претрагу. Ова опција се отвара тако што кликнемо на точкић у горњем десном углу (1) и одаберемо одговарајућу опцију (2).</p>
 <a class="reference internal image-reference" href="../_images/L73S9b.png"><img alt="../_images/L73S9b.png" class="align-center" src="../_images/L73S9b.png" style="width: 200px;" /></a>
-<p>Након избора опције <code class="docutils literal notranslate"><span class="pre">Напредна</span> <span class="pre">претрага</span></code> (Advanced search) приказаће се прозор у коме можемо да подешавамо различите опције за претрагу слика.
-За претрагу слике по величини одаберемо из падајуће листе одаберемо величину коју желимо и потврдимо жељени одабир.</p>
+<p>Након избора опције <code class="docutils literal notranslate"><span class="pre">Напредна</span> <span class="pre">претрага</span></code> (Advanced search) приказаће се прозор у коме можемо да подешавамо
+различите опције за претрагу слика. За претрагу слике по величини одаберемо из падајуће листе потребно
+је да величину коју желимо и потврдимо жељени одабир.</p>
 <a class="reference internal image-reference" href="../_images/L73S9c.png"><img alt="../_images/L73S9c.png" class="align-center" src="../_images/L73S9c.png" style="width: 700px;" /></a>
 <p>Након избора приказаће нам се слике чија је величина, у овом случају, већа од 1024х768.</p>
 <a class="reference internal image-reference" href="../_images/L73S11.png"><img alt="../_images/L73S11.png" class="align-center" src="../_images/L73S11.png" style="width: 700px;" /></a>
@@ -628,22 +630,24 @@
 <h3>Задатак:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Пронађи слике Николе Тесле чија је величина тачно 1920х1080 пиксела.</p>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да је најчешћа подела рачунарске графике на 2Д и 3Д графику, као и на растерску и векторску графику;</p></li>
-<li><p>да се 2Д графика односи на слике које природно имају 2 димензије (ширину и дужину);</p></li>
-<li><p>да се 3Д графика користи за приказ објеката у тродимензионалном простору у дигиталном облику;</p></li>
-<li><p>да растерска графика представља графичке податке правоугаоном мрежом пиксела;</p></li>
-<li><p>да векторска графика представља начин приказивања слике помоћу објеката (геометријских облика);</p></li>
-<li><p>да се растерска слика не може увећати без губитка квалитета;</p></li>
-<li><p>да се векторска графика може неограничено увећавати без губитка квалитета;</p></li>
+<li><p>најчешћа подела рачунарске графике је на 2Д и 3Д графику, као и на растерску и векторску графику;</p></li>
+<li><p>2Д графика односи се на слике које природно имају 2 димензије (ширину и дужину);</p></li>
+<li><p>3Д графика користи се за приказ објеката у дигиталном облику;</p></li>
+<li><p>растерска графика представља графичке податке правоугаоном мрежом пиксела;</p></li>
+<li><p>векторска графика представља начин приказивања слике помоћу објеката (геометријских облика);</p></li>
+<li><p>растерска слика не може се увећати без губитка квалитета;</p></li>
+<li><p>векторска графика може се неограничено увећавати без губитка квалитета;</p></li>
 <li><p>да би се смањила количина меморије потребна за чување слика, развијене су различите технике компресије дигиталне слике;</p></li>
-<li><p>да су најчешће коришћени типови (формати) растерских датотека: RAW, BMP, GIF, JPEG, PNG, TIFF;</p></li>
-<li><p>да су најчешће коришћени типови (формати) векторских датотека: SVG, PDF, CDR, DWG;</p></li>
-<li><p>да претрагу слике можемо вршити и према величини слике.</p></li>
+<li><p>најчешће коришћени типови (формати) растерских датотека су: RAW, BMP, GIF, JPEG, PNG, TIFF;</p></li>
+<li><p>најчешће коришћени типови (формати) векторских датотека су: SVG, PDF, CDR, DWG;</p></li>
+<li><p>претрагу слике можемо вршити и према величини слике.</p></li>
 </ul>
 </dd>
 </dl>

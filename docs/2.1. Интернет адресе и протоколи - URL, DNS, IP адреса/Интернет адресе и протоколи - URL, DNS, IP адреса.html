@@ -419,7 +419,9 @@
   <div class="section" id="url-dns-ip">
 <h1>Интернет адресе и протоколи - URL, DNS, IP адреса<a class="headerlink" href="#url-dns-ip" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -468,7 +470,7 @@
 </dl>
 <p>У претходном разреду објаснили смо значење појмова URL, DNS и IP адресе. Потсетимо се шта представљају ови појмови.</p>
 <p><strong>URL</strong> (енг. <strong>Uniform Resource Locator</strong>) представља јединствену локацију ресурса (појединачне веб-стране, датотека и других ресурса) на мрежи. Као синоним за URL адресу често се користи веб-адреса.</p>
-<a class="reference internal image-reference" href="../_images/network.jpg"><img alt="../_images/network.jpg" class="align-right" src="../_images/network.jpg" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/network.png"><img alt="../_images/network.png" class="align-right" src="../_images/network.png" style="width: 300px;" /></a>
 <p><strong>IP адреса</strong> (енг. <strong>Internet Protocol Address</strong>) је јединствена адреса сваког уређаја прикљученог
 на интернет. IP адресе се записују <strong>бинарним записом</strong> помоћу цифара 0 и 1. За записивање IP адресе
 потребно је 32 бита (бинарне цифре), нпр. 11000000 10101000 00000001 10011000. Да би људи могли лакше
@@ -495,8 +497,16 @@
 </dd>
 </dl>
 <a class="reference internal image-reference" href="../_images/Ipv4_address.jpg"><img alt="../_images/Ipv4_address.jpg" class="align-center" src="../_images/Ipv4_address.jpg" style="width: 400px;" /></a>
-<p>Како можеш да откријеш која је твоја IP адреса? Један од начина је да одеш на неки од сајтова који раде проверу IP адресе попут <a class="reference external" href="https://whatismyipaddress.com/ip-lookup">https://whatismyipaddress.com/ip-lookup</a>.
-Како је људима тешко да памте и манипулишу оваквим нумеричким адресама са великим бројем цифара, за представљање IP адресе користе се мнемоничке адресе које представљају комбинацију слова и цифара. Такве адресе се називају веб-адресе.
+
+    <div class="note-wrapper suggestionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
+        <div class="course-content">
+            <p>
+<p>Како можеш да откријеш која је твоја IP адреса? Један од начина је да одеш на неки од сајтова који раде проверу IP адресе попут <a class="reference external" href="https://whatismyipaddress.com/ip-lookup">https://whatismyipaddress.com/ip-lookup</a>.</p>
+
+    </p></div></div>
+<p>Како је људима тешко да памте и манипулишу оваквим нумеричким адресама са великим бројем цифара, за представљање IP адресе користе се мнемоничке адресе које представљају комбинацију слова и цифара. Такве адресе се називају веб-адресе.
 Тако је веб-адреса сајта <a class="reference external" href="https://www.google.com/">https://www.google.com/</a> а IP адреса сервера на коме је тај сајт смештен је 172.217.168.196. Било да у адресном пољу интернет прегледача укуцамо веб-адресу или IP адресу резултат ће бити исти, добићемо почетну страницу Google сајта.
 Да би овакав начин адресирања био изводљив, уведен је интернет сервис <strong>Систем интернет домена</strong> (енгл. DNS), који претвара мнемоничку адресу у IP адресу. DNS (енг. <em>Domain Name System</em>) је интернет сервис који врши конвертовање IP адресе из бројева у симболичку адресу како би се лакше памтила односно омогућава превођење текстуалних ознака у нумеричке ознаке и обратно.</p>
 <div class="section" id="id1">
@@ -504,7 +514,15 @@
 <p>Када у пољу претраге претраживача унесеш адресу <a class="reference external" href="https://www.google.com">https://www.google.com</a>, твој рачунар шаље захтев DNS серверу да пронађе адресу сервера на коме је овај сајт смештен. DNS сервер преводи текстуалну URL адресу у нумеричку IP адресу и упућује на тражену адресу.
 Дакле улога DNS сервера јесте да се за тражене услуге на одређеном сајту добију одговарајуће IP адресе неопходне за комуникацију и размену података у мрежи.</p>
 <a class="reference internal image-reference" href="../_images/URL_IP_DNS.png"><img alt="../_images/URL_IP_DNS.png" class="align-center" src="../_images/URL_IP_DNS.png" style="width: 1000px;" /></a>
+
+    <div class="note-wrapper suggestionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
+        <div class="course-content">
+            <p>
 <p>На сајту <a class="reference external" href="https://tools.keycdn.com/">https://tools.keycdn.com/</a> преко URL адресе можеш добити IP адресу. Ово може бити важно ако желиш да сазнаш на ком серверу се налази нека веб-страница. Некада се дешава да из неког разлога DNS не ради, па онда страници можеш приступити преко IP адресе.</p>
+
+    </p></div></div>
 <p>Како на интернету постоји велики број сервера, а сваки од њих мора имати јединствено име, произилази да сервери морају имати сложена имена. Из тог разлога уводи се појам интернет домена.
 Домен је скуп имена за сервере који припадају једној организацији (предузећу, школи, државној установи итд.). Систем имена је <strong>хијерархијски организован</strong>. Последњи део интернет домена назива се <strong>домен највишег нивоа</strong> (енг. Top-Level Domain - <strong>TLD</strong>).
 На пример домени комерцијалних организација групишу се у домен вишег нивоа .com (www.google.com, www.microsoft.com), едукативне организације се налазе у домену .edu (www.harvard.edu) итд.</p>
@@ -516,6 +534,12 @@
 којим управља <strong>Регистар интернет домена</strong>. Практично назив интернет домена је интернет (веб) адреса коју
 корисник региструје у оквиру неког постојећег интернет домена. На пример, веб-адреса www.petlja.org представља
 адресу која је  регистрована у оквиру домена .org.</p>
+
+    <div class="note-wrapper learnmorenote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/learnmorenote-img.svg" class="note-image learnmorenote-image" /> 
+        <div class="course-content">
+            <p>
 <dl class="simple">
 <dt>Назив интернет домена састоји се из низа слова и цифара раздвојених тачкама. Правила код давања назива домену су:</dt><dd><ul class="simple">
 <li><p>назив може да може да садржи цифре (0–9), слова енглеског алфабета (а–z) (или неког другог писма) и цртицу (-),</p></li>
@@ -524,6 +548,8 @@
 </ul>
 </dd>
 </dl>
+
+    </p></div></div>
 <p>Домен .rs припада доменима са интернационализованим називима, што омогућава да се у имену домена нађу
 и карактери č, ć, š, ž и đ. Подсетимо се да имамо и .срб домен, код кога се користи ћирилица за називе
 домена.</p>

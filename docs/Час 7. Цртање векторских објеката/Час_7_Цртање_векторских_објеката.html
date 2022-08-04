@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,7 +419,9 @@
   <div class="section" id="id1">
 <h1>Цртање векторских објеката<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -469,9 +435,11 @@
 
     </p></div></div>
 <p>Програм Inkscape омогућава креирање основних геометријских облика избором одговарајуће алатке из Toolbox-а.</p>
-<p>Да бисмо исцртали правилан многоугао, користимо алатку <strong>Create stars and polygons</strong> <a class="reference internal" href="../_images/L77S1.png"><img alt="x1" src="../_images/L77S1.png" style="width: 30px;" /></a>, а затим у <code class="docutils literal notranslate"><span class="pre">Tool</span> <span class="pre">Controls</span> <span class="pre">Bar</span></code> одаберемо алатку <a class="reference internal" href="../_images/L77S2.png"><img alt="x2" src="../_images/L77S2.png" style="width: 30px;" /></a> и унесемо број углова. Када смо подесили број углова, држимо притиснут леви тастер миша и развлачимо многоугао.</p>
-<p>На сличан начин исцртавамо звезду одабиром алатке <a class="reference internal" href="../_images/L77S3.png"><img alt="x3" src="../_images/L77S3.png" style="width: 30px;" /></a>.</p>
-<p>Опис поступка за исцртавање правилног многоугла и звезде можете погледати на следећем видеу:</p>
+<p>За исцртавање правилног многоугла користиш алатку <strong>Create stars and polygons</strong> <a class="reference internal" href="../_images/L77S1.png"><img alt="x1" src="../_images/L77S1.png" style="width: 30px;" /></a>, а затим у <code class="docutils literal notranslate"><span class="pre">Tool</span>
+<span class="pre">Controls</span> <span class="pre">Bar</span></code> одабереш алатку <a class="reference internal" href="../_images/L77S2.png"><img alt="x2" src="../_images/L77S2.png" style="width: 30px;" /></a> и унесеш број углова. Када унесеш број углова, држиш притиснут леви
+тастер миша и развлачиш многоугао.</p>
+<p>На сличан начин исцртаваш звезду одабиром алатке <a class="reference internal" href="../_images/L77S3.png"><img alt="x3" src="../_images/L77S3.png" style="width: 30px;" /></a>.</p>
+<p>Опис поступка за исцртавање правилног многоугла и звезде можеш погледати на следећем видеу:</p>
 
     <div  id="Te62qYbMsH8" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/Te62qYbMsH8/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -486,8 +454,9 @@
     </div>
     
     
-    <p>Да бисмо исцртали спирале, користимо алатку <strong>Create spirals</strong> <a class="reference internal" href="../_images/L77S4.png"><img alt="x4" src="../_images/L77S4.png" style="width: 30px;" /></a> и док држимо притиснут леви тастер миша, развучемо спиралу.</p>
-<p>Опис поступка за исцртавање спирале можете погледати на следећем видеу:</p>
+    <p>Да бисмо исцртали спирале, користиш алатку <strong>Create spirals</strong> <a class="reference internal" href="../_images/L77S4.png"><img alt="x4" src="../_images/L77S4.png" style="width: 30px;" /></a> и док држиш притиснут леви тастер
+миша, развучеш спиралу.</p>
+<p>Опис поступка за исцртавање спирале можеш погледати на следећем видеу:</p>
 
     <div  id="8OWrcGTk56o" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/8OWrcGTk56o/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -504,12 +473,17 @@
     
     <div class="section" id="id2">
 <h2>Цртање линија<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>За цртање правих и неправилних линија користимо алатку <strong>Draw freehand lines</strong> <a class="reference internal" href="../_images/L77S5.png"><img alt="x5" src="../_images/L77S5.png" style="width: 30px;" /></a>.</p>
-<p>Да бисмо нацртали праву линију, потребно је да кликнемо левим тастером миша на страницу, а затим да преместимо курсор миша на место где желимо да буде крај дужи и поново кликнемо на страницу.</p>
-<p>За исцртавање неправилних линија потребно је да кликнемо левим тастером миша на страницу и држимо га притиснутог док цртамо линију жељеног облика. Када отпустимо тастер миша, завршавамо исцртавање линије.</p>
-<p>За цртање Безијеових кривих линија (заобљене изломљене линије које се лако прилагођавају потребном облику) користимо алатку <strong>Bezier</strong> <a class="reference internal" href="../_images/L77S6.png"><img alt="x6" src="../_images/L77S6.png" style="width: 30px;" /></a>.</p>
-<p>Да бисмо исцртали Безијеове линије, потребно је да кликнемо левим тастером миша на страницу да означимо почетак линије, затим да преместимо курсор миша на место где желимо да изломимо линију, поново кликнемо и преместимо курсор миша, па понављамо ове радње све до крајње тачке изломљене линије, коју означавамо двокликом на страницу.</p>
-<p>Опис поступка за исцртавање линије можете погледати на следећем видеу:</p>
+<p>За цртање правих и неправилних линија користиш алатку <strong>Draw freehand lines</strong> <a class="reference internal" href="../_images/L77S5.png"><img alt="x5" src="../_images/L77S5.png" style="width: 30px;" /></a>.</p>
+<p>За цртање праве линије потребно је да кликнеш левим тастером миша на страницу, а затим да преместиш
+курсор миша на место где желиш да буде крај дужи и поново кликнеш на страницу.</p>
+<p>За исцртавање неправилних линија потребно је да кликнеш левим тастером миша на страницу и држиш га
+притиснутог док црташ линију жељеног облика. Када отпустиш тастер миша, завршаваш исцртавање линије.</p>
+<p>За цртање Безијеових кривих линија (заобљене изломљене линије које се лако прилагођавају потребном
+облику) користиш алатку <strong>Bezier</strong> <a class="reference internal" href="../_images/L77S6.png"><img alt="x6" src="../_images/L77S6.png" style="width: 30px;" /></a>.</p>
+<p>За цртање Безијеове линије, потребно је да кликнеш левим тастером миша на страницу да означиш почетак
+линије, затим да преместиш курсор миша на место где желиш да изломиш линију, поново кликнеш и преместиш
+курсор миша, па понављаш ове радње све до крајње тачке изломљене линије, коју означаваш двокликом на страницу.</p>
+<p>Опис поступка за исцртавање линије можеш погледати на следећем видеу:</p>
 
     <div  id="u6vUBLS6mLI" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/u6vUBLS6mLI/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -527,9 +501,11 @@
     </div>
 <div class="section" id="id3">
 <h2>Уметност лепог писања<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>У програму Inkscape могуће је креирати објекте налик лепом писању - калиграфије. То остварујемо коришћењем алатке <strong>Calligraphy</strong> <a class="reference internal" href="../_images/L77S7.png"><img alt="x7" src="../_images/L77S7.png" style="width: 30px;" /></a>.</p>
-<p>Одабиром ове алатке добијамо могућност да цртамо посебне врсте линија - дебље или тање, под одређеним углом и правцем.</p>
-<p>Опис поступка за лепо писање - калиграфију, можете погледати на следећем видеу:</p>
+<p>У програму Inkscape могуће је креирати објекте налик лепом писању - калиграфије. То остварујеш коришћењем
+алатке <strong>Calligraphy</strong> <a class="reference internal" href="../_images/L77S7.png"><img alt="x7" src="../_images/L77S7.png" style="width: 30px;" /></a>.</p>
+<p>Одабиром ове алатке добијаш могућност да црташ посебне врсте линија - дебље или тање, под одређеним углом
+и правцем.</p>
+<p>Опис поступка за лепо писање - калиграфију, можеш погледати на следећем видеу:</p>
 
     <div  id="hhFD1sj6rBI" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/hhFD1sj6rBI/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -548,16 +524,16 @@
 <div class="section" id="id4">
 <h2>Креирање текста<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Такође, у програму Inkscape је могуће креирати комплексне текстове, наслове, банере, логое или натписе.</p>
-<p>За креирање текста потребно је да изаберемо алатку <a class="reference internal" href="../_images/L77S8.png"><img alt="x8" src="../_images/L77S8.png" style="width: 30px;" /></a>, кликнемо на страницу и унесемо текст.</p>
-<p>За форматирање текста потребно је да га селектујемо и из менија <strong>Text</strong> одаберемо опцију <code class="docutils literal notranslate"><span class="pre">Convert</span> <span class="pre">to</span> <span class="pre">Text</span></code>.</p>
-<p>На тексту можемо вршити измене:</p>
+<p>За креирање текста потребно је да изабереш алатку <a class="reference internal" href="../_images/L77S8.png"><img alt="x8" src="../_images/L77S8.png" style="width: 30px;" /></a>, кликнеш на страницу и унесеш текст.</p>
+<p>За форматирање текста потребно је да га селектујеш и из менија <strong>Text</strong> одабереш опцију <code class="docutils literal notranslate"><span class="pre">Convert</span> <span class="pre">to</span> <span class="pre">Text</span></code>.</p>
+<p>На тексту можеш вршити измене:</p>
 <ul class="simple">
 <li><p>фонта и његове величине;</p></li>
 <li><p>хоризонталног и вертикалног растојања између речи или слова;</p></li>
 <li><p>ротирања слова.</p></li>
 </ul>
-<p>Да бисмо направили те измене, потребно је да кликнемо између карактера и изаберемо одговарајуће подешавање у <code class="docutils literal notranslate"><span class="pre">Tool</span> <span class="pre">Controls</span> <span class="pre">Bar</span></code> <a class="reference internal" href="../_images/L77S9.png"><img alt="x9" src="../_images/L77S9.png" style="width: 300px;" /></a>.</p>
-<p>Опис поступка за креирање текста можете погледати на следећем видеу:</p>
+<p>За ове измене, потребно је да кликнеш између карактера и изабереш одговарајуће подешавање у <code class="docutils literal notranslate"><span class="pre">Tool</span> <span class="pre">Controls</span> <span class="pre">Bar</span></code> <a class="reference internal" href="../_images/L77S9.png"><img alt="x9" src="../_images/L77S9.png" style="width: 300px;" /></a>.</p>
+<p>Опис поступка за креирање текста можеш погледати на следећем видеу:</p>
 
     <div  id="fj2BGf8x7XI" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/fj2BGf8x7XI/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -573,14 +549,16 @@
     
     
     
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да векторску графику можемо да креирамо и обрађујемо у програму Inkscape;</p></li>
-<li><p>да програм Inkscape омогућава креирање основних геометријских објеката избором одговарајуће алатке из Toolbox;</p></li>
-<li><p>да у програму Inkscape можемо да креирамо велике и комплексне текстове, али и наслове, банере, логое или натписе.</p></li>
+<li><p>векторску графику можеш да креираш и обрађујеш у програму Inkscape;</p></li>
+<li><p>програм Inkscape омогућава креирање основних геометријских објеката избором одговарајуће алатке из Toolbox;</p></li>
+<li><p>у програму Inkscape можеш да креираш велике и комплексне текстове, али и наслове, банере, логое или натписе.</p></li>
 </ul>
 </dd>
 </dl>

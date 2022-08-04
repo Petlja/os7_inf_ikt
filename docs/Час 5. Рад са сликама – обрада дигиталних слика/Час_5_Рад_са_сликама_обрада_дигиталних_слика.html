@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,26 +419,32 @@
   <div class="section" id="id1">
 <h1>Обрада слика – дигиталне слике<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt>На овом часу ћеш научити:</dt><dd><ul class="simple">
-<li><p>да урадиш селекцију дела слике;</p></li>
-<li><p>промениш нивое обојености, осветљености и контраста слике;</p></li>
-<li><p>примениш различите филтере на дигиталну слику;</p></li>
-<li><p>основне геометријске трансформације слике;</p></li>
-<li><p>како можеш аутоматски да обрадиш већи број дигиталних слика.</p></li>
+<li><p>да селектујеш део слике;</p></li>
+<li><p>да промениш нивое обојености, осветљености и контраста слике;</p></li>
+<li><p>да примениш различите филтере на дигиталну слику;</p></li>
+<li><p>да примениш основне геометријске трансформације слике;</p></li>
+<li><p>како да аутоматски обрадиш већи број дигиталних слика.</p></li>
 </ul>
 </dd>
 </dl>
 
     </p></div></div>
-<p>У програму Gimp 2 постоји више алатки помоћу којих можемо да уређујемо слике или њихове делове. За сваку од тих алатки уређивање почиње означавањем дела слике који желимо да уређујемо. Зато ћемо прво да објаснимо како се све може изабрати (селектовати) део слике.</p>
+<p>У програму Gimp 2 постоји више алатки помоћу којих можеш да уређујеш слике или њихове делове. За сваку
+од тих алатки уређивање почиње означавањем дела слике који желиш да уређујеш. Зато ћемо прво да објаснимо
+како се све може изабрати (селектовати) део слике.</p>
 <p>Алатке за означавање (селектовање) жељеног дела слике налазе се у кутији с алаткама Toolbox (1), а одговарајуће опције су доступне и у оквиру менија <code class="docutils literal notranslate"><span class="pre">Tools</span></code> →  <code class="docutils literal notranslate"><span class="pre">Selection</span> <span class="pre">Tools</span></code> (2).</p>
 <a class="reference internal image-reference" href="../_images/L75S1.png"><img alt="../_images/L75S1.png" class="align-center" src="../_images/L75S1.png" style="width: 700px;" /></a>
-<p>Део слике селектујемо употребом алатки за правоугаону <a class="reference internal" href="../_images/L75S2.png"><img alt="h1" src="../_images/L75S2.png" style="width: 30px;" /></a>, елипсоидну <a class="reference internal" href="../_images/L75S3.png"><img alt="h2" src="../_images/L75S3.png" style="width: 30px;" /></a>, и селекцију слободним избором <a class="reference internal" href="../_images/L75S4.png"><img alt="h3" src="../_images/L75S4.png" style="width: 30px;" /></a> или издвајањем пиксела који имају сличне особине (суседне области сличне боје <a class="reference internal" href="../_images/L75S5.png"><img alt="h4" src="../_images/L75S5.png" style="width: 30px;" /></a>, области исте боје на целој слици <a class="reference internal" href="../_images/L75S5.png"><img alt="h4" src="../_images/L75S5.png" style="width: 30px;" /></a>).
-Кликом на једну од наведених алатки, отвара се простор у коме је могуће подесити њена својства.</p>
+<p>Део слике можеш да селектујеш употребом алатки за правоугаону <a class="reference internal" href="../_images/L75S2.png"><img alt="h1" src="../_images/L75S2.png" style="width: 30px;" /></a>, елипсоидну <a class="reference internal" href="../_images/L75S3.png"><img alt="h2" src="../_images/L75S3.png" style="width: 30px;" /></a>, и селекцију слободним
+избором <a class="reference internal" href="../_images/L75S4.png"><img alt="h3" src="../_images/L75S4.png" style="width: 30px;" /></a> или издвајањем пиксела који имају сличне особине (суседне области сличне боје <a class="reference internal" href="../_images/L75S5.png"><img alt="h4" src="../_images/L75S5.png" style="width: 30px;" /></a>, области
+исте боје на целој слици <a class="reference internal" href="../_images/L75S5.png"><img alt="h4" src="../_images/L75S5.png" style="width: 30px;" /></a>). Кликом на једну од наведених алатки, отвара се простор у коме је могуће
+подесити њена својства.</p>
 <p>Најважнија својства алатке за избор правоугаоне селекције су:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Mode</span></code> – преклапање селекције (Прво дугме активира режим у коме се креирањем нове селекције уклања претходна, док друго дугме активира режим у коме се креирањем нове селекције задржава претходна);</p></li>
@@ -483,19 +453,35 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Expand</span> <span class="pre">from</span> <span class="pre">Center</span></code> - Рашири из средишта.</p></li>
 </ol>
 <a class="reference internal image-reference" href="../_images/L75S7.png"><img alt="../_images/L75S7.png" class="align-center" src="../_images/L75S7.png" style="width: 300px;" /></a>
-<p>Селекцију у облику правоугаоника извршавамо тако што одаберемо алатку <strong>Rectangle Select Tool</strong> <a class="reference internal" href="../_images/L75S2.png"><img alt="h1" src="../_images/L75S2.png" style="width: 30px;" /></a> и, држећи притиснут леви тастер миша, развучемо правоугаоник.</p>
-<p>Да бисмо извршили квадратну селекцију држимо притиснут тастер <strong>Shift</strong> или подешавамо својства <a class="reference internal" href="../_images/L75S8.png"><img alt="h6" src="../_images/L75S8.png" style="width: 150px;" /></a> којим се задржава однос ширине и висине на 1:1 што значи да ће нам бити иста ширина и дужина селекције.</p>
-<p>Овалну селекцију вршимо тако што одаберемо алатку <strong>Ellipse Select Tool</strong> <a class="reference internal" href="../_images/L75S3.png"><img alt="h2" src="../_images/L75S3.png" style="width: 30px;" /></a> и, држећи притиснут леви тастер миша, развучемо овални облик.
-Круг добијамо држећи притиснут тастер <strong>Shift</strong> или подешавањем својства задржавања односа ширине и висине 1:1.</p>
-<p>Селекцију неправилног облика вршимо коришћењем алатке <strong>Free Select Tool</strong> <a class="reference internal" href="../_images/L75S4.png"><img alt="h3" src="../_images/L75S4.png" style="width: 30px;" /></a> (ласо).
-Селекцију вршимо тако што курсор поставимо на део слике који желимо да селектујемо.
-Држимо притиснут леви тастер миша и испратимо мишем жељени облик.
-Да би облик био затворен, процес селектовања морамо да завршимо у тачки из које смо га започели.</p>
-<p>Да бисмо селектовали суседну област или објекат сличне боје користимо алатку <strong>Fuzzy Select Tool</strong> <a class="reference internal" href="../_images/L75S5.png"><img alt="h4" src="../_images/L75S5.png" style="width: 30px;" /></a>.
-Када кликнемо на неку област или објекат, пиксели који имају сличну вредност боје биће такође селектовани.</p>
-<p>Да бисмо селектовали све области или предмете исте боје можемо да користимо алатку <strong>Select by Color Tool</strong> <a class="reference internal" href="../_images/L75S6.png"><img alt="h5" src="../_images/L75S6.png" style="width: 30px;" /></a>.
-Када кликнемо на неку област или објекат, сви пиксели који имају исту вредност боје биће селектовани.</p>
-<p>Опис поступка за селекцију објеката можете погледати на следећем видеу:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Тип селекције</p></th>
+<th class="head"><p>Опис поступка селекције</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Правоугаона селекција</p></td>
+<td><p>Селекцију у облику правоугаоника вршиш тако што одабереш алатку <strong>Rectangle Select Tool</strong> <a class="reference internal" href="../_images/L75S2.png"><img alt="h1" src="../_images/L75S2.png" style="width: 30px;" /></a> и, држећи притиснут леви тастер миша, развучеш правоугаоник. За квадратну селекцију потребно је да држиш притиснут тастер <strong>Shift</strong> или подесиш својства <a class="reference internal" href="../_images/L75S8.png"><img alt="h6" src="../_images/L75S8.png" style="width: 150px;" /></a> којим се задржава однос ширине и висине на 1:1 што значи да ће бити иста ширина и дужина селекције.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Овална селекција</p></td>
+<td><p>Овалну селекцију вршиш тако што одабереш алатку <strong>Ellipse Select Tool</strong> <a class="reference internal" href="../_images/L75S3.png"><img alt="h2" src="../_images/L75S3.png" style="width: 30px;" /></a> и, држећи притиснут леви тастер миша, развучеш овални облик. Круг добијаш држећи притиснут тастер <strong>Shift</strong> или подешавањем својства задржавања односа ширине и висине 1:1.</p></td>
+</tr>
+<tr class="row-even"><td><p>Селекција неправилног облика</p></td>
+<td><p>Селекцију неправилног облика вршиш коришћењем алатке <strong>Free Select Tool</strong> <a class="reference internal" href="../_images/L75S4.png"><img alt="h3" src="../_images/L75S4.png" style="width: 30px;" /></a> (ласо). Селекцију вршишш тако што курсор поставиш на део слике који желиш да селектујеш. Држиш притиснут леви тастер миша и испратиш мишем жељени облик. Да би облик био затворен, процес селектовања мораш да завршиш у тачки из које је започет.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Селекција суседних области сличне боје</p></td>
+<td><p>Када кликнешмо на неку област или објекат, пиксели који имају сличну вредност боје биће такође селектовани. Да би се селектовала суседну област или објекат сличне боје користиш алатку <strong>Fuzzy Select Tool</strong> <a class="reference internal" href="../_images/L75S5.png"><img alt="h4" src="../_images/L75S5.png" style="width: 30px;" /></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Селекција области исте боје</p></td>
+<td><p>Да би се селектовале све области или предмети исте боје можеш да користиш алатку <strong>Select by Color Tool</strong> <a class="reference internal" href="../_images/L75S6.png"><img alt="h5" src="../_images/L75S6.png" style="width: 30px;" /></a>. Када кликнеш на неку област или објекат, сви пиксели који имају исту вредност боје биће селектовани.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Опис поступка за селекцију објеката можеш погледати на следећем видеу:</p>
 
     <div  id="Mxy5iiMBm-0" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/Mxy5iiMBm-0/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -521,7 +507,9 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Brightness-Contrast</span></code> - осветљеност, односно контраст.</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/L75S9.png"><img alt="../_images/L75S9.png" class="align-center" src="../_images/L75S9.png" style="width: 300px;" /></a>
-<p>Кликом на <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">Balance</span></code> отвара се помоћни мени у коме можемо да променимо тамне (<code class="docutils literal notranslate"><span class="pre">Shadows</span></code>), средње (<code class="docutils literal notranslate"><span class="pre">Midtones</span></code>) или светле делове (<code class="docutils literal notranslate"><span class="pre">Highlights</span></code> слике, те да,  померањем клизача, подесимо нивое боја  (<code class="docutils literal notranslate"><span class="pre">Cyan</span></code>, <code class="docutils literal notranslate"><span class="pre">Magenta</span></code>, <code class="docutils literal notranslate"><span class="pre">Yellow</span></code>).</p>
+<p>Кликом на <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">Balance</span></code> отвара се прозор у коме можемо да променимо тамне (<code class="docutils literal notranslate"><span class="pre">Shadows</span></code>), средње
+(<code class="docutils literal notranslate"><span class="pre">Midtones</span></code>) или светле делове (<code class="docutils literal notranslate"><span class="pre">Highlights</span></code>) слике, те да,  померањем клизача, подесимо нивое боја
+(<code class="docutils literal notranslate"><span class="pre">Cyan</span></code>, <code class="docutils literal notranslate"><span class="pre">Magenta</span></code>, <code class="docutils literal notranslate"><span class="pre">Yellow</span></code>).</p>
 <a class="reference internal image-reference" href="../_images/L75S10.png"><img alt="../_images/L75S10.png" class="align-center" src="../_images/L75S10.png" style="width: 300px;" /></a>
 <p>Кликом на опцију <code class="docutils literal notranslate"><span class="pre">Brightness-Contrast</span></code> отвара се прозор у коме померањем клизача можемо подесити осветљеност (<code class="docutils literal notranslate"><span class="pre">Brightness</span></code>) и/или контраст (<code class="docutils literal notranslate"><span class="pre">Contrast</span></code>).</p>
 <a class="reference internal image-reference" href="../_images/L75S11.png"><img alt="../_images/L75S11.png" class="align-center" src="../_images/L75S11.png" style="width: 300px;" /></a>
@@ -543,16 +531,19 @@
     </div>
 <div class="section" id="id3">
 <h2>Филтери<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Филтерe користимо за постизање различитих ефеката на слици, као што је изоштравање или замућивање фотографије. Филтри се могу применити на слоју или изабраном делу слоја слике.</p>
-<p>Филтерима приступамо кроз мени <strong>Filters</strong>.</p>
+<p>Филтери се користе за постизање различитих ефеката на слици, као што је изоштравање или замућивање фотографије.
+Филтери се могу применити на слоју или изабраном делу слоја слике.</p>
+<p>Филтерима приступаш кроз мени <strong>Filters</strong>.</p>
 <a class="reference internal image-reference" href="../_images/L75S12.png"><img alt="../_images/L75S12.png" class="align-center" src="../_images/L75S12.png" style="width: 300px;" /></a>
 <p>Најчешће се користе следећи филтери:</p>
 <p>­-<code class="docutils literal notranslate"><span class="pre">Blur</span></code> – скуп филтера којим се замућује цела слика или њен део.</p>
 <p>­-<code class="docutils literal notranslate"><span class="pre">Enhance</span></code> – скуп филтера помоћу којих се врши изоштравање слике, отклањање мрља, црвенила очију…</p>
 <p>-<code class="docutils literal notranslate"><span class="pre">Distorts</span></code> – скуп филтера са ефектима мозаика, ветра, таласа,…</p>
 <p>-<code class="docutils literal notranslate"><span class="pre">Artistic</span></code> – скуп филтера помоћу којих се стварају уметнички ефекти, као што је изглед уља на платну, витража …</p>
-<p>Када кликнемо на одабрани филтер отвара се помоћни прозор, у којем можемо да видимо како ће изгледати слика након примене филтера, као и да подесимо додатне параметре како бисмо постигли жељени резултат. Притиском на тастер <strong>OK</strong> потврђујемо примену одабраног филтера.</p>
-<p>Опис поступка за примену филтера можете погледати на следећем видеу:</p>
+<p>Када кликнеш на одабрани филтер отвара се помоћни прозор, у којем можеш да видиш како ће изгледати слика
+након примене филтера, као и да подесиш додатне параметре како би се постигао жељени резултат. Притиском
+на тастер <strong>OK</strong> потврђујеш примену одабраног филтера.</p>
+<p>Опис поступка за примену филтера можеш погледати на следећем видеу:</p>
 
     <div  id="Wjq3YDxuQpA" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/Wjq3YDxuQpA/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -570,50 +561,54 @@
     </div>
 <div class="section" id="id4">
 <h2>Основне геометријске трансформације слике<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>У програму Gimp 2 постоји више алатки којима можемо да извршимо разне трансформације слике, као што су ротирање, обртање или искошавање слике. Овим алаткама приступамо у кутији с алаткама Toolbox или кроз мени <code class="docutils literal notranslate"><span class="pre">Tools</span></code> → <code class="docutils literal notranslate"><span class="pre">Transform</span> <span class="pre">Tools</span></code>.</p>
+<p>У програму Gimp 2 постоји више алатки којима можеш да извршим разне трансформације слике, као што су
+ротирање, обртање или искошавање слике. Овим алаткама приступаш у кутији с алаткама Toolbox или кроз
+мени <code class="docutils literal notranslate"><span class="pre">Tools</span></code> → <code class="docutils literal notranslate"><span class="pre">Transform</span> <span class="pre">Tools</span></code>.</p>
 <a class="reference internal image-reference" href="../_images/L75S13.png"><img alt="../_images/L75S13.png" class="align-center" src="../_images/L75S13.png" style="width: 600px;" /></a>
-<p>Слику или делове слике можемо да трансформишемо тако што је:</p>
+<p>Слику или делове слике можеш да трансформишеш тако што је:</p>
 <ul class="simple">
-<li><p>ротирамо кликом на алатку <a class="reference internal" href="../_images/L75S14.png"><img alt="е1" src="../_images/L75S14.png" style="width: 30px;" /></a>;</p></li>
-<li><p>променимо величину кликом на алатку <a class="reference internal" href="../_images/L75S15.png"><img alt="е2" src="../_images/L75S15.png" style="width: 30px;" /></a>;</p></li>
-<li><p>искосимо кликом на алатку <a class="reference internal" href="../_images/L75S16.png"><img alt="е3" src="../_images/L75S16.png" style="width: 30px;" /></a>;</p></li>
-<li><p>променимо перспективу кликом на алатку <a class="reference internal" href="../_images/L75S17.png"><img alt="е4" src="../_images/L75S17.png" style="width: 30px;" /></a>;</p></li>
-<li><p>преокренемо кликом на алатку <a class="reference internal" href="../_images/L75S18.png"><img alt="е5" src="../_images/L75S18.png" style="width: 30px;" /></a>.</p></li>
+<li><p>ротираш кликом на алатку <a class="reference internal" href="../_images/L75S14.png"><img alt="е1" src="../_images/L75S14.png" style="width: 30px;" /></a>;</p></li>
+<li><p>промениш величину кликом на алатку <a class="reference internal" href="../_images/L75S15.png"><img alt="е2" src="../_images/L75S15.png" style="width: 30px;" /></a>;</p></li>
+<li><p>искосиш кликом на алатку <a class="reference internal" href="../_images/L75S16.png"><img alt="е3" src="../_images/L75S16.png" style="width: 30px;" /></a>;</p></li>
+<li><p>промениш перспективу кликом на алатку <a class="reference internal" href="../_images/L75S17.png"><img alt="е4" src="../_images/L75S17.png" style="width: 30px;" /></a>;</p></li>
+<li><p>преокренеш кликом на алатку <a class="reference internal" href="../_images/L75S18.png"><img alt="е5" src="../_images/L75S18.png" style="width: 30px;" /></a>.</p></li>
 </ul>
 <p>Кликом на једну од горе наведених алатки, отвара се простор у коме је могуће подесити својства трансформације.</p>
 <a class="reference internal image-reference" href="../_images/L75S19.png"><img alt="../_images/L75S19.png" class="align-center" src="../_images/L75S19.png" style="width: 200px;" /></a>
 <p>Најважнија својства су:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Transform</span></code> – избор слоја или селекције на којој ћемо применити трансформацију;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Transform</span></code> – избор слоја или селекције на којој ћеш применити трансформацију;</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Interpolation</span></code> – начин на који ће пиксели који недостају на трансформисаној слици бити допуњени;</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">image</span> <span class="pre">preview</span></code> – захтев да током подешавања параметара трансформације у прозору слике унапред видимо ефекат који бисмо постигли.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">image</span> <span class="pre">preview</span></code> – захтев да током подешавања параметара трансформације у прозору слике унапред видиш ефекат који ће се постићи.</p></li>
 </ul>
 <p>Поред горе наведених својстава, избором неке од алатки за трансформацију слике, могу се приказати и друга својства као што је <code class="docutils literal notranslate"><span class="pre">Flip</span> <span class="pre">Type</span></code> - врста/тип преокретања који може да буде хоризонтални (<code class="docutils literal notranslate"><span class="pre">Horizontal</span></code>) или вертикални (<code class="docutils literal notranslate"><span class="pre">Vertical</span></code>).</p>
 <a class="reference internal image-reference" href="../_images/L75S20.png"><img alt="../_images/L75S20.png" class="align-center" src="../_images/L75S20.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="id5">
 <h2>Ротација<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Често се дешава да сликa коју сте преузели са интернета или сте је направили камером неког дигиталног уређаја буде погрешно оријентисана.
-У програму за обраду слике постоји алатка којом је могуће ротирати слику и поставити је онако како нам одоговара. За то ћемо користити алатку <strong>Rotate</strong>.</p>
-<p>Кликом на активни слој или изабрани део слике појавиће се прозор где подешавамо:</p>
+<p>Често се дешава да сликa преузета са интернета или направиљена камером неког дигиталног уређаја буде погрешно
+оријентисана. У програму за обраду слике постоји алатка којом је могуће ротирати слику и поставити је онако
+како ти одоговара. За то ћеш користити алатку <strong>Rotate</strong>.</p>
+<p>Кликом на активни слој или изабрани део слике појавиће се прозор где подешаваш:</p>
 <ul class="simple">
 <li><p>угао ротације (<code class="docutils literal notranslate"><span class="pre">Angle</span></code>) померањем клизача или уношењем бројевне вредност и</p></li>
 <li><p>центар ротације.</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/L75S21.png"><img alt="../_images/L75S21.png" class="align-center" src="../_images/L75S21.png" style="width: 300px;" /></a>
-<p>Избор потврђујемо кликом на дугме <strong>Rotate</strong>. Поред тога, слику можемо да ротирамо и тако што кликнемо на слој и држимо притиснут леви тастер миша док га померамо у смеру жељене ротације.</p>
+<p>Избор потврђујеш кликом на дугме <strong>Rotate</strong>. Поред тога, слику можеш да ротираш и тако што кликнеш на
+слој и држиш притиснут леви тастер миша док га помераш у смеру жељене ротације.</p>
 </div>
 <div class="section" id="id6">
 <h2>Искошавање<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>Да бисмо искосили слику по хоризонтали или вертикали можемо користити алатку <strong>Shear</strong>.
-Кликом на дату алатку отвара се прозор у коме се вредности задају кликом на стрелице или уносом бројчане вредности.
-Избор потврђујемо кликом на дугме <strong>Shear</strong>.</p>
+<p>Да би се искосила слика по хоризонтали или вертикали можеш користити алатку <strong>Shear</strong>. Кликом на дату
+алатку отвара се прозор у коме се вредности задају кликом на стрелице или уносом бројчане вредности.
+Избор потврђујеш кликом на дугме <strong>Shear</strong>.</p>
 <a class="reference internal image-reference" href="../_images/L75S22.png"><img alt="../_images/L75S22.png" class="align-center" src="../_images/L75S22.png" style="width: 300px;" /></a>
 </div>
 <div class="section" id="id7">
 <h2>Преокретање<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<p>Слику или део слике можемо да преокренемо по хоризонтали или вертикали помоћу алатке <strong>Flip</strong>.</p>
-<p>Опис поступка за ротирање, искошавање и преокретање слике можете погледати на следећем видеу:</p>
+<p>Слику или део слике можеш да преокренеш по хоризонтали или вертикали помоћу алатке <strong>Flip</strong>.</p>
+<p>Опис поступка за ротирање, искошавање и преокретање слике можеш погледати на следећем видеу:</p>
 
     <div  id="TaqUHy6gdSg" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/TaqUHy6gdSg/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -631,15 +626,18 @@
     </div>
 <div class="section" id="id8">
 <h2>Аутоматска обрада већег броја дигиталних слика<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
-<p>Ако желимо да у исто време променимо име или величину свих слика које се налазе у фасцикли, то је у програму за обраду слике могуће коришћењем програмских додатака.
-Један од таквих додатака је dbp.exe који омогућава аутоматску обраду (промена имена, величине,…) више дигиталних слика.</p>
-<p>Додатак можемо преузети са овог линка: <a class="reference external" href="https://alessandrofrancesconi.it/projects/bimp/">https://alessandrofrancesconi.it/projects/bimp/</a>. Да бисмо инсталирали додатак, потребно је да га ископирамо у фасиклу plug-ins програма Gimp 2.
-Место фасцикле plug-ins зависи од тога где је на твом рачунару инсталиран програм Gimp 2.</p>
+<p>Ако желиш да у исто време промениш име или величину свих слика које се налазе у фасцикли, то је у програму
+за обраду слике могуће коришћењем програмских додатака. Један од таквих додатака је dbp.exe који омогућава
+аутоматску обраду (промена имена, величине,…) више дигиталних слика.</p>
+<p>Додатак можеш преузети са овог линка: <a class="reference external" href="https://alessandrofrancesconi.it/projects/bimp/">https://alessandrofrancesconi.it/projects/bimp/</a>. Да би се додатак
+инсталирао, потребно је да га ископираш у фасиклу plug-ins програма Gimp 2. Место фасцикле plug-ins зависи
+од тога где је на твом рачунару инсталиран програм Gimp 2.</p>
 <a class="reference internal image-reference" href="../_images/L75S23.png"><img alt="../_images/L75S23.png" class="align-center" src="../_images/L75S23.png" style="width: 600px;" /></a>
 <p>Након покретања програма Gimp 2, из менија Filters можемо да покренемо додатак Batch Process.</p>
 <a class="reference internal image-reference" href="../_images/L75S24.png"><img alt="../_images/L75S24.png" class="align-center" src="../_images/L75S24.png" style="width: 600px;" /></a>
-<p>Отвара се прозор у оквиру кога кликом на Аdd Files додамо жељене слике и одабирамо акцију коју желимо на њих да применимо.
-Опис поступка за аутоматску обраду већег броја дигиталних слика можете погледати на следећем видеу:</p>
+<p>Отвара се прозор у оквиру кога кликом на Аdd Files додаш жељене слике и одабираш акцију коју желиш на
+њих да примениш. Опис поступка за аутоматску обраду већег броја дигиталних слика можеш погледати на
+следећем видеу:</p>
 
     <div  id="OjBVIQdWmDU" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/OjBVIQdWmDU/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -655,13 +653,15 @@
     
     
     
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да дигиталну слику можемо додатно да уређујемо;</p></li>
-<li><p>да инсталацијом додатака унапређујемо могућности програма Gimp 2 (нпр. примењујемо операције на више слика одједном).</p></li>
+<li><p>дигиталну слику можеш додатно да уређујеш;</p></li>
+<li><p>инсталацијом додатака унапређујеш могућности програма Gimp 2 (нпр. примењујеш операције на више слика одједном).</p></li>
 </ul>
 </dd>
 </dl>

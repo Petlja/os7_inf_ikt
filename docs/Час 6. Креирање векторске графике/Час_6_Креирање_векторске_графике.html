@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,12 +419,14 @@
   <div class="section" id="id1">
 <h1>Креирање векторске графике<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt>На овом часу ћеш научити:</dt><dd><ul class="simple">
-<li><p>шта обухвата припреми за цртање векторске графике;</p></li>
+<li><p>шта обухвата припрема за цртање векторске графике;</p></li>
 <li><p>како изгледа радно окружење програма за обраду векторске графике;</p></li>
 <li><p>да црташ векторске објекте.</p></li>
 </ul>
@@ -474,7 +440,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L76P1">
-            <p>Q-56:     За коју врсту рачунарске графике важи да када се слика увећа она остаје оштра, тачније увећањем на било коју величину не губи се квалитет слике.</p>
+            <p>Q-57:     За коју врсту рачунарске графике важи да када се слика увећа она остаје оштра, односно увећањем на било коју величину не губи се квалитет слике.</p>
 
             <li data-component="answer"  id="L76P1_opt_a">растерска графика</li><li data-component="feedback" id="L76P1_opt_a">Нетачно</li>
             
@@ -486,11 +452,11 @@
             </ul>
             </div>
             <p>Векторска графика је начин приказивања слике помоћу линија и облика. Увећавањем не губи на квалитету.</p>
-<p>До сада смо се бавили креирањем растерске графике, а у седмом разреду ћемо се упознати са основним техникама за креирање и обраду векторске графике.
+<p>До сада смо се бавили креирањем растерске графике, а у седмом разреду ћеш се упознати са основним техникама за креирање и обраду векторске графике.
 Постоји велики број програма за креирање и обраду вексторске графике, а неки од њих су Inkscape, Corel Draw и Adobe Illustrator.</p>
 <p>У овом разреду, бавићемо се основним техникама за креирање и обраду дигиталних слика у програму Inkscape.</p>
-<p>Програм можемо да преузмемо са интернет странице <a class="reference external" href="https://inkscape.org/en/download">https://inkscape.org/en/download</a>.</p>
-<p>Опис поступка инсталације програма Inkscape можете погледати на следећем видеу:</p>
+<p>Програм можеш да преузмеш са интернет странице <a class="reference external" href="https://inkscape.org/en/download">https://inkscape.org/en/download</a>.</p>
+<p>Опис поступка инсталације програма Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="8lEIXFeHiRM" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/8lEIXFeHiRM/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -505,27 +471,35 @@
     </div>
     
     
-    <p>Када покренемо програм Inkscape, отвара се нови документ који је у формату <strong>SVG</strong> (Scalable Vector Graphics).</p>
+    <p>Када покренеш програм Inkscape, отвара се нови документ који је у формату <strong>SVG</strong> (Scalable Vector Graphics).</p>
 <p>Радно окружење програма Inkscape приказано је на следећој слици:</p>
 <a class="reference internal image-reference" href="../_images/L76S1a.png"><img alt="../_images/L76S1a.png" class="align-center" src="../_images/L76S1a.png" style="width: 600px;" /></a>
-<p>У радном окружењу централно место чини бела површина, страница или платно за цртање, чија је димензија 210mm x 297mm.
-То је простор у који се постављају основни елементи (тачке, линије, криве, кругови, многоуглови …) који се користе за грађење дигиталне слике.
-Ти градивни елементи једним именом се називају <strong>објекти</strong>. Објекти могу да буду отворени и затворени, испуњени и неиспуњени, један испред другог, могу да се преклапају… формирајући слику.</p>
-<p>Да бисмо подесили величину или оријентацију платна за цртање, потребно је да кликнемо на мени <strong>File</strong> (1) и одаберемо опцију <code class="docutils literal notranslate"><span class="pre">Document</span> <span class="pre">Properties</span></code> (2).
-Отвара се прозор <strong>Document Properties</strong> са више картица (3).</p>
+<p>Уколико желиш да цртеж одштампаш на папиру формата А4 онда је потребно да одабереш домензију 210mm x 297mm
+и одговарајућу оријентацију. Ово је простор у који се постављају основни елементи (тачке, линије, криве,
+кругови, многоуглови …) који се користе за грађење дигиталне слике. Ти градивни елементи једним именом
+се називају <strong>објекти</strong>. Објекти могу да буду отворени и затворени, испуњени и неиспуњени, један испред
+другог, могу да се преклапају… формирајући слику.</p>
+<p>Да би се подесила величина или оријентација платна за цртање, потребно је да кликнеш на мени <strong>File</strong> (1)
+и одабереш опцију Поставке документа <code class="docutils literal notranslate"><span class="pre">Document</span> <span class="pre">Properties</span></code> (2). Отвара се прозор <strong>Document Properties</strong>
+са више картица (3).</p>
 <a class="reference internal image-reference" href="../_images/L76S2.png"><img alt="../_images/L76S2.png" class="align-center" src="../_images/L76S2.png" style="width: 600px;" /></a>
-<p>У оквиру картице <strong>Page</strong> можемо да променимо следеће параметре: величину и оријентацију папира, као и мерну јединицу коју желимо да користимо у раду.</p>
+<p>У оквиру картице <strong>Display</strong> можеш да промениш следеће параметре: величину и оријентацију папира, као
+и мерну јединицу коју желиш да користиш у раду.</p>
 <a class="reference internal image-reference" href="../_images/L76S3.png"><img alt="../_images/L76S3.png" class="align-center" src="../_images/L76S3.png" style="width: 600px;" /></a>
-<p>У оквиру картице <strong>Guides</strong> могуће је активирати приказ помоћних линија (вођица) на страници.
+<p>У оквиру картице Вођице <strong>Вођице</strong> могуће је активирати приказ помоћних линија (вођица) на страници.
 Ове линије користе се за прецизно постављање објеката на страницу.</p>
 <a class="reference internal image-reference" href="../_images/L76S4.png"><img alt="../_images/L76S4.png" class="align-center" src="../_images/L76S4.png" style="width: 600px;" /></a>
-<p>Помоћне линије постављамо тако што кликнемо на лењир (хоризонтални или вертикални) и, држећи притиснут леви тастер миша, повлачимо линију под жељеним углом.</p>
-<p>Двоструким кликом на линију отвара се помоћни прозор <strong>Guideline</strong> у оквиру кога подешавамо назив маргине (<code class="docutils literal notranslate"><span class="pre">Label</span></code>), боју, позицију или угао линије.</p>
-<p>Ако је за прецизно постављање потребно више помоћних линија можемо да учинимо видљивом мрежу помоћних линија.</p>
-<p>У оквиру картице <strong>Grids</strong> можемо да одаберемо да ли да мрежа помоћних линија буде правоугаона (<code class="docutils literal notranslate"><span class="pre">Rectangular</span></code>) или просторна - аксонометријска (<code class="docutils literal notranslate"><span class="pre">Axonometric</span></code>).</p>
+<p>Помоћне линије постављаш тако што кликнеш на лењир (хоризонтални или вертикални) и, држећи притиснут
+леви тастер миша, повлачиш линију под жељеним углом.</p>
+<p>Двоструким кликом на линију отвара се помоћни прозор <strong>Вођице</strong> (Guideline) у оквиру кога подешаваш
+назив маргине (<code class="docutils literal notranslate"><span class="pre">Label</span></code>), боју, позицију или угао линије.</p>
+<p>Ако је за прецизно постављање потребно више помоћних линија можеш да учиниш видљивом мрежу помоћних линија.</p>
+<p>У оквиру картице <strong>Grids</strong> можеш да одабереш да ли да мрежа помоћних линија буде правоугаона (<code class="docutils literal notranslate"><span class="pre">Rectangular</span></code>)
+или просторна - аксонометријска (<code class="docutils literal notranslate"><span class="pre">Axonometric</span></code>).</p>
 <a class="reference internal image-reference" href="../_images/L76S5.png"><img alt="../_images/L76S5.png" class="align-center" src="../_images/L76S5.png" style="width: 600px;" /></a>
-<p>У истој картици дефинишемо јединицу мере (<code class="docutils literal notranslate"><span class="pre">Grid</span> <span class="pre">units</span></code>), постављамо почетну координату (<code class="docutils literal notranslate"><span class="pre">Origin</span> <span class="pre">X</span></code>, <code class="docutils literal notranslate"><span class="pre">Origin</span> <span class="pre">Y</span></code>), као и размак између линија (<code class="docutils literal notranslate"><span class="pre">Spacing</span> <span class="pre">X</span></code>, <code class="docutils literal notranslate"><span class="pre">Spacing</span> <span class="pre">Y</span></code>).</p>
-<p>Опис поступка постављања помоћних линија можете погледати на следећем видеу:</p>
+<p>У истој картици дефинишеш јединицу мере (<code class="docutils literal notranslate"><span class="pre">Grid</span> <span class="pre">units</span></code>), постављаш почетну координату (<code class="docutils literal notranslate"><span class="pre">Почетак</span> <span class="pre">X</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Почетак</span> <span class="pre">Y</span></code>), као и размак између линија (<code class="docutils literal notranslate"><span class="pre">Размак</span> <span class="pre">X</span></code>, <code class="docutils literal notranslate"><span class="pre">Размак</span> <span class="pre">Y</span></code>).</p>
+<p>Опис поступка постављања помоћних линија можеш погледати на следећем видеу:</p>
 
     <div  id="NzNa9dc1bBg" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/NzNa9dc1bBg/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -543,9 +517,10 @@
     <div class="section" id="id3">
 <h3>Цртање правоугаоних и овалних облика<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Програм Inkscape омогућава креирање основних геометријских облика избором одговарајуће алатке из кутије с алаткама Toolbox.</p>
-<p>Да бисмо исцртали правоугаоник или квадрат користимо <strong>Create rectangles and squares</strong> <a class="reference internal" href="../_images/L76S6.png"><img alt="k1" src="../_images/L76S6.png" style="width: 30px;" /></a>.
-Правоугаоник исцртавамо тако што кликнемо на платно за цртање и развучемо га држећи притиснут леви тастер миша, док квадрат исцртавамо на исти начин, уз држање притиснутог тастера <strong>Ctrl</strong>.</p>
-<p>Опис поступка за исцртавање правоугаоника и квадрата можете погледати на следећем видеу:</p>
+<p>За цртање правоугаоника или квадрата користиш <strong>Create rectangles and squares</strong> <a class="reference internal" href="../_images/L76S6.png"><img alt="k1" src="../_images/L76S6.png" style="width: 30px;" /></a>. Правоугаоник исцртаваш
+тако што кликнеш на платно за цртање и развучеш га држећи притиснут леви тастер миша, док квадрат исцртаваш
+на исти начин, уз држање притиснутог тастера <strong>Ctrl</strong>.</p>
+<p>Опис поступка за исцртавање правоугаоника и квадрата можеш погледати на следећем видеу:</p>
 
     <div  id="jtRnPkYBsE4" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/jtRnPkYBsE4/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -560,8 +535,10 @@
     </div>
     
     
-    <p>Исцртавање елипсе или круга вршимо коришћењем алатке <strong>Create circles, ellipses and arcs</strong> <a class="reference internal" href="../_images/L76S7.png"><img alt="k2" src="../_images/L76S7.png" style="width: 30px;" /></a>. Елипсу исцртавамо тако што кликнемо на страницу и развучемо елипсу држећи притиснут леви тастер миша, док круг исцртавамо на исти начин, уз држање притиснутог тастера <strong>Ctrl</strong>.</p>
-<p>Опис поступка за исцртавање елипсе и круга можете погледати на следећем видеу:</p>
+    <p>Исцртавање елипсе или круга вршиш коришћењем алатке <strong>Create circles, ellipses and arcs</strong> <a class="reference internal" href="../_images/L76S7.png"><img alt="k2" src="../_images/L76S7.png" style="width: 30px;" /></a>. Елипсу
+исцртаваш тако што кликнеш на страницу и развучеш елипсу држећи притиснут леви тастер миша, док круг
+исцртаваш на исти начин, уз држање притиснутог тастера <strong>Ctrl</strong>.</p>
+<p>Опис поступка за исцртавање елипсе и круга можеш погледати на следећем видеу:</p>
 
     <div  id="DVr_vNuds4c" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/DVr_vNuds4c/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -576,16 +553,19 @@
     </div>
     
     
-    <p>Од исцртаног круга могуће је креирати кружне исечке и лукове коришћењем алатке <strong>Tool Controls Bar</strong> <a class="reference internal" href="../_images/L76S8.png"><img alt="k3" src="../_images/L76S8.png" style="width: 120px;" /></a>, у оквиру које је могуће да креирамо кружни исечак или лук или вратимо објекат у почетно стање.</p>
+    <p>Од исцртаног круга могуће је креирати кружне исечке и лукове коришћењем алатке <strong>Tool Controls Bar</strong> <a class="reference internal" href="../_images/L76S8.png"><img alt="k3" src="../_images/L76S8.png" style="width: 120px;" /></a>,
+у оквиру које је могуће да креираш кружни исечак или лук или вратиш објекат у почетно стање.</p>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да векторску графику можемо да креирамо и обрађујемо у програму Inkscape;</p></li>
-<li><p>да су основни елементи (тачке, линије, криве, кругови, многоуглови…) који граде векторску слику објекти;</p></li>
-<li><p>да програм Inkscape омогућава креирање основних геометријских објеката избором одговарајуће алатке из Toolbox;</p></li>
+<li><p>векторску графику можеш да креираш и обрађујеш у програму Inkscape;</p></li>
+<li><p>основни елементи (тачке, линије, криве, кругови, многоуглови…) који граде векторску слику су објекти;</p></li>
+<li><p>програм Inkscape омогућава креирање основних геометријских објеката избором одговарајуће алатке из Toolbox;</p></li>
 </ul>
 </dd>
 </dl>

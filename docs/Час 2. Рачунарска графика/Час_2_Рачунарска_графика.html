@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,33 +419,63 @@
   <div class="section" id="id1">
 <h1>Рачунарска графика<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt>На овом часу ћеш научити:</dt><dd><ul class="simple">
-<li><p>нешто више о рачунарској графици;</p></li>
+<li><p>шта је рачунарска графика и како се представља у рачунару;</p></li>
 <li><p>шта је RGB модел боја и које су његове карактеристике;</p></li>
 <li><p>како резолуција утиче на оштрину слике;</p></li>
-<li><p>које су карактеристике CMYK модела боја.</p></li>
+<li><p>шта је CMYK модела боја и које су његове карактеристике.</p></li>
 </ul>
 </dd>
 </dl>
 
     </p></div></div>
-<p>Данас корисник скоро сваки дигитални уређај контролише помоћу икона и слика, а не само уношењем текста. Област рачунарства која се бави креирањем, обрадом, прилагођавањем слика и анимација помоћу рачунара је рачунарска графика. O рачунарској графици говорили смо и у петом и у шестом разреду.</p>
-<p>Рачунарска графика је врло корисна. То је област која се користи у различитим дисциплинама попут машинства, архитектуре, грађевине, саобраћаја, електротехнике и електронике, али и у уметности, а такође у медицини и фармацији, физици, биологији и хемији, математици, примењеној математици и информатици.
-Поред тога, рачунарска графика је опште примењена у филмској индустрији, користи се и за израду компјутерских игара, као и у веб дизајну. Рачунарски генерисане слике које видимо на телевизији и у филмовима напредовале су до те мере да их је готово немогуће разликовати од слика из стварног света.</p>
+<p>Данас корисник скоро сваки дигитални уређај контролише помоћу икона и слика, а не само уношењем текста.
+Област рачунарства која се бави креирањем, обрадом, прилагођавањем слика и анимација помоћу рачунара
+назива се рачунарска графика. O рачунарској графици говорили смо и у петом и у шестом разреду.</p>
+<p>Рачунарска графика се користи у различитим областима попут машинства, архитектуре, грађевине, саобраћаја,
+електротехнике и електронике, али и у уметности, а такође у медицини и фармацији, физици, биологији и
+хемији, математици, примењеној математици и информатици. Поред тога, рачунарска графика је опште примењена
+у филмској индустрији, користи се и за израду компјутерских игара, као и у веб дизајну. Рачунарски генерисане
+слике које видимо на телевизији и у филмовима напредовале су до те мере да их је готово немогуће разликовати
+од слика из стварног света.</p>
 <div class="section" id="id2">
 <h2>Како разликујемо боје<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Најкраће речено, ми видимо зато што светлост улази у наше око.</p>
-<p>У људском оку налазе се две врсте специјалних чулних ћелија осетљивих на светлост - чепићи и штапићи. У чепићима постоје три различита протеина, који када су осветљени шаљу одређене сигнале ка мозгу. Због тога ове протеине називамо фоторецепторским протеинима, или фоторецепторима. Један од ових фоторецептора је највише осетљив на црвену, други на зелену, а трећи на плаву светлост. Светлост која уђе у наше око активира сваку од ове три врсте рецептора у одређеној мери. При томе светлости различитих боја доводе до различитих нивоа побуде црвених, плавих и зелених рецептора. Сваку комбинацију нивоа побуде црвених, плавих и зелених рецептора доживљавамо као одређену нијансу боје. На тај начин нам рецептори у чепићима омогућавају да распознајемо боје.</p>
-<p>На пример, светлост која побуђује наше рецепторе за црвену и зелену видимо као жуту. Због тога, када позорницу на концерту осветле два рефлектора, од којих један емитује црвену, а други зелену светлост, ми позорницу видимо исто као да је обасјава један рефлектор који емитује жуту светлост.</p>
+
+    <div class="note-wrapper learnmorenote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/learnmorenote-img.svg" class="note-image learnmorenote-image" /> 
+        <div class="course-content">
+            <p>
+<p>Како разликујемо боје</p>
+<p>Вид се формира преламањем светлости кроз наше око. У људском оку налазе се две врсте специјалних чулних
+ћелија осетљивих на светлост - чепићи и штапићи. У чепићима постоје три различита протеина, који када су
+осветљени шаљу одређене сигнале ка мозгу. Због тога ове протеине називамо фоторецепторским протеинима,
+или фоторецепторима. Један од ових фоторецептора је највише осетљив на црвену, други на зелену, а трећи
+на плаву светлост. Светлост која уђе у наше око активира сваку од ове три врсте рецептора у одређеној мери.
+При томе светлости различитих боја доводе до различитих нивоа побуде црвених, плавих и зелених рецептора.
+Сваку комбинацију нивоа побуде црвених, плавих и зелених рецептора доживљавамо као одређену нијансу боје.
+На тај начин нам рецептори у чепићима омогућавају да распознајемо боје.</p>
+<p>На пример, светлост која побуђује наше рецепторе за црвену и зелену видимо као жуту. Због тога, када
+позорницу на концерту осветле два рефлектора, од којих један емитује црвену, а други зелену светлост,
+ми позорницу видимо исто као да је обасјава један рефлектор који емитује жуту светлост.</p>
+
+    </p></div></div>
 </div>
 <div class="section" id="rgb">
 <h2>RGB модел боја<a class="headerlink" href="#rgb" title="Permalink to this headline">¶</a></h2>
-<p>Особине људског ока о којима је било речи могу да се искористе за генерисање боја (тачније, стварање доживљаја боја код човека). Наиме, када се ка оку емитује одређена количина црвене, зелене и плаве светлости, свака од њих побуђује одговарајуће рецепторе у чепићима. Мозак интерпретира ту комбинацију побуда као ону нијансу боје, која би изазвала исте такве побуде. То значи да за сваку нијансу може да се одреди колико црвене, зелене и плаве светлости је потребно упутити ка људском оку, да би оно реаговало исто као на дату нијансу.</p>
-<p>Следећа слика показује светлост које боје се добија комбиновањем црвене, плаве и зелене светлости.</p>
+<p>Особине људског ока о којима је било речи могу да се искористе за генерисање боја (тачније, стварање
+доживљаја боја код човека). Наиме, када се ка оку емитује одређена количина црвене, зелене и плаве
+светлости, свака од њих побуђује одговарајуће рецепторе у чепићима. Мозак интерпретира ту комбинацију
+побуда као ону нијансу боје која би изазвала исте такве побуде. То значи да за сваку нијансу може да се
+одреди колико црвене, зелене и плаве светлости је потребно упутити ка људском оку да би оно реаговало
+исто као на дату нијансу.</p>
+<p>Следећа слика показује светлост боје се добија комбиновањем црвене, плаве и зелене светлости.</p>
 <a class="reference internal image-reference" href="../_images/L72S2.png"><img alt="../_images/L72S2.png" class="align-center" src="../_images/L72S2.png" style="width: 600px;" /></a>
 <ul class="simple">
 <li><p>Светлост боје цијан (енгл. <em>cyan</em> - означена словом <em>C</em>) добија се комбиновањем једнаких количина зелене и плаве светлости;</p></li>
@@ -489,7 +483,12 @@
 <li><p>Светлост жуте боје (енгл. <em>yellow</em> - означена словом <em>Y</em>) добија се комбиновањем једнаких количина црвене и зелене светлости.</p></li>
 <li><p>Светлост беле боје (енгл. <em>white</em> - означена словом <em>W</em>) добија се комбиновањем једнаких количина црвене, зелене и плаве светлости.</p></li>
 </ul>
-<p>Представљање светлости разних боја помоћу одређених количина црвене, зелене и плаве светлости називамо <strong>RGB</strong> (Red, Green, Blue) <strong>модел боја</strong>. Пошто наши рецептори за црвену, зелену и плаву светлост раде независно једни од других, то се дејство емитоване црвене, зелене и плаве светлости комбинује (сабира) у људском оку. Зато за RGB модел боја користи и назив адитивни модел. У овом моделу свака боја може да се зада помоћу три броја, а то су потребне количине црвене, плаве и зелене светлости, које заједно производе доживљај полазне боје.</p>
+<p>Представљање светлости разних боја помоћу одређених количина црвене, зелене и плаве светлости називамо
+<strong>RGB</strong> (Red, Green, Blue) модел боја. Пошто наши рецептори за црвену, зелену и плаву светлост раде
+независно једни од других, то се дејство емитоване црвене, зелене и плаве светлости комбинује (сабира)
+у људском оку. Зато за RGB модел боја користи и назив адитивни модел. У овом моделу свака боја може
+да се зада помоћу три броја, а то су потребне количине црвене, плаве и зелене светлости које заједно
+производе доживљај полазне боје.</p>
 <p>Појачавањем интензитета све три компоненте добија се светлија, а смањивањем тамнија боја. Сиву боју добијамо комбиновањем исте количине црвене, зелене и плаве светлости умереног интензитета. Када комбинујемо исте количине све три светлости високог интензитета, видећемо белу боју, а одсуство све три ове светлости видимо као црну боју. Различите нијансе свих могућих боја се добијају мењањем (подешавањем) односа основних компоненти.</p>
 <p>Сви уређаји код којих се слика добија емитовањем светлости користе RGB модел и раде на описани начин. Овде спадају телевизори, монитори рачунара, пројектори, као и екрани мобилних телефона и других дигиталних уређаја. Екрани дигиталних уређаја се састоје од сићушних делова који се зову пиксели. Сваки пиксел садржи изворе црвеног, зеленог и плавог светла, који могу да емитују светлост различитог интензитета.</p>
 <p>Ево како би изгледао екран дигиталног уређаја посматран помоћу микроскопа или снимљен макро камером:</p>
@@ -533,6 +532,13 @@
 </div>
 <div class="section" id="id3">
 <h2>Како видимо боје предмета<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+
+    <div class="note-wrapper learnmorenote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/learnmorenote-img.svg" class="note-image learnmorenote-image" /> 
+        <div class="course-content">
+            <p>
+<p>Како видимо боје предмета</p>
 <p>Сунчева светлост садржи светлост свих боја. Предмети око нас због своје структуре упијају (апсорбују) светлост одређених боја, а одбијају (рефлектују) светлост других боја (делимично или потпуно провидни предмети могу и да пропуштају светлост одређене боје). Када гледамо у неки предмет, до нашег ока стиже само светлост која се одбија од предмета и она одређује како видимо предмет. На пример:</p>
 <ul class="simple">
 <li><p>ако предмет одбија само светлост црвене боје (а све остале упија), само црвена светлост стиже до нашег ока и побуђује само рецепторе за црвену, па предмет видимо као црвен;</p></li>
@@ -541,8 +547,10 @@
 <li><p>ако предмет не одбија ни једну боју (тј. упија светлост свих боја), до ока не стиже светлост ни једне боје и такав предмет видимо као црн (а видимо га само зато што предмети око њега одбијају светлост неке боје и стварају контраст).</p></li>
 </ul>
 <p>На следећој слици Сунце обасјава јабуку светлошћу свих боја (које су представљене различитим таласастим линијама), јабука упија светлост свих боја осим једне, која се једина одбија и стиже до нашег ока. Та светлост побуђује само рецепторе за црвено и зато ову јабуку видимо као црвену.</p>
-<a class="reference internal image-reference" href="../_images/L72S1.jpg"><img alt="../_images/L72S1.jpg" class="align-center" src="../_images/L72S1.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/L72S1.png"><img alt="../_images/L72S1.png" class="align-center" src="../_images/L72S1.png" style="width: 600px;" /></a>
 <p>На слици су рецептори за црвену, зелену и плаву светлост означени редом словима <em>L, M, S</em>, што су почетна слова речи <em>long, medium, short</em> (дуго, средње, кратко), јер се светлост простире у облику таласа, а ти таласи су дужи за црвену боју, средње дужине за зелену, а краћи за плаву.</p>
+
+    </p></div></div>
 </div>
 <div class="section" id="cmyk">
 <h2>CMYK модел боја<a class="headerlink" href="#cmyk" title="Permalink to this headline">¶</a></h2>
@@ -565,17 +573,19 @@
 <p>Теорија одузимања боја помоћу пигмената није у потпуности тачна. По тој теорији, мешањем сва три основна пигмента (цијан, магента, жути) у једнаким количинама требало би да се добиje црна боја. Међутим, уместо црне се добија нека нијанса смеђе боје. Због тога се у CMYK моделу уводи и четврта боја – црна боја (Key (Black)).</p>
 <p>Као што је поменуто, CMYK модел се користи за штампање докумената. Када треба одштампати слику, записи боје се прерачунавају из RGB модела у CMYK модел, јер је за штампање потребно одредити потребне количине цијан, магента и жутог пигмента које треба ставити на одређено место на папиру.</p>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да je рачунарска графика област рачунарства која се бави креирањем, обрадом, прилагођавањем слика и анимација помоћу рачунара;</p></li>
-<li><p>да је пиксел најмањи елемент дигиталне слике који се може обрађивати;</p></li>
-<li><p>да је резолуција основна мера за оштрину неке слике и дефинише се као број пиксела на екрану;</p></li>
-<li><p>да дубина боје одређује укупан број различитих нијанси боје које се могу представити;</p></li>
-<li><p>да је RGB (Red, Green, Blue) модел боја адитиван модел, јер се светлости различитих боја добијају комбиновањем (сабирањем) светлости три основне боје;</p></li>
-<li><p>да је CMYK (енгл. Cyan, Magenta, Yellow, Key (Black)) модел боја суптрактиван, јер свака од основних боја - пигмената у штампи (цијан, магента, жута) одузима, тј. упија једну од основних боја (црвена, зелена, плава) од светлости којом се осветли.</p></li>
+<li><p>рачунарска графика јe област рачунарства која се бави креирањем, обрадом, прилагођавањем слика и анимација помоћу рачунара;</p></li>
+<li><p>пиксел je најмањи елемент дигиталне слике који се може обрађивати;</p></li>
+<li><p>резолуција je основна мера за оштрину неке слике и дефинише се као број пиксела на екрану;</p></li>
+<li><p>дубина боје одређује укупан број различитих нијанси боје које се могу представити;</p></li>
+<li><p>RGB (Red, Green, Blue) модел боја је адитиван модел, јер се светлости различитих боја добијају комбиновањем (сабирањем) светлости три основне боје;</p></li>
+<li><p>CMYK (енгл. Cyan, Magenta, Yellow, Key (Black)) модел боја је суптрактиван, јер свака од основних боја - пигмената у штампи (цијан, магента, жута) одузима, тј. упија једну од основних боја (црвена, зелена, плава) од светлости којом се осветли.</p></li>
 </ul>
 </dd>
 </dl>

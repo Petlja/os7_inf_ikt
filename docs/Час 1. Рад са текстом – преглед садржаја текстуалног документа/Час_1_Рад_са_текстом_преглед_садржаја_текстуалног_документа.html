@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,7 +419,9 @@
   <div class="section" id="id1">
 <h1>Обрада текста – преглед садржаја текстуалног документа<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -469,21 +435,32 @@
 </dl>
 
     </p></div></div>
-<p>У петом и шестом разреду у програму за унос и обраду текста, бавили смо се опцијама за едитовање и форматирање текста. Тачније, бавили смо се мењањем садржаја и изгледа текста, односно бавили смо се визуалном презентацијом текста.</p>
-<p>Уколико садржи више текста, да би читаоцу текстуални документ био прегледан требао би да има главни наслов, да буде подељен на одељке (наслове појединачних прича) и поднаслове.</p>
-<p>У овој лекцији бавићемо се логичком структуром или логичким изгледом текста, односно бавићемо се организацијом садржаја текста (дефинисање наслова, поднаслова, пасуса). Дефинисањем логичке структуре текста обезбеђује се лако прилагођавање изгледа текста неким специфичним захтевима (нпр. одређена боја свих наслова, искошеност свих поднаслова…).</p>
+<p>У петом и шестом разреду у програму за унос и обраду текста, упознали смо опције за едитовање и форматирање
+текста и помоћу њих мењали његов садржај и изглед, односно визуелну презентацију текста.</p>
+<p>Да би текстуални документ који садржи више текста био прегледнији требало би га уредити тако да садржи
+главни наслов, више одељака (одвојених целина текста) и поднаслове за њих.</p>
+<p>Такво организовање садржаја текста, које подразумева <strong>дефинисање наслова</strong>, <strong>поднаслова</strong>, <strong>пасуса</strong>,
+<strong>набрајања</strong> и слично, назива се логичка структура или логички изглед текста и тиме ћемо се бавити у
+овој лекцији.</p>
 <div class="section" id="id2">
 <h2>Додавање стилова<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Да би текст био логички структуриран потребно је да дефинишемо стилове. <strong>Стилови</strong> представљају скуп правила која омогућавају брзо обликовање текста, односно доследно форматирање елемената текста (нпр. свих наслова, поднаслова…).
-Једноставније речено, главни наслов читавог документа има свој стил (фонт, величину, боју, позицију…), наслови одељака свој стил (фонт, величину, боју, позицију…) различит од стила главног наслова, поднаслови свој стил различит од претходна два, итд.</p>
-<p>Поступак означавања стилова своди се на означавање (селектовање) дела текста и одабир одговарајућег стила из палете уграђених стилова, која се налази у менију <strong>Home</strong>.</p>
+<p>Да би текст био логички структуриран потребно је да дефинишеђ стилове. <strong>Стилови</strong> представљају скуп
+правила која омогућавају брзо обликовање текста, односно доследно форматирање елемената текста (нпр.
+свих наслова, поднаслова…). Једноставније речено, главни наслов читавог документа има свој стил
+(фонт, величину, боју, позицију…), наслови одељака свој стил (фонт, величину, боју, позицију…)
+различит од стила главног наслова, поднаслови свој стил различит од претходна два, итд.</p>
+<p>Поступак означавања стилова састоји се од означавања (селектовања) дела текста и одабира одговарајућег
+стила из палете уграђених стилова, која се налази у менију Home.</p>
 <a class="reference internal image-reference" href="../_images/L67S1.png"><img alt="../_images/L67S1.png" class="align-center" src="../_images/L67S1.png" style="width: 500px;" /></a>
-<p>Уграђене стилове могуће је изменити у палети стилова, десним кликом на одабрани стил и одабиром опције <code class="docutils literal notranslate"><span class="pre">Modify</span></code>.</p>
+<p>Уграђене стилове могуће је изменити у палети стилова, десним кликом на одабрани стил и одабиром опције
+<code class="docutils literal notranslate"><span class="pre">Modify</span></code>.</p>
 <a class="reference internal image-reference" href="../_images/L67S2.png"><img alt="../_images/L67S2.png" class="align-center" src="../_images/L67S2.png" style="width: 500px;" /></a>
-<p>Отвориће се прозор <strong>Modify Style</strong>, у оквиру кога је могуће изменити фонт, величину, поравнање, боју и сличне атрибуте уграђеног стила.</p>
+<p>Отвориће се прозор <strong>Modify Style</strong>, у оквиру кога је могуће изменити фонт, величину, поравнање, боју
+и остале атрибуте уграђеног стила.</p>
 <a class="reference internal image-reference" href="../_images/L67S3.png"><img alt="../_images/L67S3.png" class="align-center" src="../_images/L67S3.png" style="width: 500px;" /></a>
-<p><strong>Напомена:</strong> Промена стила важе само у оквиру документа у коме је извршена. Нови документ имаће само уграђене стилове.</p>
-<p>Опис поступка за примену и прилагођавање стила можете погледати на доњем видеу:</p>
+<p><strong>Напомена:</strong> Промена стила важи само у оквиру документа у коме је извршена. Нови документ имаће само
+уграђене стилове.</p>
+<p>Опис поступка за примену и прилагођавање стила можеш погледати на видеу који следи:</p>
 
     <div  id="VGH23rVr2d8" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/VGH23rVr2d8/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -498,13 +475,18 @@
     </div>
     
     
-    <p>Захваљујући дефинисаној логичкој структури текста, можемо врло лако да формирамо преглед садржаја текстуалног документа.</p>
-<p>Пре него што формирамо садржај у текстуалном документу, потребно је да сваки наслов и поднаслов буде дефинисан одређеним стилом Heading 1 (Naslov 1), Heading 2 (Naslov 2),….</p>
-<p>Када форматирамо наслове и поднаслове у текстуалном документу, следећи корак је да се позиционирамо (кликнемо мишем) на место у документу где желимо да поставимо преглед садржаја, а затим да на картици <strong>References</strong> одаберемо опцију <code class="docutils literal notranslate"><span class="pre">Table</span> <span class="pre">of</span> <span class="pre">Content</span></code>.
-Отвориће се падајућа листа са понуђеним изгледом прегледа садржаја текстуалног документа.</p>
+    <p>Захваљујући дефинисаној логичкој структури текста, можеш врло лако да формираш преглед садржаја текстуалног
+документа.</p>
+<p>Пре него што формираш садржај у текстуалном документу, потребно је да сваки наслов и поднаслов буде дефинисан
+одређеним стилом Heading 1 (Naslov 1), Heading 2 (Naslov 2),….</p>
+<p>Када форматираош наслове и поднаслове у текстуалном документу, следећи корак је да се позиционираш (кликнеш
+мишем) на место у документу где желиш да поставиш преглед садржаја, а затим да на картици References
+одабереш опцију Table of Content. Отвориће се падајућа листа са понуђеним изгледом прегледа садржаја
+текстуалног документа.</p>
 <a class="reference internal image-reference" href="../_images/L71S1.png"><img alt="../_images/L71S1.png" class="align-center" src="../_images/L71S1.png" style="width: 500px;" /></a>
-<p>Након одабира једног од понуђених изгледа садржаја, приказ садржаја текстуалног документа (наслови, поднаслови и бројеви страница на којима се они налазе) постаће део нашег документа.</p>
-<p>Опис поступка за креирање садржаја текстуалног документа можете погледати на следећем видеу:</p>
+<p>Након одабира једног од понуђених изгледа садржаја, приказ садржаја текстуалног документа (наслови,
+поднаслови и бројеви страница на којима се они налазе) постаће део твог документа.</p>
+<p>Опис поступка за креирање садржаја текстуалног документа можеш погледати на следећем видеу:</p>
 
     <div  id="xVSpoZrV0xs" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/xVSpoZrV0xs/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -519,15 +501,15 @@
     </div>
     
     
-    <p>У случају да смо у међувремену додали нови наслов или поднаслов, довољно је да извршимо ажурирање садржаја.</p>
-<p>Ажурирање садржаја вршимо кликом на садржај и одабиром опције <a class="reference internal" href="../_images/L71S3.png"><img alt="update" src="../_images/L71S3.png" style="width: 150px;" /></a> на картици <strong>References</strong>.</p>
+    <p>У случају да си у међувремену додао нови наслов или поднаслов, довољно је да извршиш ажурирање садржаја.</p>
+<p>Ажурирање садржаја вршиш кликом на садржај и одабиром опције update на картици References.</p>
 <a class="reference internal image-reference" href="../_images/L71S4.png"><img alt="../_images/L71S4.png" class="align-center" src="../_images/L71S4.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="google-docs">
 <h2>Рад са стиловима и креирање садржаја у Google Docs<a class="headerlink" href="#google-docs" title="Permalink to this headline">¶</a></h2>
 <p>Све поменуте акције могу се извести и у програмима Google Docs.</p>
 <a class="reference internal image-reference" href="../_images/L67S4.png"><img alt="../_images/L67S4.png" class="align-center" src="../_images/L67S4.png" style="width: 500px;" /></a>
-<p>Опис поступка за за примену и прилагођавање стила у Google документу можете погледати на доњем видеу:</p>
+<p>Опис поступка за примену и прилагођавање стила у Google документу можеш погледати на следећем видеу:</p>
 
     <div  id="N1Fn-ISVPkQ" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/N1Fn-ISVPkQ/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -542,9 +524,9 @@
     </div>
     
     
-    <p>Уметање прегледа садржаја текстуалног документа вршимо одабиром картице <code class="docutils literal notranslate"><span class="pre">Уметање</span></code> → <code class="docutils literal notranslate"><span class="pre">Садржај</span></code>.</p>
+    <p>Уметање прегледа садржаја текстуалног документа вршиш одабиром картице Уметање → Садржај.</p>
 <a class="reference internal image-reference" href="../_images/L71S5.png"><img alt="../_images/L71S5.png" class="align-center" src="../_images/L71S5.png" style="width: 300px;" /></a>
-<p>Опис поступка за креирање садржаја у Google Docs можете погледати на следећем видеу:</p>
+<p>Опис поступка за креирање садржаја у Google Docs можеш погледати на следећем видеу:</p>
 
     <div  id="XstrRIw1aRA" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/XstrRIw1aRA/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -560,12 +542,14 @@
     
     
     
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да визуелна презентација текста представља његов појавни облик (то што видимо на екрану биће одштампано на папиру);</p></li>
+<li><p>да визуелна презентација текста представља облик у коме се приказује на екрану и како ће изгледати на папиру када се одштампа;</p></li>
 <li><p>да логичка структура текста описује организацију садржаја текста (наслове, поднаслове, пасусе);</p></li>
 <li><p>да стилови омогућавају доследно форматирање елемената текста који се налазе на истом нивоу логичке структуре (нпр. свих наслова, свих поднаслова…);</p></li>
 <li><p>да је уграђене стилове могуће модификовати (променити боју, величину фонта и сл.);</p></li>

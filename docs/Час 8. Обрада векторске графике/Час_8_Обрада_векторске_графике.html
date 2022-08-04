@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,7 +419,9 @@
   <div class="section" id="id1">
 <h1>Обрада векторске графике<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -468,8 +434,10 @@
 </dl>
 
     </p></div></div>
-<p>На претходна два часа смо креирали, тачније исцртавали различите геометријске облике (правоугаоник, квадрат, елипсу, праву линију, изломљену линију, спиралу,…).
-Сви ти објекти на страници не морају да буду постављени у истој равни (један поред другог), већ можемо да их стављамо један преко другог. У задацима из претходне лекције си могао/могла да приметиш како изгледају објекти који се преклапају.</p>
+<p>На претходна два часа смо креирали, тачније исцртавали различите геометријске облике (правоугаоник,
+квадрат, елипсу, праву линију, изломљену линију, спиралу,…). Сви ти објекти на страници не морају
+да буду постављени у истој равни (један поред другог), већ можеш да их стављаш један преко другог.
+У задацима из претходне лекције си могао/могла да приметиш како изгледају објекти који се преклапају.</p>
 <p>Објекти на векторској слици су поређани по нивоима, тако да се сваки нови објекат налази на нивоу изнад претходног. Редослед ових нивоа (па самим тим и редослед објеката на слици) се може променити.</p>
 <a class="reference internal image-reference" href="../_images/L78S31.png"><img alt="../_images/L78S31.png" class="align-center" src="../_images/L78S31.png" style="width: 500px;" /></a>
 <p>У програму Inkscape могуће је променити редослед означених објеката коришћењем опција из менија <strong>Object</strong>:</p>
@@ -479,7 +447,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Raise</span> <span class="pre">to</span> <span class="pre">Top</span></code> <a class="reference internal" href="../_images/L78S3.png"><img alt="y3" src="../_images/L78S3.png" style="width: 30px;" /></a> да се објекат подигне на врх;</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Lower</span> <span class="pre">to</span> <span class="pre">Bottom</span></code> <a class="reference internal" href="../_images/L78S4.png"><img alt="y4" src="../_images/L78S4.png" style="width: 30px;" /></a> да се објекат спусти на дно;</p></li>
 </ul>
-<p>Опис поступка за мењање редоследа објеката у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Опис поступка за мењање редоследа објеката у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="D1Pir-75X0k" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/D1Pir-75X0k/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -496,14 +464,17 @@
     
     <div class="section" id="id2">
 <h2>Операције над објектима<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Да бисмо манипулисали објектима (померање, промена величине, ротација…) користимо алатку <strong>Selector</strong> <a class="reference internal" href="../_images/L78S51.png"><img alt="y5" src="../_images/L78S51.png" style="width: 30px;" /></a>.</p>
-<p>Када кликнемо на објекат користећи алатку за означавање (селекцију), око њега се формира оквир са 8 двостраних стрелица. Овакав објекат је спреман за све врсте манипулација (померање, мењање величине, ротирање…)</p>
+<p>За манипулацију објектима (померање, промена величине, ротација…) користиш алатку <strong>Selector</strong> <a class="reference internal" href="../_images/L78S51.png"><img alt="y5" src="../_images/L78S51.png" style="width: 30px;" /></a>.</p>
+<p>Када кликнеш на објекат користећи алатку за означавање (селекцију), око њега се формира оквир са 8
+двостраних стрелица. Овакав објекат је спреман за све врсте манипулација (померање, мењање величине,
+ротирање…)</p>
 </div>
 <div class="section" id="id3">
 <h2>Померање објеката<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Објекат можемо да померамо само када је селектован и то превлачењем мишем или употребом стрелица на тастатури.
-Притиском стрелица на тастатури објекат се помера у жељеном смеру за 2 пиксела. Уколико држимо пристиснут тастер <strong>Shift</strong> и стрелице на тастатури, померање је 10 пута веће (20 пиксела).</p>
-<p>Опис поступка за померање објекта у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Објекат можеш да помераш само када је селектован и то превлачењем миша или употребом стрелица на тастатури.
+Притиском стрелица на тастатури објекат се помера у жељеном смеру за 2 пиксела. Уколико држиш пристиснут
+тастер <strong>Shift</strong> и стрелице на тастатури, померање је 10 пута веће (20 пиксела).</p>
+<p>Опис поступка за померање објекта у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="RjDnLivWCJk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/RjDnLivWCJk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -521,11 +492,12 @@
     </div>
 <div class="section" id="id4">
 <h2>Промена величине објеката<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Величину објекта мењамо кликом и повлачењем на одговарајуће двостране стрелице.
-Ширину или висину селектованог објекта мењамо кликом на двостране стрелице које су на средини страница оквира селектованог објекта и њиховим повлачењем.
-Ако кликнемо на двостране стрелице у угловима селектованог објекта истовремено мењамо и ширину и висину објекта.
-Пропорцију објекта, односно исти однос ширине и висине можемо да задржимо тако што током промене величине објекта држимо притиснут тастер <strong>Ctrl</strong>.</p>
-<p>Опис поступка за промену величине објекта у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Величину објекта мењаш кликом и повлачењем на одговарајуће двостране стрелице. Ширину или висину селектованог
+објекта мењаш кликом на двостране стрелице које су на средини страница оквира селектованог објекта и њиховим
+повлачењем. Ако кликнеш на двостране стрелице у угловима селектованог објекта истовремено мењаш и ширину и
+висину објекта. Пропорцију објекта, односно исти однос ширине и висине можеш да задржиш тако што током промене
+величине објекта држимо притиснут тастер <strong>Ctrl</strong>.</p>
+<p>Опис поступка за промену величине објекта у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="9H0mZp3T_AU" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/9H0mZp3T_AU/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -543,13 +515,13 @@
     </div>
 <div class="section" id="id5">
 <h2>Ротирање и искошавање објеката<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Да бисмо могли да ротирамо или искосимо објекат, треба да кликнемо на селектовани објекат чиме двостране стрелице мењају облик. На првој слици је приказан селектован објекат, а на другој је приказан изглед стрелица након што се кликне на селектовани објекат.</p>
+<p>Да би се објекат могао ротирати или искосити, треба да кликнеш на селектовани објекат чиме двостране стрелице мењају облик. На првој слици је приказан селектован објекат, а на другој је приказан изглед стрелица након што се кликне на селектовани објекат.</p>
 <a class="reference internal image-reference" href="../_images/L78S32.png"><img alt="../_images/L78S32.png" class="align-left" src="../_images/L78S32.png" style="width: 200px;" /></a>
 <a class="reference internal image-reference" href="../_images/L78S33.png"><img alt="../_images/L78S33.png" src="../_images/L78S33.png" style="width: 200px;" /></a>
-<p>Објекат ротирамо повлачењем одговарајуће двостране стрелице којa се налази на углу селектованог објекта.</p>
-<p>Објекат можемо искосити вертикално повлачењем двостране стрелице која се налази на средини усправне странице оквира селектованог објекта (са леве и десне стране).</p>
-<p>Објекат можемо искосити хоризонтално повлачењем двостране стрелице која се налази на средини водоравне странице оквира селектованог објекта (горе и доле).</p>
-<p>Опис поступка за ротирање и искошавање објекта у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Објекат ротираш повлачењем одговарајуће двостране стрелице којa се налази на углу селектованог објекта.</p>
+<p>Објекат можеш искосити вертикално повлачењем двостране стрелице која се налази на средини усправне странице оквира селектованог објекта (са леве и десне стране).</p>
+<p>Објекат можеш искосити хоризонтално повлачењем двостране стрелице која се налази на средини водоравне странице оквира селектованог објекта (горе и доле).</p>
+<p>Опис поступка за ротирање и искошавање објекта у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="560DKAwqHo0" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/560DKAwqHo0/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -567,11 +539,11 @@
     </div>
 <div class="section" id="id6">
 <h2>Вишеструка селекција<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>У програму Inscape можемо да селектујемо више објеката, како бисмо на њима извршили исте операције.
-Да бисмо селектовали више објеката потребно је да држимо притиснут тастер <strong>Shift</strong> и кликнемо на сваки од објеката.
-Број објеката које можемо да селектујемо на овај начин није ограничен.
-Ако желимо да селектујемо све објекте на страници, то радимо комбинацијом тастера <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">A</span></code>.</p>
-<p>Опис поступка за вишеструку селекцију објекта у програму Inkscape можете погледати на следећем видеу:</p>
+<p>У програму Inscape можеш да селектујеш више објеката, како би се на њима извршиле исте операције. Да
+селектујеш више објеката потребно је да држиш притиснут тастер <strong>Shift</strong> и кликнеш на сваки од објеката.
+Број објеката које можеш да селектујеш на овај начин није ограничен. Ако желиш да селектујеш све објекте
+на страници, то радиш комбинацијом тастера <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">A</span></code>.</p>
+<p>Опис поступка за вишеструку селекцију објекта у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="KOOSJrmCGL8" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/KOOSJrmCGL8/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -586,30 +558,33 @@
     </div>
     
     
-    <p>За прецизнију манипулацију над селектованим објектима користимо линију за контролу алатки</p>
+    <p>За прецизнију манипулацију над селектованим објектима користиш линију за контролу алатки</p>
 <p><a class="reference internal" href="../_images/L78S6.png"><img alt="y6" src="../_images/L78S6.png" style="width: 800px;" /></a></p>
 <p>или опцију <code class="docutils literal notranslate"><span class="pre">Transform</span></code>, која се налази у менију <strong>Object</strong> (<code class="docutils literal notranslate"><span class="pre">Object</span></code> →  <code class="docutils literal notranslate"><span class="pre">Transform</span></code>).</p>
 </div>
 <div class="section" id="id7">
 <h2>Уређивање објеката<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<p>Када поставимо објекат на страницу можемо да модификујемо, тачније, да мењамо његов облик.</p>
-<p>То радимо тако што из кутије са алаткама Toolbox одаберемо алатку <strong>Edit paths by nodes</strong> <a class="reference internal" href="../_images/L78S8.png"><img alt="y8" src="../_images/L78S8.png" style="width: 30px;" /></a> и кликнемо на објекат који модификујемо.
-Приказаће нам се чворови беле боје. Њиховим повлачењем мењамо изглед делова објекта.</p>
-<p>Да бисмо мењали број углова и додавали нове чворове на објекту неопходно је да објекте претворимо у путање (Path). То чинимо тако што селектујемо објекат и из менија <strong>Path</strong> бирамо опцију <code class="docutils literal notranslate"><span class="pre">Object</span> <span class="pre">to</span> <span class="pre">Path</span></code>.</p>
+<p>Када поставиш објекат на страницу можеш да модификујеш, тачније, да мењаш његов облик.</p>
+<p>То радиш тако што из кутије са алаткама Toolbox одабереш алатку <strong>Edit paths by nodes</strong> <a class="reference internal" href="../_images/L78S8.png"><img alt="y8" src="../_images/L78S8.png" style="width: 30px;" /></a> и кликнеш
+на објекат који модификујеш. Приказаће нам се чворови беле боје. Њиховим повлачењем мењаш изглед делова
+објекта.</p>
+<p>За промену броја углова и додавање нових чворова на објекту неопходно је да објекте претвориш у путање
+(Path). То чиниш тако што селектујеш објекат и из менија <strong>Path</strong> бираш опцију <code class="docutils literal notranslate"><span class="pre">Object</span> <span class="pre">to</span> <span class="pre">Path</span></code>.</p>
 <a class="reference internal image-reference" href="../_images/L78S34a.png"><img alt="../_images/L78S34a.png" class="align-center" src="../_images/L78S34a.png" style="width: 600px;" /></a>
-<p>Када је објекат претворен у путању на располагању су нам 4 различите врсте чворова:</p>
+<p>Када је објекат претворен у путању на располагању су ти 4 различите врсте чворова:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">cusp</span></code> - угаони чворови који су намењени за креирање оштрих углова;</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">smooth</span></code> - намењен за креирање глатких кривих;</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">symmetric</span></code> - намењен за креирање кривих;</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">auto-smooth</span></code> - за креирање идеално глатких кривих.</p></li>
 </ul>
-<p>За подешавање одговарајуће врсте чвора потребно је да кликнимо на постојећи чвор, а затим да одаберемо једну од опција: <a class="reference internal" href="../_images/L78S9.png"><img alt="y9" src="../_images/L78S9.png" style="width: 100px;" /></a> које се налазе у Линији за контролу алатки.
-Објекат мењамо тако што повлачимо бели круг одговарајућег чвора.</p>
-<p>За додавање новог чвора довољно је да два пута кликнемо (двоклик) на жељено место на објекту.
-Да бисмо обрисали чвор, потребно је да га означимо, а затим притиснемо тастер <strong>Delete</strong>.
-За додавање и брисање чворова можемо да користимо и опцију <a class="reference internal" href="../_images/L78S10.png"><img alt="y10" src="../_images/L78S10.png" style="width: 100px;" /></a> са Линије за контролу алатки.</p>
-<p>Опис поступка за додавање и брисање чвора на објекту у програму Inkscape можете погледати на следећем видеу:</p>
+<p>За подешавање одговарајуће врсте чвора потребно је да кликнеш на постојећи чвор, а затим да одабереш
+једну од опција: <a class="reference internal" href="../_images/L78S9.png"><img alt="y9" src="../_images/L78S9.png" style="width: 100px;" /></a> које се налазе у Линији за контролу алатки. Објекат мењаш тако што повлачиш бели
+круг одговарајућег чвора.</p>
+<p>За додавање новог чвора довољно је да два пута кликнеш (двоклик) на жељено место на објекту. За брисање
+чвора потребно је да га означиш, а затим притиснеш тастер <strong>Delete</strong>. За додавање и брисање чворова можеш
+да користимо и опцију <a class="reference internal" href="../_images/L78S10.png"><img alt="y10" src="../_images/L78S10.png" style="width: 100px;" /></a> са Линије за контролу алатки.</p>
+<p>Опис поступка за додавање и брисање чвора на објекту у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="gidHEspmdYQ" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/gidHEspmdYQ/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -630,7 +605,7 @@
 <p>У програму Inkscape могуће је креирати објекат уклањањем једног или више постојећих објеката, тачније могуће је извршити комбиновање више објеката креирајући потпуно нов објекат.</p>
 <p>Објекте комбинујемо тако што превучемо један објекат преко другог, селектујемо оба и изаберемо начин комбиновања (<code class="docutils literal notranslate"><span class="pre">Union</span></code>, <code class="docutils literal notranslate"><span class="pre">Difference</span></code>, <code class="docutils literal notranslate"><span class="pre">Intersection</span></code>, <code class="docutils literal notranslate"><span class="pre">Exclusion</span></code>, <code class="docutils literal notranslate"><span class="pre">Divison</span></code>, <code class="docutils literal notranslate"><span class="pre">Cut</span> <span class="pre">Path</span></code>) из менија <strong>Path</strong>.</p>
 <a class="reference internal image-reference" href="../_images/L78S11.png"><img alt="../_images/L78S11.png" class="align-center" src="../_images/L78S11.png" style="width: 200px;" /></a>
-<p>Опис поступка за комбиновање објеката у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Опис поступка за комбиновање објеката у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="4BalqI0w_so" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/4BalqI0w_so/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -648,7 +623,7 @@
     </div>
 <div class="section" id="id9">
 <h2>Копирање и брисање објекта<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
-<p>У програму Inkscape селектовани објекат можемо да копирамо на више начина:</p>
+<p>У програму Inkscape селектовани објекат можеш да копираш на више начина:</p>
 <ul class="simple">
 <li><p>коришћењем стандардних пречица са тастатуре (<code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">C</span></code>, <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">V</span></code>);</p></li>
 <li><p>десним кликом миша на објекат и одабиром из падајућег менија наредбе <code class="docutils literal notranslate"><span class="pre">Copy</span></code> и <code class="docutils literal notranslate"><span class="pre">Paste</span></code>;</p></li>
@@ -656,7 +631,7 @@
 </ul>
 <p>Поред горе описаног начина копирања објеката у програму Inkscape могуће је извршити копирање и помоћу опција <code class="docutils literal notranslate"><span class="pre">Duplicate</span></code> <a class="reference internal" href="../_images/L78S14.png"><img alt="y13" src="../_images/L78S14.png" style="width: 30px;" /></a> и <code class="docutils literal notranslate"><span class="pre">Clone</span></code> <a class="reference internal" href="../_images/L78S15.png"><img alt="y14" src="../_images/L78S15.png" style="width: 30px;" /></a> из Командне линије.
 <em>Напомена</em>: Применом ових опција копирани објекти се појављују преко постојећих објеката па их је потребно померити на жељену позицију.</p>
-<p>Опис поступка за копирање објеката у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Опис поступка за копирање објеката у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="RmNS9EqKYAk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/RmNS9EqKYAk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -672,7 +647,7 @@
     
     
     <p>Када селектујемо објекат и притиснемо тастер <strong>Delete</strong> бришемо објекат са радне површине.</p>
-<p>Опис поступка за брисање објеката у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Опис поступка за брисање објеката у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="WWak7c7G0vE" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/WWak7c7G0vE/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -690,14 +665,14 @@
     </div>
 <div class="section" id="id10">
 <h2>Поравнање објеката<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-<p>Објекте можемо прецизно да поравнамо на два начина:</p>
+<p>Објекте можеш прецизно да поравнаш на два начина:</p>
 <ul class="simple">
 <li><p>употребом помоћних линија (мреже) или</p></li>
 <li><p>опцијом <code class="docutils literal notranslate"><span class="pre">Align</span> <span class="pre">and</span> <span class="pre">distribute</span> <span class="pre">objects</span></code> из менија <strong>Object</strong> до које се може доћи и помоћу пречице на тастатури <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">A</span></code>.</p></li>
 </ul>
 <p>Ова опција отвара палету у којој се налазе опције за поравнање објеката (<code class="docutils literal notranslate"><span class="pre">Align</span></code>) и усклађивање размака (<code class="docutils literal notranslate"><span class="pre">Distribute</span></code>) између објеката.</p>
 <a class="reference internal image-reference" href="../_images/L78S17.png"><img alt="../_images/L78S17.png" class="align-center" src="../_images/L78S17.png" style="width: 300px;" /></a>
-<p>Опис поступка за поравнавање објеката у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Опис поступка за поравнавање објеката у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="_rtZp-X2Ewk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/_rtZp-X2Ewk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -715,9 +690,9 @@
     </div>
 <div class="section" id="id11">
 <h2>Симетрично пресликавање<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
-<p>Да бисмо симетрично пресликали објекте, користимо опцију <code class="docutils literal notranslate"><span class="pre">Path</span> <span class="pre">Effects</span></code> из менија <strong>Path</strong>.
-Објекат треба да буде селектован да бисмо га симетрично пресликали.
-Након избора опције <code class="docutils literal notranslate"><span class="pre">Path</span> <span class="pre">Effects</span></code> отвара се палета у којој треба кликнути на опцију <a class="reference internal" href="../_images/L78S18.png"><img alt="y17" src="../_images/L78S18.png" style="width: 30px;" /></a>. Отвара се додатни прозор у којем бирамо опцију <code class="docutils literal notranslate"><span class="pre">Mirror</span> <span class="pre">symmetry</span></code>.</p>
+<p>За симетрично пресликавање објеката користиш опцију <code class="docutils literal notranslate"><span class="pre">Path</span> <span class="pre">Effects</span></code> из менија <strong>Path</strong>. Објекат треба
+да буде селектован да би се симетрично пресликао. Након избора опције <code class="docutils literal notranslate"><span class="pre">Path</span> <span class="pre">Effects</span></code> отвара се палета
+у којој треба кликнути на опцију <a class="reference internal" href="../_images/L78S18.png"><img alt="y17" src="../_images/L78S18.png" style="width: 30px;" /></a>. Отвара се додатни прозор у којем бираш опцију <code class="docutils literal notranslate"><span class="pre">Mirror</span> <span class="pre">symmetry</span></code>.</p>
 <a class="reference internal image-reference" href="../_images/L78S20a.png"><img alt="../_images/L78S20a.png" class="align-center" src="../_images/L78S20a.png" style="width: 700px;" /></a>
 <p>Након избора ове опције у палети <strong>Path Effects</strong> налазе се опције којима се подешава:</p>
 <ul class="simple">
@@ -727,7 +702,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Mirror</span> <span class="pre">symmetry</span></code> - избор ефекта.</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/L78S20b.png"><img alt="../_images/L78S20b.png" class="align-center" src="../_images/L78S20b.png" style="width: 300px;" /></a>
-<p>Опис поступка за симетрично пресликавање у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Опис поступка за симетрично пресликавање у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="OYcLWuCrqOI" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/OYcLWuCrqOI/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -746,9 +721,9 @@
 <div class="section" id="id12">
 <h2>Груписање и разлагање објеката<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <p>Више објеката на страници може да формира једну групу, тако да се са њима може истовремено манипулисати. Таква група делује као један објекат. За разлику од комбинованих објеката груписани објекти се по потреби поново могу раздвојити и посебно уређивати.
-Групу формирамо од селектованих објеката кликом на опцију <code class="docutils literal notranslate"><span class="pre">Group</span> <span class="pre">selected</span> <span class="pre">objects</span></code> <a class="reference internal" href="../_images/L78S21.png"><img alt="y18" src="../_images/L78S21.png" style="width: 30px;" /></a> из Командне линије.
-Групу разлажемо на појединачне објекте кликом на опцију <code class="docutils literal notranslate"><span class="pre">Ungroup</span> <span class="pre">selected</span> <span class="pre">groups</span></code> <a class="reference internal" href="../_images/L78S22.png"><img alt="y19" src="../_images/L78S22.png" style="width: 30px;" /></a>. Опције за груписање објеката доступне су и у менију <strong>Object</strong>.</p>
-<p>Опис поступка за груписање и растављање објеката у програму Inkscape можете погледати на следећем видеу:</p>
+Групу формираш од селектованих објеката кликом на опцију <code class="docutils literal notranslate"><span class="pre">Group</span> <span class="pre">selected</span> <span class="pre">objects</span></code> <a class="reference internal" href="../_images/L78S21.png"><img alt="y18" src="../_images/L78S21.png" style="width: 30px;" /></a> из Командне линије.
+Групу разлажеш на појединачне објекте кликом на опцију <code class="docutils literal notranslate"><span class="pre">Ungroup</span> <span class="pre">selected</span> <span class="pre">groups</span></code> <a class="reference internal" href="../_images/L78S22.png"><img alt="y19" src="../_images/L78S22.png" style="width: 30px;" /></a>. Опције за груписање објеката доступне су и у менију <strong>Object</strong>.</p>
+<p>Опис поступка за груписање и растављање објеката у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="NPIMXmS6fao" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/NPIMXmS6fao/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -766,13 +741,14 @@
     </div>
 <div class="section" id="id13">
 <h2>Промена боје објекта<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
-<p>Сваки објекат у програму Inkscape је дефинисан унутрашњом облашћу (<code class="docutils literal notranslate"><span class="pre">Fill</span></code>) и ивицом (<code class="docutils literal notranslate"><span class="pre">Stroke</span></code>). Унутрашњој области и ивицама можемо независно да мењамо боју.
-Промену боје унутрашње области или ивице селектованог објекта (или групе објеката) вршимо избором жељене боје из палете боја.</p>
+<p>Сваки објекат у програму Inkscape је дефинисан унутрашњом облашћу (<code class="docutils literal notranslate"><span class="pre">Fill</span></code>) и ивицом (<code class="docutils literal notranslate"><span class="pre">Stroke</span></code>).
+Унутрашњој области и ивицама можеш независно да мењаш боју. Промену боје унутрашње области или ивице
+селектованог објекта (или групе објеката) вршиш избором жељене боје из палете боја.</p>
 <a class="reference internal image-reference" href="../_images/L78S23.png"><img alt="../_images/L78S23.png" class="align-center" src="../_images/L78S23.png" style="width: 500px;" /></a>
 <p>Кликом на боју поред назива Fill: и Stroke: отвара се палета <strong>Fill and Stroke</strong> у коме се врше детаљна подешавања изгледа унутрашње области и ивице објекта.</p>
 <a class="reference internal image-reference" href="../_images/L78S24.png"><img alt="../_images/L78S24.png" class="align-center" src="../_images/L78S24.png" style="width: 400px;" /></a>
-<p>Палету <strong>Fill and Stroke</strong> можемо да покренемо и из менија <strong>Object</strong> (<code class="docutils literal notranslate"><span class="pre">Object</span></code> → <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">and</span> <span class="pre">Stroke</span></code>).</p>
-<p>Опис поступка за промену боје објеката у програму Inkscape можете погледати на следећем видеу:</p>
+<p>Палету <strong>Fill and Stroke</strong> можеш да покренеш и из менија <strong>Object</strong> (<code class="docutils literal notranslate"><span class="pre">Object</span></code> → <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">and</span> <span class="pre">Stroke</span></code>).</p>
+<p>Опис поступка за промену боје објеката у програму Inkscape можеш погледати на следећем видеу:</p>
 
     <div  id="nnOe5zSusSM" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/nnOe5zSusSM/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -788,7 +764,7 @@
     
     
     <p>За чување документа креираних у програму Inkscape користи се опција <code class="docutils literal notranslate"><span class="pre">Save</span></code>, односно <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As</span></code>, из менија <strong>File</strong>. На овај начин пројекат ће бити сачуван у <strong>.svg</strong> формату и може се поново отворити и уређивати у програму Inkscape. Уколико је рад на пројекту завршен слика се може извести у <strong>.png</strong> формат помоћу опције <code class="docutils literal notranslate"><span class="pre">Export</span></code> која се такође налази у менију <strong>File</strong>.</p>
-<p>Поступак чувања у програму Inkscape можете да погледате на следећем видеу:</p>
+<p>Поступак чувања у програму Inkscape можеш да погледаш на следећем видеу:</p>
 
     <div  id="DTINrBQIUkA" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/DTINrBQIUkA/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -806,10 +782,11 @@
     </div>
 <div class="section" id="id14">
 <h2>Векторизација растерске слике<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
-<p>Процес којим растерску фотографију/слику претварамо у векторски цртеж, графички формат који не губи квалитет приликом увећавања називамо <strong>векторизација</strong>.</p>
+<p>Процес којим растерску фотографију/слику претвараш у векторски цртеж, графички формат који не губи квалитет
+приликом увећавања назива се <strong>векторизација</strong>.</p>
 <p>У програму Inkscape могуће је претварање растерске слике у векторску коришћењем опције <code class="docutils literal notranslate"><span class="pre">Trace</span> <span class="pre">Bitmap</span></code> (<code class="docutils literal notranslate"><span class="pre">Path</span></code> → <code class="docutils literal notranslate"><span class="pre">Trace</span> <span class="pre">Bitmap</span></code>).
 Избором већег броја скенирања (<code class="docutils literal notranslate"><span class="pre">Scans</span></code>) и избором из листе више боја (<code class="docutils literal notranslate"><span class="pre">Colors</span></code>) добија се квалитетнија векторска слика.</p>
-<p>Поступак векторизације слике у програму Inkscape можете да погледате на следећем видеу:</p>
+<p>Поступак векторизације слике у програму Inkscape можеш да погледаш на следећем видеу:</p>
 
     <div  id="UOlc-X4iOiM" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/UOlc-X4iOiM/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -825,16 +802,18 @@
     
     
     
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <p><strong>Шта смо научили?</strong></p>
 <ul class="simple">
-<li><p>да је објектима могуће променити редослед на страници коришћењем наредби: подигни (<code class="docutils literal notranslate"><span class="pre">Raise</span></code>), спусти (<code class="docutils literal notranslate"><span class="pre">Lower</span></code>), подигни на врх (<code class="docutils literal notranslate"><span class="pre">Raise</span> <span class="pre">to</span> <span class="pre">Top</span></code>), спусти на дно (<code class="docutils literal notranslate"><span class="pre">Lower</span> <span class="pre">to</span> <span class="pre">Bottom</span></code>) из менија <strong>Object</strong>;</p></li>
-<li><p>да поред селекције, померања и ротирања, објекте можемо да копирамо, групишемо, поравнавамо, мењамо им боју или провидност и на тај начин додатно уређујемо векторску графику;</p></li>
-<li><p>да за симетрично пресликавање објеката користимо опцију <code class="docutils literal notranslate"><span class="pre">Path</span> <span class="pre">Effects</span></code> из менија <strong>Path</strong>;</p></li>
-<li><p>да више објеката на страници може формирати једну групу. Када су објекти у групи, њима се може истовремено манипулисати (премештати, копирати, мењати боју,…);</p></li>
-<li><p>да је векторизација процес претварања растерске фотографије/слике у векторски цртеж.</p></li>
+<li><p>објектима је могуће променити редослед на страници коришћењем наредби: подигни (<code class="docutils literal notranslate"><span class="pre">Raise</span></code>), спусти (<code class="docutils literal notranslate"><span class="pre">Lower</span></code>), подигни на врх (<code class="docutils literal notranslate"><span class="pre">Raise</span> <span class="pre">to</span> <span class="pre">Top</span></code>), спусти на дно (<code class="docutils literal notranslate"><span class="pre">Lower</span> <span class="pre">to</span> <span class="pre">Bottom</span></code>) из менија <strong>Object</strong>;</p></li>
+<li><p>поред селекције, померања и ротирања, објекте можемш да копираш, групишеш, поравнаваш, мењаш им боју или провидност и на тај начин додатно уређујеш векторску графику;</p></li>
+<li><p>за симетрично пресликавање објеката користиш опцију <code class="docutils literal notranslate"><span class="pre">Path</span> <span class="pre">Effects</span></code> из менија <strong>Path</strong>;</p></li>
+<li><p>више објеката на страници може формирати једну групу. Када су објекти у групи, њима се може истовремено манипулисати (премештати, копирати, мењати боју,…);</p></li>
+<li><p>векторизација је процес претварања растерске фотографије/слике у векторски цртеж.</p></li>
 </ul>
 
     </p></div></div>

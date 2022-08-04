@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -455,7 +419,9 @@
   <div class="section" id="id1">
 <h1>Обрада слика - слојеви<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -470,10 +436,12 @@
     </p></div></div>
 <p>За уређивање слике често се користе слојеви (Layers).</p>
 <p><strong>Слојеви</strong> су делови слике који се користе при обради растерских и векторских дигиталних слика за чување појединих елемената одвојено од осталих.</p>
-<p>Коришћењем слојева можемо да правимо слике из више делова, од којих се сваким делом може манипулисати без утицаја на било који други део слике.
-Слојеви су сложени један на други. Доњи слој је позадина слике, а компоненте у првом плану слике се налазе изнад ње.</p>
+<p>Коришћењем слојева можеш да правиш слике из више делова, од којих се сваким делом може манипулисати
+без утицаја на било који други део слике. Слојеви су сложени један на други. Доњи слој је позадина слике,
+а компоненте у првом плану слике се налазе изнад ње.</p>
 <p>Као и у претходним разредима обраду слика ћемо радити у програму Gimp 2.</p>
-<p>Aко немате инсталиран програм на свом рачунару, можете погледати поступак инсталације програма на следећем видеу:</p>
+<p>Aко немаш инсталиран програм на свом рачунару, можеш погледати поступак инсталације програма на следећем
+видеу:</p>
 
     <div  id="-jSiYBv9WeU" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/-jSiYBv9WeU/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -489,22 +457,28 @@
     
     
     <p>Картица <strong>Layers</strong> (Слојеви) налази се у доњем десном делу прозора програма Gimp 2.</p>
-<p>У оквиру ње можемо да креирамо нове слојеве, копирамо или бришемо постојеће, приказујемо их или сакривамо, повезујемо, мењамо им провидност или бирамо начин мешања.</p>
+<p>У оквиру ње можеш да креираш нове слојеве, копираш или бришеш постојеће, приказујеш их или сакриваш,
+повезујеш, мењаш им провидност или бираш начин мешања.</p>
 <p>Картица <strong>Layers</strong> у програму Gimp 2 има следеће делове:</p>
-<p>1 – Начин мешања слојева (Mode)
-2 – Непровидност (Opacity)
-3 – Закључавање слојева
-4 – Палета слојева
-5 – Палета дугмића за рад са слојевима</p>
+<ol class="arabic simple">
+<li><p>Начин мешања слојева (Mode)</p></li>
+<li><p>Непровидност (Opacity)</p></li>
+<li><p>Закључавање слојева (Lock)</p></li>
+<li><p>Палета слојева</p></li>
+<li><p>Палета дугмића за рад са слојевима</p></li>
+</ol>
 <a class="reference internal image-reference" href="../_images/L74S8.png"><img alt="../_images/L74S8.png" class="align-center" src="../_images/L74S8.png" style="width: 250px;" /></a>
-<p>Уколико картица <strong>Layers</strong> није приказана приликом покретања програма Gimp 2, можемо је приказати комбинацијом тастера <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">L</span></code>.</p>
+<p>Уколико картица <strong>Layers</strong> није приказана приликом покретања програма Gimp 2, можеш је приказати комбинацијом
+тастера <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">L</span></code>.</p>
 <div class="section" id="id2">
 <h2>Додавање и брисање слојева<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Да бисмо креирали нови слој можемо да кликнемо у менију <strong>Layer</strong> на опцију <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Layer</span></code>, или да притиснемо комбинацију тастера <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">N</span></code>.</p>
+<p>Да би се креирао нови слој можеш да кликнеш у менију <strong>Layer</strong> на опцију <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Layer</span></code>, или да притиснеш
+комбинацију тастера <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">N</span></code>.</p>
 <a class="reference internal image-reference" href="../_images/L74S1b.png"><img alt="../_images/L74S1b.png" class="align-center" src="../_images/L74S1b.png" style="width: 450px;" /></a>
 <p>Нови слој се може креирати и кликом на прво дугме у дну палете <cite>Layers</cite> <a class="reference internal" href="../_images/L74S1a.png"><img alt="g1" src="../_images/L74S1a.png" style="width: 25px;" /></a>.</p>
-<p>Када изаберемо опцију за креирање новог слоја. отвориће се прозор у коме можемо да именујемо слој, подесимо његову величину у пикселима и означимо да ли ће бити провидан или испуњен бојом.</p>
-<p>Притиском на дугме <strong>OK</strong> додајемо слој у палету слојева.</p>
+<p>Када изабереш опцију за креирање новог слоја. отвориће се прозор у коме можеш да именујеш слој, подесиш
+његову величину у пикселима и означиш да ли ће бити провидан или испуњен бојом.</p>
+<p>Притиском на дугме <strong>OK</strong> додајеш слој у палету слојева.</p>
 <a class="reference internal image-reference" href="../_images/L74S1c.png"><img alt="../_images/L74S1c.png" class="align-center" src="../_images/L74S1c.png" style="width: 450px;" /></a>
 <p>На дну палете слојева, поред дугмета за додавање новог слоја, налазе се редом:</p>
 <ol class="arabic simple">
@@ -514,10 +488,11 @@
 <li><p>дугме за креирање дупликата слоја;</p></li>
 <li><p>дугме за усидравање и дугме за брисање слоја.</p></li>
 </ol>
-<p>Све измене можемо да вршимо само на активном слоју. Слој се активира кликом на његов назив у палети слојева.</p>
-<p>Кликом на дугме за брисање слоја <a class="reference internal" href="../_images/L74S2a.png"><img alt="g2" src="../_images/L74S2a.png" style="width: 25px;" /></a> можемо да избришемо само активан слој.</p>
-<p>Двоструким кликом на назив слоја можемо да изменимо његов назив тако што га откуцамо, а затим притиснемо тастер <strong>Enter</strong>.</p>
-<p>Опис поступка за креирање и брисање слојева можете погледати на следећем видеу:</p>
+<p>Све измене можеш да вршиш само на активном слоју. Слој се активира кликом на његов назив у палети слојева.</p>
+<p>Кликом на дугме за брисање слоја <a class="reference internal" href="../_images/L74S2a.png"><img alt="g2" src="../_images/L74S2a.png" style="width: 25px;" /></a> можеш да избришеш само активан слој.</p>
+<p>Двоструким кликом на назив слоја можеш да измениш његов назив тако што га откуцаш, а затим притиснеш
+тастер <strong>Enter</strong>.</p>
+<p>Опис поступка за креирање и брисање слојева можеш погледати на следећем видеу:</p>
 
     <div  id="MzL1Pthu6tU" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/MzL1Pthu6tU/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -539,7 +514,7 @@
 <p>Испред слојева могу бити видљиве (укључене) две иконице <a class="reference internal" href="../_images/L74S3.png"><img alt="g3" src="../_images/L74S3.png" style="width: 100px;" /></a> (око и ланац).</p>
 <p>Слој је видљив (приказан) ако је иконица ока приказана испред слоја. У случају да иконица око није видљива и слој неће бити приказан у прозору за приказ слике.</p>
 <p>Иконица ланца означава везу између слојева. Слојеви су повезани и можемо их заједно померати када је иконица ланца видљива. Померање слојева вршимо коришћењем алата Move <a class="reference internal" href="../_images/L74S4.png"><img alt="g4" src="../_images/L74S4.png" style="width: 50px;" /></a>.</p>
-<p>Опис поступка за приказивање и сакривање слојева можете погледати на следећем видеу:</p>
+<p>Опис поступка за приказивање и сакривање слојева можеш погледати на следећем видеу:</p>
 
     <div  id="XQYO0s57uOA" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/XQYO0s57uOA/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -558,14 +533,14 @@
 <div class="section" id="id4">
 <h2>Подешавање непровидности, закључавање и стапање слојева<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>На почетку, сваки слој је дефинисан као непровидан, тачније опција <code class="docutils literal notranslate"><span class="pre">Opacity</span></code> је подешена на 100%. За сваки слој се засебно подешава да ли ће се мењати непровидност слоја или не.</p>
-<p>Кликом на стрелице <a class="reference internal" href="../_images/L74S5.png"><img alt="g5" src="../_images/L74S5.png" style="width: 200px;" /></a> мењамо провидност слоја.</p>
-<p>У програму за обраду слике могуће је закључати слојеве како бисмо спречили измену његовог садржаја.</p>
+<p>Кликом на стрелице <a class="reference internal" href="../_images/L74S5.png"><img alt="g5" src="../_images/L74S5.png" style="width: 200px;" /></a> мењаш провидност слоја.</p>
+<p>У програму за обраду слике могуће је закључати слојеве како би се спречила измена његовог садржаја.</p>
 <p>Опција Lock (Закључај) <a class="reference internal" href="../_images/L74S6.png"><img alt="g6" src="../_images/L74S6.png" style="width: 200px;" /></a> штити слојеве од измена на два начина:</p>
 <ul class="simple">
-<li><p>кликом на иконицу четкице закључамо све пикселе на слоју;</p></li>
-<li><p>кликом на иконицу провидног слоја закључавамо само провидне пикселе на слоју.</p></li>
+<li><p>кликом на иконицу четкице закључаш све пикселе на слоју;</p></li>
+<li><p>кликом на иконицу провидног слоја закључаш само провидне пикселе на слоју.</p></li>
 </ul>
-<p>Опис поступка за подешавање непровидности и закључавања слојева можете погледати на следећем видеу:</p>
+<p>Опис поступка за подешавање непровидности и закључавања слојева можеш погледати на следећем видеу:</p>
 
     <div  id="ICUSLkZYFf8" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/ICUSLkZYFf8/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -582,15 +557,15 @@
     
     <p>У програму GIMP 2 могуће је стапање (мешање) слојева. То је опција којом се дефинише на који ће се начин пиксели на доњем слоју измешати (стопити) са пикселима који се налазе на горњем слоју.</p>
 <p>На почетку, стапање пиксела слојева је подешено на <code class="docutils literal notranslate"><span class="pre">Normal</span></code>, чиме је обезбеђено да горњи слој у потпуности прекрива доњи (ако је непровидност подешена на 100%).</p>
-<p>Кликом на стрелицу поред опције <code class="docutils literal notranslate"><span class="pre">Mode</span></code> (Начин мешања) добијамо листу свих начина стапања (мешања) слојева.</p>
+<p>Кликом на стрелицу поред опције <code class="docutils literal notranslate"><span class="pre">Mode</span></code> (Начин мешања) добијаш листу свих начина стапања (мешања) слојева.</p>
 <a class="reference internal image-reference" href="../_images/L74S7.jpg"><img alt="../_images/L74S7.jpg" class="align-center" src="../_images/L74S7.jpg" style="width: 400px;" /></a>
-<p>Од горе приказаних начина мешања слојева неке можемо да користимо за:</p>
+<p>Од горе приказаних начина мешања слојева неке можеш да користиш за:</p>
 <ul class="simple">
 <li><p>потамњивање слике (<code class="docutils literal notranslate"><span class="pre">Multiply</span></code>, <code class="docutils literal notranslate"><span class="pre">Overlay</span></code>);</p></li>
 <li><p>рад са црно белим фотографијама (<code class="docutils literal notranslate"><span class="pre">Dodge</span></code>);</p></li>
 <li><p>отклањање ефекта црвених очију (<code class="docutils literal notranslate"><span class="pre">Hue</span></code>) који се понекад јавља приликом фотографисања дигиталним уређајима.</p></li>
 </ul>
-<p>Опис поступка за мешање/стапање слојева можете погледати на следећем видеу:</p>
+<p>Опис поступка за мешање/стапање слојева можеш погледати на следећем видеу:</p>
 
     <div  id="aaoRyk59l8I" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/aaoRyk59l8I/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -611,12 +586,13 @@
 <h2>Растеризација слоја<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>У појединим програмима за обраду растерске графике, као што је програм Gimp 2, текст је представљен векторском графиком.
 Повећањем величине слова не долази до губитка квалитета слике.</p>
-<p>Векторски слој са текстом трансформишемо у растерски тако што кликнемо десним кликом на текстулани слој и појавиће се помоћни мени.
-У помоћном менију треба да одаберемо опцију <code class="docutils literal notranslate"><span class="pre">Discard</span> <span class="pre">Text</span> <span class="pre">information</span></code> (Одбаци текстуалне информације) којом се векторски текстуални слој претворити у растерски.
-Овај процес називамо растеризовање.
-<strong>Растеризација</strong> је процес трансформације (конвертовања) геометријских објеката у њихову растерску верзију, тачније репрезентацију помоћу пиксела.</p>
+<p>Векторски слој са текстом трансформишеш у растерски тако што кликнеш десним кликом на текстулани слој
+и појавиће се помоћни мени. У помоћном менију треба да одабереш опцију <code class="docutils literal notranslate"><span class="pre">Discard</span> <span class="pre">Text</span> <span class="pre">information</span></code>
+(Одбаци текстуалне информације) којом ће се векторски текстуални слој претворити у растерски. Овај
+процес назива се растеризовање. <strong>Растеризација</strong> је процес трансформације (конвертовања) геометријских
+објеката у њихову растерску верзију, тачније репрезентацију помоћу пиксела.</p>
 <p>Након процеса растеризације, увећавањем слова дошло би до губитка квалитета слике.</p>
-<p>Опис поступка растеризације слојева можете погледати на следећем видеу:</p>
+<p>Опис поступка растеризације слојева можеш погледати на следећем видеу:</p>
 
     <div  id="S12A0UeWT-8" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/S12A0UeWT-8/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -632,15 +608,17 @@
     
     
     
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да су слојеви делови слике који се користе при обради дигиталних слика за раздвајање њених елемената;</p></li>
-<li><p>да је у програму Gimp 2 могуће додавати или брисати слојеве, мењати им назив, чинити их видљивим или невидљивим, непровидним или провидним, повезивати их, закључавати, стапати и растеризовати;</p></li>
-<li><p>да се сваки слој може посебно уређивати, а све измене можемо да вршимо само на активном слоју;</p></li>
-<li><p>да је у програму Gimp 2 текст векторски слој у растерској слици.</p></li>
+<li><p>слојеви су делови слике који се користе при обради дигиталних слика за раздвајање њених елемената;</p></li>
+<li><p>у програму Gimp 2 могуће је додавати или брисати слојеве, мењати им назив, чинити их видљивим или невидљивим, непровидним или провидним, повезивати их, закључавати, стапати и растеризовати;</p></li>
+<li><p>сваки слој се може посебно уређивати, а све измене можеш да вршиш само на активном слоју;</p></li>
+<li><p>у програму Gimp 2 текст је векторски слој у растерској слици.</p></li>
 </ul>
 </dd>
 </dl>

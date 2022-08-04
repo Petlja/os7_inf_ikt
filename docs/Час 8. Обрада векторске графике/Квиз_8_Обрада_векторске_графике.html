@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -459,7 +423,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="L78P1">
-            <p>Q-62: Које опције за комбиновање објеката (Union, Difference, Intersection, Exclusion, Divison или Cut Path) подсећају на скуповне операције? Означи све тачне одговоре.</p>
+            <p>Q-63: Које опције за комбиновање објеката (Union, Difference, Intersection, Exclusion, Divison или Cut Path) подсећају на скуповне операције? Означи све тачне одговоре.</p>
 
             <li data-component="answer" data-correct id="L78P1_opt_a">Union</li><li data-component="feedback" id="L78P1_opt_a">Тачно</li>
             
@@ -478,7 +442,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L78P2">
-            <p>Q-63: Који тастер треба да држимо притиснут ако желимо да задржимо пропорције објекта (исти однос ширине и висине), током промене величине објекта у програму Inkscape? Означи све тачне одговоре.</p>
+            <p>Q-64: Који тастер треба да држиш притиснут ако желиш да задржиш пропорције објекта (исти однос ширине и висине), током промене величине објекта у програму Inkscape? Означи тачан одговор.</p>
 
             <li data-component="answer"  id="L78P2_opt_a">Home</li><li data-component="feedback" id="L78P2_opt_a">Нетачно</li>
             
@@ -497,17 +461,17 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="L78P3">
-            <p>Q-64: Koје од наведених тврдњи су тачне? Означи све тачне одговоре.</p>
+            <p>Q-65: Koје од наведених тврдњи су тачне? Означи све тачне одговоре.</p>
 
-            <li data-component="answer" data-correct id="L78P3_opt_a">Објекат ротирамо повлачењем одговарајуће двостране стрелице која се налази у углу означеног објекта.</li><li data-component="feedback" id="L78P3_opt_a">Тачно</li>
+            <li data-component="answer" data-correct id="L78P3_opt_a">Објекат ротираш повлачењем одговарајуће двостране стрелице која се налази у углу означеног објекта.</li><li data-component="feedback" id="L78P3_opt_a">Тачно</li>
             
             <li data-component="answer"  id="L78P3_opt_b">Кликом на објекат у програму Inkscape око њега се формира оквир са девет двостраних стрелица.</li><li data-component="feedback" id="L78P3_opt_b">Нетачно</li>
             
-            <li data-component="answer" data-correct id="L78P3_opt_c">Величину објекта мењамо кликом и повлачењем одговарајућих двостраних стрелица.</li><li data-component="feedback" id="L78P3_opt_c">Тачно</li>
+            <li data-component="answer" data-correct id="L78P3_opt_c">Величину објекта мењаш кликом и повлачењем одговарајућих двостраних стрелица.</li><li data-component="feedback" id="L78P3_opt_c">Тачно</li>
             
-            <li data-component="answer"  id="L78P3_opt_d">Објекат ћемо хоризонтално искосити повлачењем двостране стрелице која се налази на средини странице оквира означеног објекта (с леве и десне стране).</li><li data-component="feedback" id="L78P3_opt_d">Нетачно</li>
+            <li data-component="answer"  id="L78P3_opt_d">Објекат ћеш хоризонтално искосити повлачењем двостране стрелице која се налази на средини странице оквира означеног објекта (с леве и десне стране).</li><li data-component="feedback" id="L78P3_opt_d">Нетачно</li>
             
-            <li data-component="answer"  id="L78P3_opt_e">Објекат ћемо вертикално искосити повлачењем двостране стрелице која се налази на средини странице оквира означеног објекта (горе и доле).</li><li data-component="feedback" id="L78P3_opt_e">Нетачно</li>
+            <li data-component="answer"  id="L78P3_opt_e">Објекат ћеш вертикално искосити повлачењем двостране стрелице која се налази на средини странице оквира означеног објекта (горе и доле).</li><li data-component="feedback" id="L78P3_opt_e">Нетачно</li>
             
 
             </ul>
@@ -518,7 +482,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="L78P4">
-            <p>Q-65: На који начин можемо да копирамо означени објекат у програму Inkscape на страницу. Означи све тачне одговоре.</p>
+            <p>Q-66: На који начин можеш да копираш означени објекат у програму Inkscape на страницу. Означи све тачне одговоре.</p>
 
             <li data-component="answer" data-correct id="L78P4_opt_a">десним кликом миша на објекат на страници и одабиром наредбе Copy и Paste из падајућег менија.</li><li data-component="feedback" id="L78P4_opt_a">Тачно</li>
             
@@ -537,7 +501,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L78P5">
-            <p>Q-66: Који тастер у програму Inkscape треба да држимо да бисмо означили више објеката? Означи све тачне одговоре.</p>
+            <p>Q-67: Који тастер у програму Inkscape треба да држимо да бисмо означили више објеката? Означи тачан одговор.</p>
 
             <li data-component="answer"  id="L78P5_opt_a">Home</li><li data-component="feedback" id="L78P5_opt_a">Нетачно</li>
             
