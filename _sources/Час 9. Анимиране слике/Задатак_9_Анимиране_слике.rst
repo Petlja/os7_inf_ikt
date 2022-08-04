@@ -8,7 +8,7 @@
 Прeузми на свој рачунар следећу слику и од ње креирај девет слика у **gif** формату које ће представљати фрејмове за анимацију облака. 
 
 .. image:: ../../_images/animacijeZoblak.png
-    :width: 700px
+    :width: 780px
     :align: center
 
 
@@ -25,7 +25,7 @@
 
 
 .. image:: ../../_images/animacijeZdecak.png
-    :width: 600px
+    :width: 780px
     :align: center
 
 Од припремљених слика у програму Microsoft Gif Animator креирај анимацију.
