@@ -6,6 +6,7 @@
     <title>Хипервеза и хипертекст</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -423,40 +425,49 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
-<dt>На овом часу ћеш научити:</dt><dd><ul class="simple">
-<li><p>шта су хипервеза и хипертекст;</p></li>
+<dt>На овом часу научићеш:</dt><dd><ul class="simple">
+<li><ul>
+<li><p>шта су хипервеза (hyperlink) и хипертекст (hypertext);</p></li>
+</ul>
+</li>
 <li><p>како да креираш хипервезе у текстуалном документу;</p></li>
-<li><p>како да креираш хипервезе у мултимедијалној презенацији.</p></li>
+<li><p>како да креираш хипервезе у мултимедијалној презентацији.</p></li>
 </ul>
 </dd>
 </dl>
 
-    </p></div></div>
+    </div></div>
 <p>Када читаш књигу, обично је читаш редом страницу по страницу, од почетка па све до краја. Такав редослед читања назива се <strong>линеаран</strong> (праволинијски). Најчешћи начин на који читаш текстуалне документе који су у израђени у неком програму за обраду текста јесте управо такав, линеаран начин приступа.
-У дигиталном тексту постоји могућност и другачије организације редоследа читања захваљујући постојању посебних <strong>веза</strong> или <strong>линкова</strong> које те воде ка другим деловима текста у оквиру самог документа, неког другог документа или ка било ком другом ресурсу на интернету.
+У дигиталном тексту постоји могућност и другачије организације редоследа читања, захваљујући постојању посебних <strong>веза</strong> или <strong>линкова</strong> које те воде ка другим деловима текста у оквиру самог документа, неког другог документа или ка било ком другом ресурсу на интернету.
 Такав посебно означен део текста који води ка другим деловима истог текста или ка неком другом садржају назива се <strong>хипервеза</strong> или <strong>хиперлинк</strong> (енг. <strong>hyperlink</strong>), а текст који садржи хипервезе назива се <strong>хипертекст</strong> (енг. <strong>hypertext</strong>).
-Хипертекст је текст у ком одабрана реч, више речи или слика може служити као хипервеза (hyperlink) према другим текстовима, сликама или звучним записима.</p>
+Хипертекст је текст у ком одабрана реч, више речи или слика може служити као хипервеза према другим текстовима, сликама или звучним записима.</p>
 <p>Хипертекст се користи у изради веб-страница. Текстуални хиперлинкови су обично подвучени и у другој боји у односу на остатак текста на веб-страници.
 Хипертекст омогућује произвољан <strong>нелинеаран</strong> редослед читања, односно прегледања садржаја, што омогућује претраживање интернета. Све интернет странице којима приступаш представљају хипертекст који садржи хипервезе, а оне те повезују са страницама које желиш да посетиш.
-Сетимо се назива протокола за пренос и приказивање веб-страница HTTP - HyperText Transfer Protokol.</p>
-<a class="reference internal image-reference" href="../_images/hipertext.png"><img alt="../_images/hipertext.png" class="align-center" src="../_images/hipertext.png" style="width: 600px;" /></a>
+Сетимо се назива протокола за пренос и приказивање веб-страница HTTP - HyperText Transfer Protocol.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/fajlovi_linkovi.png"><img alt="../_images/fajlovi_linkovi.png" src="../_images/fajlovi_linkovi.png" style="width: 780px;" /></a>
+</div>
 <div class="section" id="id2">
 <h2>Приказ хипервеза унутар једног веб-сајта<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Сваки <strong>веб-сајт</strong> се састоји од <strong>веб-страна</strong> које су <strong>повезане хиперлинковима</strong>, који се скраћено називају само линкови. Веб-стране практично можемо сматрати хипертекстуалним документима. Међутим, како поред текста, веб-стране садрже и слике, анимације, звучне и видео записе, оне су мултимедијалне па је исправније рећи да су веб-стране хипермедијални документи.
-За читање хипертекста користи се израз прегледање (енгл. browsing) па по томе и назив програма за прегледање хипертекста на вебу <strong>веб-прегледач</strong> или <strong>веб-браузер</strong> или скраћено само <strong>браузер</strong>.
-Кликом на линк веб прегледач те пребацује на садржај који се налази на истој или на другој страници тог сајта или неког другог сајта. Некада су линкови подешени тако да се, када се кликне на њих, садржај на који упућују отвара у новој картици веб-прегледача или у новом прозору. Уколико то није случај, онда се саржај на који линк упућује приказује у истом прозору уместо претходног садржаја.
+<p>Сваки <strong>веб-сајт</strong> се састоји од <strong>веб-страна</strong> (webpages) које су <strong>повезане хиперлинковима</strong>, који се скраћено називају само линкови. Веб-стране практично можемо сматрати хипертекстуалним документима. Међутим, како поред текста, веб-стране садрже и слике, анимације, звучне и видео записе, оне су мултимедијалне па је исправније рећи да су веб-стране хипермедијални документи.
+За читање хипертекста користи се израз прегледање (енгл. <em>browsing</em>), па по томе и назив програма за прегледање хипертекста на вебу <strong>веб-прегледач</strong> или <strong>веб-браузер</strong> или скраћено само <strong>браузер</strong>.
+Кликом на линк, веб-прегледач те пребацује на садржај који се налази на истој или на другој страници тог сајта или неког другог сајта. Некада су линкови подешени тако да се, када се кликне на њих, садржај на који упућују отвара у новој картици веб-прегледача или у новом прозору. Уколико то није случај, онда се садржај на који линк упућује приказује у истом прозору уместо претходног садржаја.
 Уколико то желиш да промениш, потребно је да кликнеш десним тастером миша на линк и одабереш опцију <code class="docutils literal notranslate"><span class="pre">Отвори</span> <span class="pre">линк</span> <span class="pre">у</span> <span class="pre">новој</span> <span class="pre">картици</span></code> (<code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">link</span> <span class="pre">in</span> <span class="pre">new</span> <span class="pre">tab</span></code>) или <code class="docutils literal notranslate"><span class="pre">Отвори</span> <span class="pre">линк</span> <span class="pre">у</span> <span class="pre">новом</span> <span class="pre">прозору</span></code> (<code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">link</span> <span class="pre">in</span> <span class="pre">new</span> <span class="pre">window</span></code>).</p>
-<a class="reference internal image-reference" href="../_images/Hiperlink.png"><img alt="../_images/Hiperlink.png" class="align-center" src="../_images/Hiperlink.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Hiperlink.png"><img alt="../_images/Hiperlink.png" class="screenshot-shadow" src="../_images/Hiperlink.png" style="width: 800px;" /></a>
+</div>
 <p>Понекад је потребно да и у документима које креираш користиш хипервезе. Такве хипертекстуалне односно хипермедијалне документе можеш стварати и помоћу програма за обраду текста или израду мултимедијалних презентација. У наставку ћеш научити како да убациш хипервезе у Word документ и PowerPoint презентацију.</p>
 </div>
 <div class="section" id="microsoft-word">
 <h2>Уметање хипервезе у текстуални документ у Microsoft Word-у<a class="headerlink" href="#microsoft-word" title="Permalink to this headline">¶</a></h2>
-<p>Једна од могућности за примену хипервеза у текстуалном документу је приликом креирања садржаја када је уместо броја странице могуће користити хипервезе. На тај начин попут приступа одређеним интернет страницамa преко хипервеза и у текстуалном документу можеш приступати различитим деловима истог документа, што је посебно погодно када су у питању документи са великим бројем страна па се лако може прелазити рецимо са једног на друго поглавље документа. Ово је погодно на пример за креирање збирке песама код које садржај можеш креирати користећи могућност да се уместо преко броја стране одговарајућој песми приступа преко хиперлинка. На овај начин креирају се хиперлинкови у оквиру самог документа.</p>
+<p>Једна од могућности за примену хипервеза у текстуалном документу је приликом креирања садржаја када је уместо броја странице могуће користити хипервезе. На тај начин, попут приступа одређеним интернет страницамa преко хипервеза, и у текстуалном документу можеш приступати различитим деловима истог документа, што је посебно погодно када су у питању документи са великим бројем страна, па се лако може прелазити, рецимо, са једног на друго поглавље документа. Ово је погодно, на пример, за креирање збирке песама код које садржај можеш креирати користећи могућност да се уместо преко броја стране одговарајућој песми приступа преко хиперлинка. На овај начин креирају се хиперлинкови у оквиру самог документа.</p>
 <p>Понекад је потребно креирати хипервезе ка неким другим документима који су снимљени на рачунару или се налазе на интернету.</p>
-<p>У програму Microsoft Word опција за додавање хипервезе налази се на картици <strong>Insert</strong> у групи <strong>Links</strong>. За прављење хипервезе најпре је потребно да означиш део текста који ће представљати хипервезу (као што је на слици означена реч <em>брошура</em>), а онда кликнути на опцију <code class="docutils literal notranslate"><span class="pre">Insert</span></code> - <code class="docutils literal notranslate"><span class="pre">Hyperlink</span></code> након чега се отвара прозор у коме се у пољу <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">to</span> <span class="pre">display</span></code> аутоматски налази текст који је означен, али ту можеш унети и неки други текст који ће представљати хипервезу, те ће тај текст заменити претходно означени.</p>
-<a class="reference internal image-reference" href="../_images/Hiperlink1.png"><img alt="../_images/Hiperlink1.png" class="align-center" src="../_images/Hiperlink1.png" style="width: 800px;" /></a>
+<p>У програму Microsoft Word опција за додавање хипервезе налази се на картици <strong>Insert</strong> у групи <strong>Links</strong>. За прављење хипервезе најпре је потребно да означиш део текста који ће представљати хипервезу (као што је на слици означена реч <em>брошура</em>), а онда кликнути на опцију <code class="docutils literal notranslate"><span class="pre">Insert</span></code> - <code class="docutils literal notranslate"><span class="pre">Hyperlink</span></code>, након чега се отвара прозор у коме се у пољу <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">to</span> <span class="pre">display</span></code> аутоматски налази текст који је означен, али ту можеш унети и неки други текст који ће представљати хипервезу, те ће тај текст заменити претходно означени.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Hiperlink1.png"><img alt="../_images/Hiperlink1.png" class="screenshot-shadow" src="../_images/Hiperlink1.png" style="width: 800px;" /></a>
+</div>
 <dl class="simple">
 <dt>Затим је потребно да подесиш путању (<code class="docutils literal notranslate"><span class="pre">Link</span> <span class="pre">to...</span></code>):</dt><dd><ul class="simple">
 <li><p>до постојећег документа или веб-стране (<code class="docutils literal notranslate"><span class="pre">Existing</span> <span class="pre">File</span> <span class="pre">or</span> <span class="pre">Web</span> <span class="pre">page</span></code>);</p></li>
@@ -473,15 +484,23 @@
 </dd>
 </dl>
 <p>Такође, у пољу <code class="docutils literal notranslate"><span class="pre">Address</span></code> можеш унети интернет адресу садржаја којем желиш да приступиш, као што је то приказано на слици.</p>
-<a class="reference internal image-reference" href="../_images/Hiperlink2.png"><img alt="../_images/Hiperlink2.png" class="align-center" src="../_images/Hiperlink2.png" style="width: 800px;" /></a>
-<p>Након тога означени део текста постаје хипервеза обојена обично плавом бојом и подвучена, а када поставиш показивач миша преко ње добићеш обавештење на коју веб адресу ће те одвести.</p>
-<a class="reference internal image-reference" href="../_images/Hiperlink3.png"><img alt="../_images/Hiperlink3.png" class="align-center" src="../_images/Hiperlink3.png" style="width: 450px;" /></a>
-<p>Путања хипервезе може се поставити да води и до адресе електронске поште и тај поступак је приказан на наредној слици.</p>
-<a class="reference internal image-reference" href="../_images/Hiperlink4.png"><img alt="../_images/Hiperlink4.png" class="align-center" src="../_images/Hiperlink4.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Hiperlink2.png"><img alt="../_images/Hiperlink2.png" class="screenshot-shadow" src="../_images/Hiperlink2.png" style="width: 800px;" /></a>
+</div>
+<p>Након тога, означени део текста постаје хипервеза, обојена обично плавом бојом и подвучена, а када поставиш показивач миша преко ње добићеш обавештење на коју веб адресу ће те одвести.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Hiperlink3.png"><img alt="../_images/Hiperlink3.png" class="screenshot-shadow" src="../_images/Hiperlink3.png" style="width: 450px;" /></a>
+</div>
+<p>Путања хипервезе може се поставити да води и до адресе електронске поште, и тај поступак је приказан на наредној слици.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Hiperlink4.png"><img alt="../_images/Hiperlink4.png" class="screenshot-shadow" src="../_images/Hiperlink4.png" style="width: 800px;" /></a>
+</div>
 <p>Креирану хипервезу можеш накнадно изменити, отворити, копирати или уклонити онако како је и креирана на картици <strong>Insert</strong> задавањем опције <code class="docutils literal notranslate"><span class="pre">Hyperlink</span></code> у групи <strong>Links</strong> или ако десним кликом миша кликнеш на њу и изабереш одговарајућу опцију од понуђених опција.</p>
-<a class="reference internal image-reference" href="../_images/Hiperlink5.png"><img alt="../_images/Hiperlink5.png" class="align-center" src="../_images/Hiperlink5.png" style="width: 500px;" /></a>
-<p>Оно што је битно да знаш и о чему треба да водиш рачуна јесте путања до садржаја коме желиш да се приступи. Постоје два типа путања до овог садржаја, тзв. апсолутне и релативне путање.
-Апсолутна путања је комплетна путања одређене датотеке или фасцикле почев од root фасцикле. Релативна путања је путања одређене датотеке или фасцикле у односу на тренутну радну фасциклу.
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Hiperlink5.png"><img alt="../_images/Hiperlink5.png" class="screenshot-shadow" src="../_images/Hiperlink5.png" style="width: 500px;" /></a>
+</div>
+<p>Оно што је битно да знаш и о чему треба да водиш рачуна јесте путања до садржаја коме желиш да се приступи. Постоје два типа путања до овог садржаја - тзв. апсолутне и релативне путање.
+Апсолутна путања је комплетна путања одређене датотеке или фасцикле, почев од root фасцикле. Релативна путања је путања одређене датотеке или фасцикле у односу на тренутну радну фасциклу.
 На пример, ако желиш да направиш хипервезу ка датотеци <em>slika.jpg</em> која се налази у фолдеру <em>Informatika</em> на <em>C</em> диску рачунара, потребно је да у пољу <code class="docutils literal notranslate"><span class="pre">Address</span></code> откуцаш:
 <strong>c:\Informatika\slika.jpg</strong> и то је <em>апсолутна путања</em>, док је <strong>slika.jpg</strong> <em>релативна путања</em>. Треба нагласити да се код ове релативне путање слика налази у истом фолдеру као и текстуални документ у којем се прави хипервеза.
 Апсолутна путања наводи се од основног фолдера (коренски фолдер на рачунару) па до конкретног фајла, док се релативна наводи од фолдера у коме се налази фајл из кога се врши повезивање.
@@ -497,15 +516,17 @@
 </ul>
 </dd>
 </dl>
-<p>У PowerPoint-у је карактеристично то да је сваки слајд већ обележен као место у документу до кога може водити линк па је постављање линкова ка другим слајдовима веома једноставно. У прозору <strong>InsertHyperlink</strong> треба да одабереш опцију <code class="docutils literal notranslate"><span class="pre">Place</span> <span class="pre">in</span> <span class="pre">this</span> <span class="pre">document</span></code> као што је то означено на слици, затим кликнеш на слајд до кога хиперлинк треба да те одведе и на крају избор потврдиш кликом на дугме <strong>OK</strong>.</p>
-<a class="reference internal image-reference" href="../_images/Hiperlink6.png"><img alt="../_images/Hiperlink6.png" class="align-center" src="../_images/Hiperlink6.png" style="width: 800px;" /></a>
+<p>У PowerPoint-у је карактеристично то да је сваки слајд већ обележен као место у документу до кога може водити линк, па је постављање линкова ка другим слајдовима веома једноставно. У прозору <strong>InsertHyperlink</strong> треба да одабереш опцију <code class="docutils literal notranslate"><span class="pre">Place</span> <span class="pre">in</span> <span class="pre">this</span> <span class="pre">document</span></code> као што је то означено на слици, затим кликнеш на слајд до кога хиперлинк треба да те одведе и на крају избор потврдиш кликом на дугме <strong>OK</strong>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/Hiperlink6.png"><img alt="../_images/Hiperlink6.png" src="../_images/Hiperlink6.png" style="width: 800px;" /></a>
+</div>
 <p>У PowerPoint-у можеш додати, као и у Word-у, хипервезу ка неком веб-сајту, видео-запису који се налази на YouTube-у или репродуковати аудио запис који се налази на рачунару, што презентацију може учинити занимљивијом.</p>
 <dl class="simple">
 <dt>Шта смо научили:</dt><dd><ul class="simple">
 <li><p>посебно означен део текста који води ка другим деловима истог текста или ка неком другом садржају назива се хипервеза или хиперлинк (енг. hyperlink), а текст који садржи хипервезе назива се хипертекст (енг. hypertext).</p></li>
-<li><p>Хипертекст се користи у изради веб-страница. Текстуални хиперлинкови су обично подвучени и у другој боји у односу на остатак текста на веб-страници. Хипертекст омогућује произвољан нелинеаран редослед читања што омогућује претраживање интернета.</p></li>
+<li><p>Хипертекст се користи у изради веб-страница. Текстуални хиперлинкови су обично подвучени и у другој боји у односу на остатак текста на веб-страници. Хипертекст омогућује произвољан нелинеаран редослед читања, што омогућује претраживање интернета.</p></li>
 <li><p>У програму Microsoft Word опција за додавање хипервезе налази се на картици Insert у групи Links. За прављење хипервезе најпре је потребно да означиш део текста који ће представљати хипервезу а онда кликнути на опцију Insert - Hyperlink.</p></li>
-<li><p>На сличан начин као и у текстуалном документу хипервезе можеш креирати и у слајд-презентацијама у програму Microsoft PowerPoint.</p></li>
+<li><p>На сличан начин као и у текстуалном документу, хипервезе можеш креирати и у слајд-презентацијама у програму Microsoft PowerPoint.</p></li>
 </ul>
 </dd>
 </dl>

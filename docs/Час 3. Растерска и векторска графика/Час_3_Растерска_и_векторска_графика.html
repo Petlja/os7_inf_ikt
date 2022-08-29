@@ -6,6 +6,7 @@
     <title>Растерска и векторска графика</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -423,7 +425,7 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
 <dt>На овом часу ћеш научити:</dt><dd><ul class="simple">
 <li><p>како се дели рачунарска графика;</p></li>
@@ -434,10 +436,14 @@
 </dd>
 </dl>
 
-    </p></div></div>
+    </div></div>
 <p>Да се подсетимо, рачунарска графика представља визуелну репрезентацију информација помоћу слика тј. боја и облика на екрану дигиталног уређаја.</p>
 <p>Прве кораке у развоју рачунарске графике направио је Ајван Сатерленд (енгл. Ivan Sutherland), када је 1962. године креирао рачунарски програм под именом Sketchpad, који је омогућавао цртање на рачунару.</p>
-<a class="reference internal image-reference" href="../_images/L73S1.jpg"><img alt="../_images/L73S1.jpg" class="align-center" src="../_images/L73S1.jpg" style="width: 400px;" /></a>
+<div class="figure align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/L73S1.jpg"><img alt="../_images/L73S1.jpg" src="../_images/L73S1.jpg" style="width: 780px;" /></a>
+<p class="caption"><span class="caption-text">Kerry Rodden, скен оригиналне фотографије Ivanа Sutherlandа,
+CC BY-SA 3.0 &lt;<a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0">https://creativecommons.org/licenses/by-sa/3.0</a>&gt;, via Wikimedia Commons</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
 <p>Најчешћa поделa рачунарске графике je на:</p>
 <ul class="simple">
 <li><p>2Д и 3Д графику и</p></li>
@@ -445,20 +451,28 @@
 </ul>
 <p>Појам <strong>2Д графика</strong> односи се на слике које имају 2 димензије (ширину и дужину), као што су фотографија,
 цртеж, графикон и слично.</p>
-<a class="reference internal image-reference" href="../_images/L73S2.png"><img alt="../_images/L73S2.png" class="align-center" src="../_images/L73S2.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L73S2.png"><img alt="../_images/L73S2.png" src="../_images/L73S2.png" style="width: 300px;" /></a>
+</div>
 <p>Појам <strong>3Д графика</strong> односи се на креирање и приказивање тродимензионалних објеката у дигиталном облику.
 Ови 3Д модели се користе за креирање рачунарских игара, симулација, у архитектури и грађевинарству,
 медицини и многим другим областима.</p>
-<a class="reference internal image-reference" href="../_images/L73S3.png"><img alt="../_images/L73S3.png" class="align-center" src="../_images/L73S3.png" style="width: 200px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L73S3.png"><img alt="../_images/L73S3.png" src="../_images/L73S3.png" style="width: 200px;" /></a>
+</div>
 <div class="section" id="id2">
 <h2>Растерска графика<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Хајде да се подсетимо.</p>
 <div class="section" id="id3">
 <h3>Питање:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L73P1">
-            <p>Q-46: За коју врсту рачунарске графике пиксел представља основни градивни елемент. Означи тачан одговор.</p>
+            <p>Q-46: За коју врсту рачунарске графике пиксел представља основни градивни елемент? Означи тачан одговор:</p>
 
             <li data-component="answer" data-correct id="L73P1_opt_a">растерска графика</li><li data-component="feedback" id="L73P1_opt_a">Тачно</li>
             
@@ -478,10 +492,17 @@
 <div class="line"><br /></div>
 </div>
 <blockquote>
-<div><a class="reference internal image-reference" href="../_images/L73S4.jpg"><img alt="../_images/L73S4.jpg" class="align-center" src="../_images/L73S4.jpg" style="width: 400px;" /></a>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L73S4.jpg"><img alt="../_images/L73S4.jpg" src="../_images/L73S4.jpg" style="width: 400px;" /></a>
+</div>
 </div></blockquote>
 
-        <div class="course-box course-box-question course-content">
+        <div class="course-box course-box-question course-content petlja-problem-box fitb-question">
+        <div class="image-background"></div>
+        <div class="petlja-problem-box-icon-holder"> </div>
+        <img src="../_static/img/fitb-img.svg" class="petlja-problem-image  fitb-image" /> 
+        <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+        
         <div data-component="fillintheblank" id="L73P2">
             <p>Колико пиксела је висока дата слика?</p>
 <p>Одговор: <input type="text"></p>
@@ -493,7 +514,12 @@
         </div>
         </div>
             
-        <div class="course-box course-box-question course-content">
+        <div class="course-box course-box-question course-content petlja-problem-box fitb-question">
+        <div class="image-background"></div>
+        <div class="petlja-problem-box-icon-holder"> </div>
+        <img src="../_static/img/fitb-img.svg" class="petlja-problem-image  fitb-image" /> 
+        <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+        
         <div data-component="fillintheblank" id="L73P3">
             <p>Колико пиксела је широка дата слика?</p>
 <p>Одговор: <input type="text"></p>
@@ -505,7 +531,12 @@
         </div>
         </div>
             
-        <div class="course-box course-box-question course-content">
+        <div class="course-box course-box-question course-content petlja-problem-box fitb-question">
+        <div class="image-background"></div>
+        <div class="petlja-problem-box-icon-holder"> </div>
+        <img src="../_static/img/fitb-img.svg" class="petlja-problem-image  fitb-image" /> 
+        <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+        
         <div data-component="fillintheblank" id="L73P4">
             <p>Од колико пиксела се састоји дата слика?</p>
 <p>Одговор: <input type="text"></p>
@@ -516,8 +547,10 @@
 
         </div>
         </div>
-            <p>У предходној лекцији смо научили да се у сваком пикселу налазе три извора светлости. У сваком тренутку један од њих емитује задату количину црвене, други зелене, а трећи плаве светлости. У систему боја TrueColor, ове количине се изражавају бројевима од 0 до 255. Према томе, у систему боја TrueColor се боја сваког пиксела дефинише трима бројним вредностима од 0 до 255 (0 представља одсуство једне основне боје, а 255 њен највиши интензитет). На пример, (255, 0, 0) представља црвену боју – интензитет светла црвене боје је максималан, док је интензитет зелене и плаве 0.</p>
-<a class="reference internal image-reference" href="../_images/L73S5.png"><img alt="../_images/L73S5.png" class="align-center" src="../_images/L73S5.png" style="width: 500px;" /></a>
+            <p>У претходној лекцији смо научили да се у сваком пикселу налазе три извора светлости. У сваком тренутку један од њих емитује задату количину црвене, други зелене, а трећи плаве светлости. У систему боја TrueColor, ове количине се изражавају бројевима од 0 до 255. Према томе, у систему боја TrueColor се боја сваког пиксела дефинише трима бројним вредностима од 0 до 255 (0 представља одсуство једне основне боје, а 255 њен највиши интензитет). На пример, (255, 0, 0) представља црвену боју – интензитет светла црвене боје је максималан, док је интензитет зелене и плаве 0.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L73S5.png"><img alt="../_images/L73S5.png" src="../_images/L73S5.png" style="width: 500px;" /></a>
+</div>
 <p>Kвалитет растерске слике одређују следеће две величине:</p>
 <ul class="simple">
 <li><p>резолуција, која представља број пиксела слике по јединици дужине и</p></li>
@@ -525,27 +558,31 @@
 </ul>
 <p>Што је дубина боје већа, то ће слика бити вернија. Међутим, већа дубина боје захтева и више меморије за приказивање слике.</p>
 <p>Оно што већ знамо је да увећавањем растерска слика губи на квалитету. Увећавањем растерске слике се не мења укупан број пиксела од којих се слика састоји, већ се пиксели приказују као већи, што доводи до губитка оштрине слике.</p>
-<p>На следећој слици је приказана растерска слика и увећани детаљ слике.</p>
-<a class="reference internal image-reference" href="../_images/L73S6.png"><img alt="../_images/L73S6.png" class="align-center" src="../_images/L73S6.png" style="width: 600px;" /></a>
+<p>На следећој слици је приказана растерска слика и увећани детаљ слике:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L73S6.png"><img alt="../_images/L73S6.png" src="../_images/L73S6.png" style="width: 600px;" /></a>
+</div>
 </div>
 </div>
 <div class="section" id="id5">
 <h2>Векторска графика<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Осим помоћу пиксела слике у дигиталним уређајима могу бити записане и на други начин. Слика може бити записана помоћу геометријских облика од којих се састоји. Оваква начин записивања слика назива се <strong>векторска графика</strong>.</p>
+<p>Осим помоћу пиксела, слике у дигиталним уређајима могу бити записане и на други начин. Слика може бити записана помоћу геометријских облика од којих се састоји. Овакав начин записивања слика назива се <strong>векторска графика</strong>.</p>
 <p>Код векторске графике памте се геометријски облици који се заснивају на математичким функцијама. Основне елементе (тачке, линије, криве, кругове, многоуглове…) који граде слику називамо објектима. Објекти који формирају слику могу да буду отворени или затворени, испуњени или неиспуњени, један поред другог или један испред другог (да се преклапају) и сл.</p>
 <p>За исцртавање векторске слике, рачунари користе геометријске фигуре, тачније математичке формуле које описују начин и редослед исцртавања објеката.
-Векторска слика чини скуп геометријских фигура (нпр. круг, правоугаоник,..) и параметара који дефинишу како и где ће фигура бити исцртана (стил и боја линије, позиција центра круга или горњег левог угла правоугаоника,…).
+Векторска слика чини скуп геометријских фигура (нпр. круг, правоугаоник…) и параметара који дефинишу како и где ће фигура бити исцртана (стил и боја линије, позиција центра круга или горњег левог угла правоугаоника,…).
 Количина меморије потребна за чување сваког оваквог објекта је само неколико бајтова, без обзира на то колика је величина објекта који се приказује.
 Према томе, количина меморије потребна за памћење слике зависи само од броја елемената од којих се векторска слика састоји, а не од величине слике.</p>
-<p>У процесу увећавања векторске слике објекти се поново исртавају па се она може неограничено повећавати без губитка квалитета.
+<p>У процесу увећавања векторске слике објекти се поново исцртавају па се она може неограничено повећавати без губитка квалитета.
 Због тога се векторска графика користи приликом израде слика за рекламе на билбордима, плакате, као и за техничке цртеже у пројектовању.</p>
-<p>На следећој слици је приказана векторска слика и увећани детаљ слике.</p>
-<a class="reference internal image-reference" href="../_images/L73S7.png"><img alt="../_images/L73S7.png" class="align-center" src="../_images/L73S7.png" style="width: 600px;" /></a>
+<p>На следећој слици је приказана векторска слика и увећани детаљ слике:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L73S7.png"><img alt="../_images/L73S7.png" src="../_images/L73S7.png" style="width: 600px;" /></a>
+</div>
 </div>
 <div class="section" id="id6">
 <h2>Типови графичких датотека<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>Данашњи дигитални уређаји имају камере који снимају слике високе резолуције, због чега такве слике заузимају велику количину меморије.</p>
-<p>Да би се смањила количина меморије потребна за чување слика развијене су различите технике компресије дигиталне слике.</p>
+<p>Да би се смањила количина меморије потребна за чување слика, развијене су различите технике компресије дигиталне слике.</p>
 <p><strong>Компресија без губитака (lossless)</strong> смањује величину датотеке без смањења квалитета слике. Kористи се кад је квалитет слике важнији од величине датотеке.</p>
 <p><strong>Компресија са губитком података (lossy)</strong> користи ограничења људског ока и слика се замењује сличном сликом која се може записати са мање података, тако да људско око углавном не примећује разлику између оригиналне и сачуване слике.</p>
 <p>Најчешће коришћени типови (формати) растерских датотека представљени су у следећој табели.</p>
@@ -568,11 +605,11 @@
 </tr>
 <tr class="row-odd"><td><p>RAW</p></td>
 <td><p>некомпримован</p></td>
-<td><p>формат записа фотографије у којем фотоапарат бележи све податке које је забележио и сам дигитални сензор фотоапарата (RAW значи сиров, необрађен). У овом формату нема компресије па ни редукције квалитета слике;</p></td>
+<td><p>формат записа фотографије, у којем фотоапарат бележи све податке које је забележио и сâм дигитални сензор фотоапарата (RAW значи сиров, необрађен). У овом формату нема компресије, па ни редукције квалитета слике;</p></td>
 </tr>
 <tr class="row-even"><td><p>GIF (Graphics Interchange Format)</p></td>
 <td><p>Са губицима (lossy)</p></td>
-<td><p>формат ограничен на 8-битну палету, односно 256 боја чиме се смањује количина података. Погодан је за чување графике са релативно мало боја као што су дијаграми, геометријски облици и логотипи. Подржава анимације и често се користи за приказ анимација на веб страници;</p></td>
+<td><p>формат ограничен на 8-битну палету, односно 256 боја, чиме се смањује количина података. Погодан је за чување графике са релативно мало боја као што су дијаграми, геометријски облици и логотипи. Подржава анимације и често се користи за приказ анимација на веб-страници;</p></td>
 </tr>
 <tr class="row-odd"><td><p>JPEG (Joint Photographic Experts Group)</p></td>
 <td><p>Са губицима (lossy)</p></td>
@@ -588,11 +625,11 @@
 </tr>
 </tbody>
 </table>
-<p>Један од првих графичких формата био је BMP (bitmap) формат, али је он све мање у употреби. Према овом формату растерске слике често се називају битмапиране слике. Код овог формата памти се сваки пиксел слике појединачно, са одговарајућим бројем бајтова који одређују боју. Нема компресије па ни редукције квалитета због чега су слике сачуване у овом формату веома велике.</p>
+<p>Један од првих графичких формата био је BMP (bitmap) формат, али је он све мање у употреби. Према овом формату, растерске слике често се називају битмапиране слике. Код овог формата памти се сваки пиксел слике појединачно, са одговарајућим бројем бајтова који одређују боју. Нема компресије, па ни редукције квалитета, због чега су слике сачуване у овом формату веома велике.</p>
 <p>Формати за чување векторских датотека углавном зависе од програма у којем је садржај датотеке направљен.</p>
 <p>Најчешће коришћени типови (формати) векторских датотека су:</p>
 <ul class="simple">
-<li><p><strong>SVG</strong> (Scalable Vector Graphics) - формат намењен веб страницама;</p></li>
+<li><p><strong>SVG</strong> (Scalable Vector Graphics) - формат намењен веб-страницама;</p></li>
 <li><p><strong>PDF</strong> (Portable Document Format) - формат који се користи за запис докумената намењених за читање на екрану и штампање. Подржава чување и растерских слика;</p></li>
 <li><p><strong>CDR</strong> (CorelDraw) формат програма CorelDraw;</p></li>
 <li><p><strong>DWG</strong> (AutoCAD) формат програма AutoCAD.</p></li>
@@ -600,7 +637,7 @@
 </div>
 <div class="section" id="id7">
 <h2>Претраживање слика на интернету<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<p>Када нам је потребна нека информација или слика обично је потражимо на интернету уз помоћ неког веб-претраживача.</p>
+<p>Када нам је потребна нека информација или слика, обично је потражимо на интернету уз помоћ неког веб-претраживача.</p>
 <p>На следећој слици приказан је поступак за проналажење и преузимање слике са интернета:</p>
 <ol class="arabic simple">
 <li><p>уношење кључне речи;</p></li>
@@ -608,24 +645,34 @@
 <li><p>отварање слике у новом табу;</p></li>
 <li><p>чување слике на локални рачунар.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/L73S8.png"><img alt="../_images/L73S8.png" class="align-center" src="../_images/L73S8.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/kocke_search.png"><img alt="../_images/kocke_search.png" class="screenshot-shadow" src="../_images/kocke_search.png" style="width: 800px;" /></a>
+</div>
 <p>Осим оваквог начина претраге, према праву коришћења, приликом преузимања графичких датотека можемо изабрати коју величину слике желимо да пронађемо.</p>
 <p>На следећој слици приказан је поступак проналажења слике по величини на интернету:</p>
-<a class="reference internal image-reference" href="../_images/L73S9a.png"><img alt="../_images/L73S9a.png" class="align-center" src="../_images/L73S9a.png" style="width: 700px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/1_3_3.png"><img alt="../_images/1_3_3.png" class="screenshot-shadow" src="../_images/1_3_3.png" style="width: 780px;" /></a>
+</div>
 <p>Поступак:</p>
 <ol class="arabic simple">
 <li><p>уношење кључне речи;</p></li>
 <li><p>избор алатке;</p></li>
-<li><p>избор величине слике - опција <code class="docutils literal notranslate"><span class="pre">Any</span> <span class="pre">size</span></code> (било која величина);</p></li>
+<li><p>избор величине слике - опција <code class="docutils literal notranslate"><span class="pre">Any</span> <span class="pre">size</span></code> (било која величина).</p></li>
 </ol>
-<p>Уколико је потребно направити прецизније претраживање слика треба одабрати опцију за напредну претрагу. Ова опција се отвара тако што кликнемо на точкић у горњем десном углу (1) и одаберемо одговарајућу опцију (2).</p>
-<a class="reference internal image-reference" href="../_images/L73S9b.png"><img alt="../_images/L73S9b.png" class="align-center" src="../_images/L73S9b.png" style="width: 200px;" /></a>
+<p>Уколико је потребно направити прецизније претраживање слика, треба одабрати опцију за напредну претрагу. Ова опција се отвара тако што кликнемо на точкић у горњем десном углу (1) и одаберемо одговарајућу опцију (2).</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L73S9b.png"><img alt="../_images/L73S9b.png" class="screenshot-shadow" src="../_images/L73S9b.png" style="width: 200px;" /></a>
+</div>
 <p>Након избора опције <code class="docutils literal notranslate"><span class="pre">Напредна</span> <span class="pre">претрага</span></code> (Advanced search) приказаће се прозор у коме можемо да подешавамо
-различите опције за претрагу слика. За претрагу слике по величини одаберемо из падајуће листе потребно
-је да величину коју желимо и потврдимо жељени одабир.</p>
-<a class="reference internal image-reference" href="../_images/L73S9c.png"><img alt="../_images/L73S9c.png" class="align-center" src="../_images/L73S9c.png" style="width: 700px;" /></a>
+различите опције за претрагу слика. За претрагу слике по величини из падајуће листе потребно
+је да одаберемо величину коју желимо и потврдимо жељени одабир.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L73S9c.png"><img alt="../_images/L73S9c.png" class="screenshot-shadow" src="../_images/L73S9c.png" style="width: 780px;" /></a>
+</div>
 <p>Након избора приказаће нам се слике чија је величина, у овом случају, већа од 1024х768.</p>
-<a class="reference internal image-reference" href="../_images/L73S11.png"><img alt="../_images/L73S11.png" class="align-center" src="../_images/L73S11.png" style="width: 700px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L73S11.png"><img alt="../_images/L73S11.png" class="screenshot-shadow" src="../_images/L73S11.png" style="width: 780px;" /></a>
+</div>
 <div class="section" id="id8">
 <h3>Задатак:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Пронађи слике Николе Тесле чија је величина тачно 1920х1080 пиксела.</p>
@@ -634,7 +681,7 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
 <li><p>најчешћа подела рачунарске графике је на 2Д и 3Д графику, као и на растерску и векторску графику;</p></li>
@@ -652,7 +699,7 @@
 </dd>
 </dl>
 
-    </p></div></div>
+    </div></div>
 </div>
 </div>
 </div>

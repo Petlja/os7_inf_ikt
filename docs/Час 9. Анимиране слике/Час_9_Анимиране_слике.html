@@ -6,6 +6,7 @@
     <title>Анимиране слике</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -423,9 +425,9 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
-<dt>На овом часу ћеш научити:</dt><dd><ul class="simple">
+<dt>На овом часу научићеш:</dt><dd><ul class="simple">
 <li><p>шта су анимације;</p></li>
 <li><p>да креираш анимиране слике;</p></li>
 <li><p>да уградиш анимиране слике у мултимедијалну презентацију.</p></li>
@@ -433,11 +435,11 @@
 </dd>
 </dl>
 
-    </p></div></div>
-<p>Данас се покретне слике најчешће креирају помоћу рачунара и тада је реч о рачунарским анимацијама.
+    </div></div>
+<p>Данас се покретне слике најчешће креирају помоћу рачунара. и тада је реч о рачунарским анимацијама.
 <strong>Анимација</strong> је поступак стварања слике у покрету у правилним временским интервалима. Анимација подразумева брзу промену слике на екрану. На тај начин ствара се илузија да се објекат приказан на слици креће.
 На пример, брзим смењивањем следећих сличица имаћемо утисак да дечак трчи.</p>
-<a class="reference internal image-reference" href="../_images/L79S9.png"><img alt="../_images/L79S9.png" class="align-center" src="../_images/L79S9.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/animacijeZdecak.png"><img alt="../_images/animacijeZdecak.png" class="align-center" src="../_images/animacijeZdecak.png" style="width: 900px;" /></a>
 <p>Свака кратко приказана слика у оквиру анимације назива се <strong>оквир</strong> или <strong>фрејм</strong> анимације (енгл. frame).
 Брзина којом се слике мењају мери се бројем промена тих слика у секунди и означава се са <strong>fps</strong> (frames per second).</p>
 <p>У овој лекцији бавићемо се креирањем анимираних датотека које садрже слике чијим се мењањем ствара привид покретних слика.</p>
@@ -452,7 +454,7 @@
 
     <div  id="nyw4rP0FUfk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/nyw4rP0FUfk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -466,19 +468,19 @@
     <p>Радно окружење програма састоји се од три дела:</p>
 <ol class="arabic simple">
 <li><p>линије са алатима;</p></li>
-<li><p>простор за приказ фрејмова;</p></li>
+<li><p>простора за приказ фрејмова;</p></li>
 <li><p>три картице <strong>Options</strong>, <strong>Animation</strong> и <strong>Image</strong>.</p></li>
 </ol>
 <p>Kартице <strong>Animation</strong> и <strong>Image</strong> активирају се тек након постављања прве слике.</p>
-<a class="reference internal image-reference" href="../_images/L79S2.png"><img alt="../_images/L79S2.png" src="../_images/L79S2.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/1_9_1.png"><img alt="../_images/1_9_1.png" src="../_images/1_9_1.png" style="width: 780px;" /></a>
 <p>Свака анимирана слика је сачињена од више (непокретних) слика, па је за израду анимације потребно да се припреми више слика истих димензија. Код креирања анимација обично се свака следећа слика мало разликује од претходне, што даје утисак да се објекат у анимацији креће.
-Да би се креирала анимирана слика у програму Microsoft Gif Animator потребно је да припремљене слике буду запамћене у <strong>GIF</strong> формату.</p>
+Да би се креирала анимирана слика у програму Microsoft Gif Animator, потребно је да припремљене слике буду запамћене у <strong>GIF</strong> формату.</p>
 <p>Подсетимо се да <strong>GIF</strong> (Graphics Interchange Format) спада у компримоване формате без губитака квалитетa слике.</p>
 <p>Опис поступка за припрему сликa за анимацију можеш погледати на следећем видеу:</p>
 
     <div  id="EzjtdR18luk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/EzjtdR18luk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -506,8 +508,8 @@
 </ul>
 <p>Величину сцене за приказ анимације подешавамо на картици <strong>Animation</strong> тако што жељене вредности уносиш
 у поља <code class="docutils literal notranslate"><span class="pre">Animation</span> <span class="pre">Width</span></code> и <code class="docutils literal notranslate"><span class="pre">Animation</span> <span class="pre">Height</span></code>. Видљивост броја унетих слика за креирање анимације
-налази се у пољу <code class="docutils literal notranslate"><span class="pre">Image</span> <span class="pre">Count</span></code>. У случају да желиш да се анимација понавља треба да означиш поље
-<code class="docutils literal notranslate"><span class="pre">Looping</span></code> и унесеш број понављања у поље <code class="docutils literal notranslate"><span class="pre">Repeat</span> <span class="pre">Count</span></code> или одабереш бесконачно понављање означавањем
+налази се у пољу <code class="docutils literal notranslate"><span class="pre">Image</span> <span class="pre">Count</span></code>. У случају да желиш да се анимација понавља, треба да означиш поље
+<code class="docutils literal notranslate"><span class="pre">Looping</span></code> и унесеш број понављања у поље <code class="docutils literal notranslate"><span class="pre">Repeat</span> <span class="pre">Count</span></code> или да одабереш бесконачно понављање означавањем
 поља <code class="docutils literal notranslate"><span class="pre">Repeat</span> <span class="pre">Forever</span></code>.</p>
 <p>У оквиру картице <strong>Image</strong> подешаваш основне особине фрејмова:</p>
 <ul class="simple">
@@ -521,7 +523,7 @@
 
     <div  id="5WktEqRDux4" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/5WktEqRDux4/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -538,11 +540,11 @@
 којем се приказује анимација и у којем можеш да поново покренеш и зауставиш анимацију или је прикажеш
 фрејм по фрејм.</p>
 <p>Анимирану слику чуваш у формату <strong>.gif</strong>, избором алатке <strong>Save As</strong> <a class="reference internal" href="../_images/L79S8.png"><img alt="m7" src="../_images/L79S8.png" style="width: 30px;" /></a> из Линије са алаткама.</p>
-<p>Опис поступка за креирање анимране слике можеш погледати на следећем видеу:</p>
+<p>Опис поступка за креирање анимиране слике можеш погледати на следећем видеу:</p>
 
     <div  id="vtIoGLr7Jfk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/vtIoGLr7Jfk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -557,17 +559,17 @@
 <div class="section" id="id3">
 <h2>Уграђивање анимације у мултимедијалну презентацију<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Анимирану слику не можеш прегледати у програмима за обраду слике. Такву слику можеш погледати у програму
-за креирање анимација, да је прикажеш у веб прегледачима, али и у програмима за креирање мултимедијалних
+за креирање анимација, да је прикажеш у веб-прегледачима, али и у програмима за креирање мултимедијалних
 презентација.</p>
 <p>У програму Microsoft PowerPoint можеш да уметнеш анимацију на слајд тако што у менију изабереш <code class="docutils literal notranslate"><span class="pre">Insert</span></code>
 → <code class="docutils literal notranslate"><span class="pre">Pictures</span></code> → одабир анимације → <code class="docutils literal notranslate"><span class="pre">Insert</span></code>.</p>
-<p>Тако уметнута слика ће бити „непокретна” све док не покренеш презентацију кликом на дугме <strong>F5</strong> са тастатуре.
-Када покренеш презентацију анимирана слика биће приказана у форми „покрета”.</p>
+<p>Тако уметнута слика биће „непокретна“ све док не покренеш презентацију кликом на дугме <strong>F5</strong> са тастатуре.
+Када покренеш презентацију, анимирана слика биће приказана у форми „покрета“.</p>
 <p>Опис поступка уграђивања анимације у мултимедијалну презентацију можеш погледати на следећем видеу:</p>
 
     <div  id="Adgz2n54yC4" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/Adgz2n54yC4/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -583,7 +585,7 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
 <li><p>анимација је процес смењивања слика којим се ствара привид да се неки објекат мења (или креће) током времена;</p></li>
@@ -594,7 +596,7 @@
 </dd>
 </dl>
 
-    </p></div></div>
+    </div></div>
 </div>
 </div>
 

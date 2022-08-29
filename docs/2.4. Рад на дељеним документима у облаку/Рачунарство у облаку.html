@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Рачунарство у облаку</title>
+    <title>Рачунарство у „облаку“</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -417,38 +419,40 @@
     <div id="main-content">
     
   <div class="section" id="id1">
-<h1>Рачунарство у облаку<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>Рачунарство у „облаку“<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
-<dt>На овом часу ћеш научити:</dt><dd><ul class="simple">
-<li><p>које су могућности рачунарства у облаку;</p></li>
-<li><p>како да користиш складишта у облаку, да претражујеш и проналазиш датотеке у облаку;</p></li>
-<li><p>да сараднички креираш и делиш документа у облаку;</p></li>
-<li><p>даподешаваш одговарајуће нивое приступа датотекама у облаку.</p></li>
+<dt>На овом часу научићеш:</dt><dd><ul class="simple">
+<li><p>које су могућности рачунарства у „облаку“;</p></li>
+<li><p>како да користиш складишта у „облаку“, да претражујеш и проналазиш датотеке у „облаку“;</p></li>
+<li><p>да сараднички креираш и делиш документа у „облаку“;</p></li>
+<li><p>даподешаваш одговарајуће нивое приступа датотекама у „облаку“.</p></li>
 </ul>
 </dd>
 </dl>
 
-    </p></div></div>
-<p>Могућност да своје датотеке (текстуалне, звучне, видео записе, фотографије…) не чуваш на свом рачунару, већ на неким удаљеним серверима (посебним рачунарима за чување података) и да им путем интернета приступаш са било које локације и било ког уређаја у било ком тренутку назива се <strong>складиштење у облаку</strong> (енгл. <em>Cloud storage</em>).
+    </div></div>
+<p>Могућност да своје датотеке (текстуалне, звучне, видео записе, фотографије…) не чуваш на свом рачунару, већ на неким удаљеним серверима (посебним рачунарима за чување података) и да им путем интернета приступаш са било које локације и било ког уређаја у било ком тренутку назива се <strong>складиштење у „облаку“</strong> (енгл. <em>Cloud storage</em>).
 Постоје бројни сервиси који ти пружају ову услугу попут сервиса <strong>Google Drive</strong> у оквиру Google налога, затим <strong>OneDrive</strong> коришћењем Microsoft налога, <strong>Dropbox</strong> и других. Организација података на овим серверима је хијерархијска и по структури слична организацији података на диску твог рачунара.</p>
-<p>Неки од ових сервиса пружају ти могућност да креираш нове датотеке различитог типа или отвараш и модификујеш већ постојеће отпремљене датотеке. Једна од највећих предности сервиса у облаку је што се датотеке и фасцикле могу делити са више корисника. На тај начин свако може истовремено да доприноси раду на документу, што представља сараднички рад на документу.
-Овакав концепт рада назива се <strong>“рачунарство у облаку”</strong>.</p>
+<p>Неки од ових сервиса пружају ти могућност да креираш нове датотеке различитог типа или да отвараш и модификујеш већ постојеће отпремљене датотеке. Једна од највећих предности сервиса у „облаку“ је што се датотеке и фасцикле могу делити са више корисника. На тај начин свако може истовремено да доприноси раду на документу, што представља сараднички рад на документу.
+Овакав концепт рада назива се <strong>„рачунарство у облаку“</strong>.</p>
 <div class="section" id="id2">
-<h2>Претраживање и проналажење датотека у облаку<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Као кориснику <strong>Google налога</strong> на располагању ти је коришћење услуге <strong>Гугл диск</strong> (енгл. <strong>Google Drive</strong>) који представља један од најпознатијих и најчешће коришћених складишта у облаку. У оквиру ове услуге на располагању ти је бесплатни меморијски простор од 15GB (укључујући и сервис електронске поште Gmail). За више простора потребно је купити неки од понуђених пакета.
-То је уобичајени принцип на коме функционише рачунарство у облаку - нуде се бесплатно одређене функционалности са ограниченим меморијским простором а уз доплату се добија већи простор и проширени спектар услуга на коришћење.</p>
-<a class="reference internal image-reference" href="../_images/GoogleDrive.jpg"><img alt="../_images/GoogleDrive.jpg" class="align-center" src="../_images/GoogleDrive.jpg" style="width: 800px;" /></a>
+<h2>Претраживање и проналажење датотека у „облаку“<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Као кориснику <strong>Google налога</strong> на располагању ти је коришћење услуге <strong>Гугл диск</strong> (енгл. <strong>Google Drive</strong>) који представља један од најпознатијих и најчешће коришћених складишта у „облаку“. У оквиру ове услуге на располагању ти је бесплатни меморијски простор од 15GB (укључујући и сервис електронске поште Gmail). За више простора потребно је купити неки од понуђених пакета.
+То је уобичајени принцип на коме функционише рачунарство у „облаку“ - нуде се бесплатно одређене функционалности са ограниченим меморијским простором, а уз доплату се добија већи простор и проширени спектар услуга на коришћење.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/2_4_1.png"><img alt="../_images/2_4_1.png" class="screenshot-shadow" src="../_images/2_4_1.png" style="width: 780px;" /></a>
+</div>
 <p>Погледај у следећем видеу <strong>како се претражују фасцикле и датотеке на Гугл диску</strong>:</p>
 
     <div  id="8G7pPlwvX5Q" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/8G7pPlwvX5Q/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -459,13 +463,15 @@
     </div>
     
     
-    <p>Корисницима <strong>Microsoft налога</strong> на располагању је коришћење услуге <strong>Уандрајв</strong> (енгл. <strong>OneDrive</strong>) који такође представља један од најпознатијих и најчешће коришћених складишта у облаку. Корисницима је на располагању бесплатни меморијски простор од 5GB, а за више простора потребно је купити неки од понуђених пакета.</p>
-<a class="reference internal image-reference" href="../_images/IzgledOneDrive.jpg"><img alt="../_images/IzgledOneDrive.jpg" class="align-center" src="../_images/IzgledOneDrive.jpg" style="width: 800px;" /></a>
+    <p>Корисницима <strong>Microsoft налога</strong> на располагању је коришћење услуге <strong>Уандрајв</strong> (енгл. <strong>OneDrive</strong>), који такође представља један од најпознатијих и најчешће коришћених складишта у „облаку“. Корисницима је на располагању бесплатни меморијски простор од 5GB, а за више простора потребно је купити неки од понуђених пакета.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/IzgledOneDrive.jpg"><img alt="../_images/IzgledOneDrive.jpg" class="screenshot-shadow" src="../_images/IzgledOneDrive.jpg" style="width: 800px;" /></a>
+</div>
 <p>Погледај у следећем видеу <strong>како се претражују фасцикле и датотеке у OneDrive-у</strong>:</p>
 
     <div  id="RPNALFFDn0s" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/RPNALFFDn0s/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -478,17 +484,21 @@
     
     </div>
 <div class="section" id="id3">
-<h2>Сарадничко креирање и дељење докумената у облаку<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Гугл диск ти нуди могућност да <strong>отпремиш датотеке и фасцикле</strong> које си претходно сачувао на диску локалног рачунара, или да директно <strong>креираш нове датотеке и фасцикле у облаку</strong>.
-Одабиром опције <strong>Ново</strong> (енгл. <strong>New</strong>) пружа ти се могућност да се у облаку креираш датотеку (<strong>file</strong>) или фасциклу (<strong>folder</strong>).
-Датотекама и фасциклама се у облаку управља на исти начин као и на диску рачунара. Могу се копирати, премештати, преименовати, брисати и делити.</p>
-<a class="reference internal image-reference" href="../_images/NovoGD2.jpg"><img alt="../_images/NovoGD2.jpg" class="align-center" src="../_images/NovoGD2.jpg" style="width: 400px;" /></a>
-<a class="reference internal image-reference" href="../_images/OtpremanjeGoogleDrive.jpg"><img alt="../_images/OtpremanjeGoogleDrive.jpg" class="align-center" src="../_images/OtpremanjeGoogleDrive.jpg" style="width: 500px;" /></a>
+<h2>Сарадничко креирање и дељење докумената у „облаку“<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Гугл диск ти нуди могућност да <strong>отпремиш датотеке и фасцикле</strong> које си претходно сачувао на диску локалног рачунара, или да директно <strong>креираш нове датотеке и фасцикле у „облаку“</strong>.
+Одабиром опције <strong>Ново</strong> (енгл. <strong>New</strong>) пружа ти се могућност да се у „облаку“ креираш датотеку (<strong>file</strong>) или фасциклу (<strong>folder</strong>).
+Датотекама и фасциклама се у „облаку“ управља на исти начин као и на диску рачунара. Могу се копирати, премештати, преименовати, брисати и делити.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/2_4_2.png"><img alt="../_images/2_4_2.png" src="../_images/2_4_2.png" style="width: 780px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/2_4_3.png"><img alt="../_images/2_4_3.png" src="../_images/2_4_3.png" style="width: 780px;" /></a>
+</div>
 <p>Погледај у следећем видеу <strong>како се отпремају фасцикле и датотеке на Гугл диску</strong>:</p>
 
     <div  id="NNmZMtvCaUU" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/NNmZMtvCaUU/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -503,19 +513,21 @@
 <dt>Поред ових опција могу се креирати и:</dt><dd><ul class="simple">
 <li><p>нови документ за обраду текста (<strong>Google документи</strong>),</p></li>
 <li><p>нова слајд-презентација (<strong>Google презентације</strong>),</p></li>
-<li><p>нови упитник (<strong>Google упитници</strong>)</p></li>
-<li><p>и многи други типови докумената.</p></li>
+<li><p>нови упитник (<strong>Google упитници</strong>) и</p></li>
+<li><p>многи други типови докумената.</p></li>
 </ul>
 </dd>
 </dl>
-<p>Онлајн апликације за рад са текстом и презентацијама имају скоро све функционалности као и апликације инсталиране на рачунару и међусобно су компатибилне, што значи да уколико започнеш рад на неком документу у апликацији на рачунару, па онда тај документ отпремиш на Гугл диск можеш да наставиш да га уређујеш у онлајн апликацији и обрнуто.
-Ако креираш неки документ у облаку, можеш да га преузмеш локално на диск свог рачунара и наставиш са радом у апликацији инсталираној на рачунару.</p>
-<a class="reference internal image-reference" href="../_images/NovoGDrive.jpg"><img alt="../_images/NovoGDrive.jpg" class="align-center" src="../_images/NovoGDrive.jpg" style="width: 800px;" /></a>
+<p>Онлајн апликације за рад са текстом и презентацијама имају скоро све функционалности као и апликације инсталиране на рачунару и међусобно су компатибилне, што значи да уколико започнеш рад на неком документу у апликацији на рачунару, па онда тај документ отпремиш на Гугл диск, можеш да наставиш да га уређујеш у онлајн апликацији и обрнуто.
+Ако креираш неки документ у „облаку“, можеш да га преузмеш локално на диск свог рачунара и наставиш са радом у апликацији инсталираној на рачунару.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/2_4_4.png"><img alt="../_images/2_4_4.png" src="../_images/2_4_4.png" style="width: 800px;" /></a>
+</div>
 <p>Погледај у следећем видеу <strong>како се креира Гугл презентација</strong>:</p>
 
     <div  id="UzCy4AcyzYg" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/UzCy4AcyzYg/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -531,7 +543,7 @@
 
     <div  id="-4em81Nbank" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/-4em81Nbank/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -542,42 +554,37 @@
     </div>
     
     
-    <p>Погледај у следећем видеу <strong>како се премештају датотеке и фасцикле у OneDrive-у</strong>:</p>
-
-    <div  id="oF59pvZi4x8&" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/oF59pvZi4x8&/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-oF59pvZi4x8&" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-oF59pvZi4x8&">
-        </div>
-    </div>
-    
-    
-    <p>Једна од највећих предности рачунарства у облаку су могућност лаког дељења и сараднички рад.</p>
+    <p>Једна од највећих предности рачунарства у „облаку“ су могућност лаког дељења и сараднички рад.</p>
 <dl class="simple">
 <dt>Датотеке и фасцикле на Гугл диску се могу поделити на више начина:</dt><dd><ul class="simple">
-<li><p>да буду <strong>јавне</strong> и да свако може да им приступи</p></li>
-<li><p>да могу да им приступе <strong>само особе које имају линк</strong> до њих</p></li>
+<li><p>да буду <strong>јавне</strong> и да свако може да им приступи;</p></li>
+<li><p>да могу да им приступе <strong>само особе које имају линк</strong> до њих;</p></li>
 <li><p>да могу да им приступе <strong>само особе са којима су подељене</strong>.</p></li>
 </ul>
 </dd>
 </dl>
-<p>За дељење садржаја користи се опција <strong>Дели</strong>. Одабиром ове опције отвара се прозор у коме је потребно изабрати начин на који ће се датотека или фолдер делити као и право приступа особа са којима се они деле, да ли ће имати само могућност приступа датотеци за читање или и за уређивање.</p>
-<a class="reference internal image-reference" href="../_images/deljenje.jpg"><img alt="../_images/deljenje.jpg" class="align-center" src="../_images/deljenje.jpg" style="width: 800px;" /></a>
-<a class="reference internal image-reference" href="../_images/deljenje2.jpg"><img alt="../_images/deljenje2.jpg" class="align-center" src="../_images/deljenje2.jpg" style="width: 500px;" /></a>
-<a class="reference internal image-reference" href="../_images/deljenje3.jpg"><img alt="../_images/deljenje3.jpg" class="align-center" src="../_images/deljenje3.jpg" style="width: 500px;" /></a>
-<a class="reference internal image-reference" href="../_images/deljenje4.jpg"><img alt="../_images/deljenje4.jpg" class="align-center" src="../_images/deljenje4.jpg" style="width: 500px;" /></a>
+<p>За дељење садржаја користи се опција <strong>Дели</strong>. Одабиром ове опције отвара се прозор у коме је потребно изабрати начин на који ће се датотека или фолдер делити као и право приступа особа са којима се они деле - да ли ће имати само могућност приступа датотеци за читање или и за уређивање.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/2_4_6.png"><img alt="../_images/2_4_6.png" class="screenshot-shadow" src="../_images/2_4_6.png" style="width: 800px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/deljenje2.jpg"><img alt="../_images/deljenje2.jpg" class="screenshot-shadow" src="../_images/deljenje2.jpg" style="width: 500px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/deljenje3.jpg"><img alt="../_images/deljenje3.jpg" class="screenshot-shadow" src="../_images/deljenje3.jpg" style="width: 500px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/deljenje4.jpg"><img alt="../_images/deljenje4.jpg" class="screenshot-shadow" src="../_images/deljenje4.jpg" style="width: 500px;" /></a>
+</div>
 <p>У овом кораку је потребно одабрати да ли ће особа са којом се дели документ имати <strong>право приступа</strong> особа са којима се они деле, да ли ће имати само могућност приступа датотеци за читање или и за уређивање.</p>
-<a class="reference internal image-reference" href="../_images/deljenje5.jpg"><img alt="../_images/deljenje5.jpg" class="align-center" src="../_images/deljenje5.jpg" style="width: 500px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/deljenje5.jpg"><img alt="../_images/deljenje5.jpg" src="../_images/deljenje5.jpg" style="width: 500px;" /></a>
+</div>
 <p>Погледај у следећем видеу <strong>како се дели Гугл документ</strong>:</p>
 
     <div  id="rSMV-PO1RwQ" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/rSMV-PO1RwQ/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -590,11 +597,11 @@
     
     <dl class="simple">
 <dt>Шта смо научили:</dt><dd><ul class="simple">
-<li><p>Услуга чувања датотека на неким удаљеним серверима којима можеш да путем интернета приступаш са било које локације и било ког уређаја у било ком тренутку назива се складиштење у облаку (енгл. Cloud storage).</p></li>
-<li><p>Постоји више сервиса који ти пружају ову услугу попут сервиса Google Drive, OneDrive, Dropbox и других.</p></li>
+<li><p>Услуга чувања датотека на неким удаљеним серверима којима можеш да путем интернета приступаш са било које локације и било ког уређаја у било ком тренутку назива се складиштење у „облаку“ (енгл. Cloud storage).</p></li>
+<li><p>Постоји више сервиса који ти пружају ову услугу, попут сервиса Google Drive, OneDrive, Dropbox и других.</p></li>
 <li><p>Организација података на овим серверима је хијерархијска и по структури слична организацији података на диску твог рачунара.</p></li>
-<li><p>Ови сервиси пружају ти могућност да креираш нове датотеке различитог типа или отвараш и модификујеш већ постојеће отпремљене датотеке.</p></li>
-<li><p>Једна од највећих предности складиштења у облаку је што се датотеке и фасцикле могу делити са више корисника при чему свако може истовремено да доприноси раду на документу, што представља сараднички рад на документу. Овакав концепт рада назива се “рачунарство у облаку”.</p></li>
+<li><p>Ови сервиси ти пружају могућност да креираш нове датотеке различитог типа или отвараш и модификујеш већ постојеће отпремљене датотеке.</p></li>
+<li><p>Једна од највећих предности складиштења у „облаку“ је што се датотеке и фасцикле могу делити са више корисника, при чему свако може истовремено да доприноси раду на документу, што представља сараднички рад на документу. Овакав концепт рада назива се “рачунарство у „облаку“.</p></li>
 </ul>
 </dd>
 </dl>

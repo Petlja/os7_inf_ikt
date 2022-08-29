@@ -6,6 +6,7 @@
     <title>Обрада текста – преглед садржаја текстуалног документа</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -423,10 +425,10 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
 <dt>На овом часу ћеш научити:</dt><dd><ul class="simple">
-<li><p>разлику између визуалне презентације и логичке структуре текста;</p></li>
+<li><p>разлику између визуелне презентације и логичке структуре текста;</p></li>
 <li><p>како да користиш стилове за уређивање текстуалног документа;</p></li>
 <li><p>да креираш преглед садржаја текстуалног документа;</p></li>
 <li><p>на који начин можеш да користиш стилове и креираш садржај документа у апликацији Google Docs.</p></li>
@@ -434,7 +436,7 @@
 </dd>
 </dl>
 
-    </p></div></div>
+    </div></div>
 <p>У петом и шестом разреду у програму за унос и обраду текста, упознали смо опције за едитовање и форматирање
 текста и помоћу њих мењали његов садржај и изглед, односно визуелну презентацију текста.</p>
 <p>Да би текстуални документ који садржи више текста био прегледнији требало би га уредити тако да садржи
@@ -451,20 +453,33 @@
 различит од стила главног наслова, поднаслови свој стил различит од претходна два, итд.</p>
 <p>Поступак означавања стилова састоји се од означавања (селектовања) дела текста и одабира одговарајућег
 стила из палете уграђених стилова, која се налази у менију Home.</p>
-<a class="reference internal image-reference" href="../_images/L67S1.png"><img alt="../_images/L67S1.png" class="align-center" src="../_images/L67S1.png" style="width: 500px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L67S1.png"><img alt="../_images/L67S1.png" class="screenshot-shadow" src="../_images/L67S1.png" style="width: 780px;" /></a>
+</div>
 <p>Уграђене стилове могуће је изменити у палети стилова, десним кликом на одабрани стил и одабиром опције
 <code class="docutils literal notranslate"><span class="pre">Modify</span></code>.</p>
-<a class="reference internal image-reference" href="../_images/L67S2.png"><img alt="../_images/L67S2.png" class="align-center" src="../_images/L67S2.png" style="width: 500px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L67S2.png"><img alt="../_images/L67S2.png" class="screenshot-shadow" src="../_images/L67S2.png" style="width: 780px;" /></a>
+</div>
 <p>Отвориће се прозор <strong>Modify Style</strong>, у оквиру кога је могуће изменити фонт, величину, поравнање, боју
 и остале атрибуте уграђеног стила.</p>
-<a class="reference internal image-reference" href="../_images/L67S3.png"><img alt="../_images/L67S3.png" class="align-center" src="../_images/L67S3.png" style="width: 500px;" /></a>
-<p><strong>Напомена:</strong> Промена стила важи само у оквиру документа у коме је извршена. Нови документ имаће само
-уграђене стилове.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L67S3.png"><img alt="../_images/L67S3.png" class="screenshot-shadow" src="../_images/L67S3.png" style="width: 500px;" /></a>
+</div>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Променe стила важe само у оквиру документа у којем су извршене. Нови документ имаће само уграђене стилове.</p>
+
+    </div></div>
 <p>Опис поступка за примену и прилагођавање стила можеш погледати на видеу који следи:</p>
 
     <div  id="VGH23rVr2d8" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/VGH23rVr2d8/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -478,19 +493,21 @@
     <p>Захваљујући дефинисаној логичкој структури текста, можеш врло лако да формираш преглед садржаја текстуалног
 документа.</p>
 <p>Пре него што формираш садржај у текстуалном документу, потребно је да сваки наслов и поднаслов буде дефинисан
-одређеним стилом Heading 1 (Naslov 1), Heading 2 (Naslov 2),….</p>
+одређеним стилом - Heading 1 (Naslov 1), Heading 2 (Naslov 2)…</p>
 <p>Када форматираош наслове и поднаслове у текстуалном документу, следећи корак је да се позиционираш (кликнеш
 мишем) на место у документу где желиш да поставиш преглед садржаја, а затим да на картици References
-одабереш опцију Table of Content. Отвориће се падајућа листа са понуђеним изгледом прегледа садржаја
+одабереш опцију Table of Contents. Отвориће се падајућа листа са понуђеним изгледом прегледа садржаја
 текстуалног документа.</p>
-<a class="reference internal image-reference" href="../_images/L71S1.png"><img alt="../_images/L71S1.png" class="align-center" src="../_images/L71S1.png" style="width: 500px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L71S1.png"><img alt="../_images/L71S1.png" class="screenshot-shadow" src="../_images/L71S1.png" style="width: 500px;" /></a>
+</div>
 <p>Након одабира једног од понуђених изгледа садржаја, приказ садржаја текстуалног документа (наслови,
 поднаслови и бројеви страница на којима се они налазе) постаће део твог документа.</p>
 <p>Опис поступка за креирање садржаја текстуалног документа можеш погледати на следећем видеу:</p>
 
     <div  id="xVSpoZrV0xs" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/xVSpoZrV0xs/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -503,17 +520,21 @@
     
     <p>У случају да си у међувремену додао нови наслов или поднаслов, довољно је да извршиш ажурирање садржаја.</p>
 <p>Ажурирање садржаја вршиш кликом на садржај и одабиром опције update на картици References.</p>
-<a class="reference internal image-reference" href="../_images/L71S4.png"><img alt="../_images/L71S4.png" class="align-center" src="../_images/L71S4.png" style="width: 500px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L71S4.png"><img alt="../_images/L71S4.png" src="../_images/L71S4.png" style="width: 500px;" /></a>
+</div>
 </div>
 <div class="section" id="google-docs">
 <h2>Рад са стиловима и креирање садржаја у Google Docs<a class="headerlink" href="#google-docs" title="Permalink to this headline">¶</a></h2>
 <p>Све поменуте акције могу се извести и у програмима Google Docs.</p>
-<a class="reference internal image-reference" href="../_images/L67S4.png"><img alt="../_images/L67S4.png" class="align-center" src="../_images/L67S4.png" style="width: 500px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L67S4.png"><img alt="../_images/L67S4.png" src="../_images/L67S4.png" style="width: 500px;" /></a>
+</div>
 <p>Опис поступка за примену и прилагођавање стила у Google документу можеш погледати на следећем видеу:</p>
 
     <div  id="N1Fn-ISVPkQ" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/N1Fn-ISVPkQ/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -525,12 +546,14 @@
     
     
     <p>Уметање прегледа садржаја текстуалног документа вршиш одабиром картице Уметање → Садржај.</p>
-<a class="reference internal image-reference" href="../_images/L71S5.png"><img alt="../_images/L71S5.png" class="align-center" src="../_images/L71S5.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L71S5.png"><img alt="../_images/L71S5.png" src="../_images/L71S5.png" style="width: 300px;" /></a>
+</div>
 <p>Опис поступка за креирање садржаја у Google Docs можеш погледати на следећем видеу:</p>
 
     <div  id="XstrRIw1aRA" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/XstrRIw1aRA/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -546,20 +569,20 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
 <dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
 <li><p>да визуелна презентација текста представља облик у коме се приказује на екрану и како ће изгледати на папиру када се одштампа;</p></li>
 <li><p>да логичка структура текста описује организацију садржаја текста (наслове, поднаслове, пасусе);</p></li>
 <li><p>да стилови омогућавају доследно форматирање елемената текста који се налазе на истом нивоу логичке структуре (нпр. свих наслова, свих поднаслова…);</p></li>
-<li><p>да је уграђене стилове могуће модификовати (променити боју, величину фонта и сл.);</p></li>
+<li><p>да је уграђене стилове могуће изменити (променити боју, величину фонта и сл.);</p></li>
 <li><p>да је пре креирања садржаја потребно дефинисати све наслове и поднаслове;</p></li>
 <li><p>да логички структуриран текст омогућава уметање прегледа садржаја текстуалног документа.</p></li>
 </ul>
 </dd>
 </dl>
 
-    </p></div></div>
+    </div></div>
 </div>
 </div>
 
