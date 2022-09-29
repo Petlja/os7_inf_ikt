@@ -86,9 +86,6 @@ lessons:
         file: Квиз_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
         description: ...
         guid: 0299e2c9-6e21-4941-8093-bf7888c1ce9a
-    archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-      - guid: aaf83c5e-db21-4d36-9bbd-a73d3227ee0f
-      - guid: d1f95912-c8e1-4d6a-b87d-d391250d8f30
   - title: 1.2. Рачунарска графика
     folder: Час 2. Рачунарска графика
     guid: e5c686b1-65da-48a1-957e-0abca9adc147
@@ -329,9 +326,6 @@ lessons:
         file: Тест четврте лекције.rst
         description: #opciono
         guid: 44c7dfa5-d585-4146-8002-388cac7d769f      
-archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-  - guid: b9e3e6a3-9b7b-4966-acc1-2de21a5059c1
-  - guid: 99001af8-9278-48e6-b32d-588d9f27c228
 
 
 
