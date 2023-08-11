@@ -1,6 +1,3 @@
-archived-lessons:
-- guid: b9e3e6a3-9b7b-4966-acc1-2de21a5059c1
-- guid: 99001af8-9278-48e6-b32d-588d9f27c228
 courseId: 7_razred_IKT_DigitalnaPismenost
 description:
   externalLinks:
@@ -87,6 +84,7 @@ lessons:
   - description: ''
     file: Информационо_комуникациона_технологија.html
     guid: e05eee4c-52a2-441e-89db-ab35fae40269
+    normalized_title: Информационо-комуникациона технологија
     src: Информационо_комуникациона_технологија.rst
     title: Информационо-комуникациона технологија
     type: reading
@@ -100,24 +98,25 @@ lessons:
   - description: ''
     file: Час_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.html
     guid: 1f676570-7079-4b4d-b836-555259c85f50
+    normalized_title: Обрада текста – преглед садржаја текстуалног документа
     src: Час_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
     title: Обрада текста – преглед садржаја текстуалног документа
     type: reading
   - description: ''
     file: Задатак_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.html
     guid: a564c96e-334f-42a1-8ad0-1ab0fec98b94
+    normalized_title: Задаци. Обрада текста – преглед садржаја текстуалног документа
     src: Задатак_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
     title: Задаци. Обрада текста – преглед садржаја текстуалног документа
     type: reading
   - description: '...'
     file: Квиз_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.html
     guid: 0299e2c9-6e21-4941-8093-bf7888c1ce9a
+    normalized_title: Квиз. Обрада текста – преглед садржаја текстуалног документа
     src: Квиз_1_Рад_са_текстом_преглед_садржаја_текстуалног_документа.rst
     title: Квиз. Обрада текста – преглед садржаја текстуалног документа
     type: quiz
-  archived-activities:
-  - guid: aaf83c5e-db21-4d36-9bbd-a73d3227ee0f
-  - guid: d1f95912-c8e1-4d6a-b87d-d391250d8f30
+  archived-activities: []
   description: Прва лекција
   folder: Час 1. Рад са текстом – преглед садржаја текстуалног документа
   guid: 883a789a-5320-4467-92ad-6888ba983570
@@ -127,12 +126,14 @@ lessons:
   - description: ''
     file: Час_2_Рачунарска_графика.html
     guid: 05e1440b-a65f-4f85-8892-267884ca6859
+    normalized_title: Рачунарска графика
     src: Час_2_Рачунарска_графика.rst
     title: Рачунарска графика
     type: reading
   - description: ''
     file: Квиз_2_Рачунарска_графика.html
     guid: 0f1eacd4-2900-4056-b20e-1edb356a2aab
+    normalized_title: Квиз. Рачунарска графика
     src: Квиз_2_Рачунарска_графика.rst
     title: Квиз. Рачунарска графика
     type: quiz
@@ -146,12 +147,14 @@ lessons:
   - description: ''
     file: Час_3_Растерска_и_векторска_графика.html
     guid: aa202f4d-4408-4fd6-818b-16c885ee5175
+    normalized_title: Растерска и векторска графика
     src: Час_3_Растерска_и_векторска_графика.rst
     title: Растерска и векторска графика
     type: reading
   - description: ''
     file: Квиз_3_Растерска_и_векторска_графика.html
     guid: 04a95836-6dc0-4032-aecb-ca2a861a8f65
+    normalized_title: Квиз. Растерска и векторска графика
     src: Квиз_3_Растерска_и_векторска_графика.rst
     title: Квиз. Растерска и векторска графика
     type: quiz
@@ -165,18 +168,21 @@ lessons:
   - description: ''
     file: Час_4_Рад_са_сликама_слојеви.html
     guid: 5944177d-f914-4166-beb1-7a1e58171713
+    normalized_title: Обрада слика – слојеви
     src: Час_4_Рад_са_сликама_слојеви.rst
     title: Обрада слика – слојеви
     type: reading
   - description: ''
     file: Задатак_4_Рад_са _сликама_слојеви.html
     guid: f47ce132-b11c-45f8-9ccb-5ae2899fddae
+    normalized_title: Задаци. Обрада слика - слојеви
     src: Задатак_4_Рад_са _сликама_слојеви.rst
     title: Задаци. Обрада слика - слојеви
     type: reading
   - description: ''
     file: Квиз_4_Рад_са_сликама_слојеви.html
     guid: 786c88fa-77af-4c47-95ea-151bb2fd229b
+    normalized_title: Квиз. Обрада слика – слојеви
     src: Квиз_4_Рад_са_сликама_слојеви.rst
     title: Квиз. Обрада слика – слојеви
     type: quiz
@@ -190,18 +196,21 @@ lessons:
   - description: ''
     file: Час_5_Рад_са_сликама_обрада_дигиталних_слика.html
     guid: 2e20c602-998c-4dfd-83d8-33c58b1769f9
+    normalized_title: Обрада слика – дигиталне слике
     src: Час_5_Рад_са_сликама_обрада_дигиталних_слика.rst
     title: Обрада слика – дигиталне слике
     type: reading
   - description: ''
     file: Задатак_5_Рад_са_сликама_обрада_дигиталних_слика.html
     guid: dba0fb96-ee7f-4c15-aca6-304fb08a5ea0
+    normalized_title: Задаци. Обрада слика – дигиталне слике
     src: Задатак_5_Рад_са_сликама_обрада_дигиталних_слика.rst
     title: Задаци. Обрада слика – дигиталне слике
     type: reading
   - description: ''
     file: Квиз_5_Рад_са_сликама_обрада_дигиталних_слика.html
     guid: 07610fb0-37ac-4674-ab46-b5847fc417ee
+    normalized_title: Квиз. Обрада слика – дигиталне слике
     src: Квиз_5_Рад_са_сликама_обрада_дигиталних_слика.rst
     title: Квиз. Обрада слика – дигиталне слике
     type: quiz
@@ -215,18 +224,21 @@ lessons:
   - description: ''
     file: Час_6_Креирање_векторске_графике.html
     guid: 005666a7-4702-4a63-8cbd-642cf4692078
+    normalized_title: Креирање векторске графике
     src: Час_6_Креирање_векторске_графике.rst
     title: Креирање векторске графике
     type: reading
   - description: ''
     file: Задатак_6_Креирање_векторске_графике.html
     guid: 0b069bb1-5cef-43ef-9fa1-a419e4200db3
+    normalized_title: Задаци. Креирање векторске графике
     src: Задатак_6_Креирање_векторске_графике.rst
     title: Задаци. Креирање векторске графике
     type: reading
   - description: ''
     file: Квиз_6_Креирање_векторске_графике.html
     guid: f0842095-dfd8-4ccc-85e2-f8d8a5cb58f3
+    normalized_title: Квиз. Креирање векторске графике
     src: Квиз_6_Креирање_векторске_графике.rst
     title: Квиз. Креирање векторске графике
     type: quiz
@@ -240,18 +252,21 @@ lessons:
   - description: ''
     file: Час_7_Цртање_векторских_објеката.html
     guid: a4296ff4-7bd5-4053-a3b6-b47d51e2d861
+    normalized_title: Цртање векторских објеката
     src: Час_7_Цртање_векторских_објеката.rst
     title: Цртање векторских објеката
     type: reading
   - description: ''
     file: Задатак_7_Цртање_векторских_објеката.html
     guid: 9ed5af2b-04b6-4a49-b013-433ff86f73ac
+    normalized_title: Задаци. Цртање векторских објеката
     src: Задатак_7_Цртање_векторских_објеката.rst
     title: Задаци. Цртање векторских објеката
     type: reading
   - description: ''
     file: Квиз_7_Цртање_векторских_објеката.html
     guid: 917e2189-9680-4c0e-8075-2ccb0b59bd47
+    normalized_title: Квиз. Цртање векторских објеката
     src: Квиз_7_Цртање_векторских_објеката.rst
     title: Квиз. Цртање векторских објеката
     type: quiz
@@ -265,18 +280,21 @@ lessons:
   - description: ''
     file: Час_8_Обрада_векторске_графике.html
     guid: 6b6820d6-008b-4566-8433-2613d7438d50
+    normalized_title: Обрада векторске графике
     src: Час_8_Обрада_векторске_графике.rst
     title: Обрада векторске графике
     type: reading
   - description: ''
     file: Задатак_8_Обрада_векторске_графике.html
     guid: e71545b4-7bd7-4f02-acd5-2f2d2c6159f7
+    normalized_title: Задаци. Обрада векторске графике
     src: Задатак_8_Обрада_векторске_графике.rst
     title: Задаци. Обрада векторске графике
     type: reading
   - description: ''
     file: Квиз_8_Обрада_векторске_графике.html
     guid: f374db90-7d76-47c8-b061-edfd8b443450
+    normalized_title: Квиз. Обрада векторске графике
     src: Квиз_8_Обрада_векторске_графике.rst
     title: Квиз. Обрада векторске графике
     type: quiz
@@ -290,18 +308,21 @@ lessons:
   - description: ''
     file: Час_9_Анимиране_слике.html
     guid: fde298d6-c8ce-41d7-af8a-0397e332db47
+    normalized_title: Анимиране слике
     src: Час_9_Анимиране_слике.rst
     title: Анимиране слике
     type: reading
   - description: ''
     file: Задатак_9_Анимиране_слике.html
     guid: 5132b956-9333-4e49-be9c-8704d287bfc8
+    normalized_title: Задаци. Анимиране слике
     src: Задатак_9_Анимиране_слике.rst
     title: Задаци. Анимиране слике
     type: reading
   - description: ''
     file: Квиз_9_Анимиране_слике.html
     guid: 54304960-e805-429e-b0c7-d5495e350d5e
+    normalized_title: Квиз. Анимиране слике
     src: Квиз_9_Анимиране_слике.rst
     title: Квиз. Анимиране слике
     type: quiz
@@ -315,18 +336,21 @@ lessons:
   - description: ''
     file: Час_10_Снимање_видео_записа.html
     guid: ebbd042b-b269-4845-81b5-26889c4b8489
+    normalized_title: Снимање видео-записа
     src: Час_10_Снимање_видео_записа.rst
     title: Снимање видео-записа
     type: reading
   - description: ''
     file: Задатак_10_Снимање_видео_записа.html
     guid: 21a2aad0-5d48-41e9-9960-5f4e5e8b2cfd
+    normalized_title: Задаци. Снимање видео-записа
     src: Задатак_10_Снимање_видео_записа.rst
     title: Задаци. Снимање видео-записа
     type: reading
   - description: ''
     file: Квиз_10_Снимање_видео_записа.html
     guid: 24a6a6c3-84e0-40f9-8433-0462781bcd1e
+    normalized_title: Квиз. Снимање видео-записа
     src: Квиз_10_Снимање_видео_записа.rst
     title: Квиз. Снимање видео-записа
     type: quiz
@@ -340,6 +364,7 @@ lessons:
   - description: ''
     file: 2_dp.html
     guid: e05eee4c-52a2-441e-89db-ab35fae4026d
+    normalized_title: Дигитална писменост
     src: 2_dp.rst
     title: Дигитална писменост
     type: reading
@@ -353,12 +378,14 @@ lessons:
   - description: ''
     file: Интернет адресе и протоколи - URL, DNS, IP адреса.html
     guid: b7bde1cf-0818-4b54-99eb-ee0cf13e4cca
+    normalized_title: Интернет адресе и протоколи - URL, DNS, IP адреса
     src: Интернет адресе и протоколи - URL, DNS, IP адреса.rst
     title: Интернет адресе и протоколи - URL, DNS, IP адреса
     type: reading
   - description: ''
     file: Тест прве лекције.html
     guid: 2ad6d14b-b8c8-4f48-8252-776ef4324c12
+    normalized_title: Тест прве лекције
     src: Тест прве лекције.rst
     title: Тест прве лекције
     type: quiz
@@ -372,12 +399,14 @@ lessons:
   - description: ''
     file: Хипервеза и хипертекст.html
     guid: 074a43d8-a020-4439-a3b9-31628cdde71a
+    normalized_title: Хипервеза и хипертекст
     src: Хипервеза и хипертекст.rst
     title: Хипервеза и хипертекст
     type: reading
   - description: ''
     file: Тест друге лекције.html
     guid: 9ea13f0f-af2a-42b0-b9d9-6cec8c57d68a
+    normalized_title: Тест друге лекције
     src: Тест друге лекције.rst
     title: Тест друге лекције
     type: quiz
@@ -391,12 +420,14 @@ lessons:
   - description: ''
     file: Електронска пошта.html
     guid: abae84f9-ec8b-4a81-9ddf-a4438e6c4266
+    normalized_title: Електронска пошта
     src: Електронска пошта.rst
     title: Електронска пошта
     type: reading
   - description: ''
     file: Тест треће лекције.html
     guid: 3b7c6fcc-45ce-4c31-99d5-1dee1c1730ab
+    normalized_title: Тест треће лекције
     src: Тест треће лекције.rst
     title: Тест треће лекције
     type: quiz
@@ -410,12 +441,14 @@ lessons:
   - description: ''
     file: Рачунарство у облаку.html
     guid: 6019ffec-6e3a-43c1-bc72-6b0db8f4a895
+    normalized_title: Рачунарство у облаку
     src: Рачунарство у облаку.rst
     title: Рачунарство у облаку
     type: reading
   - description: ''
     file: Тест четврте лекције.html
     guid: 44c7dfa5-d585-4146-8002-388cac7d769f
+    normalized_title: Тест четврте лекције
     src: Тест четврте лекције.rst
     title: Тест четврте лекције
     type: quiz
